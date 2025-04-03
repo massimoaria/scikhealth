@@ -58,7 +58,6 @@ Thematic orientation is analyzed using:
 
 -   MeSH terms and primary research topics
 -   Bigrams from titles and abstracts
--   Trending topics over time
 -   Network similarity of research profiles across AHSCs
 
 These approaches help identify scientific specialization and thematic convergence/divergence among institutions.
@@ -71,7 +70,6 @@ Scientific talent is assessed through equity and leadership indicators:
 
 -   Gini coefficient on publication activity (equal and fractional)
 -   Identification of top contributors based on volume and impact
--   Dominance indicators showing concentration of leadership roles (first, last, corresponding authors)
 
 These metrics shed light on internal talent distribution and the presence of high-performing researchers.
 
@@ -91,7 +89,7 @@ These indicators help quantify the **societal resonance** of research output, hi
 
 ------------------------------------------------------------------------
 
-## 💡 Research Innovation
+## 💡 Industrial Impact & Research Innovation
 
 Innovation capacity is assessed through indicators based on **patents**, which serve as a proxy for knowledge transfer and technological advancement within AHSCs.
 

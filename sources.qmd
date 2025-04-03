@@ -7,9 +7,9 @@ format: html
 The SciK-Health project relies on a set of high-quality, openly accessible data sources to map and evaluate the scientific activity and societal impact of Italian AHSCs.\
 To provide a comprehensive, multidimensional view of research productivity, funding, clinical trials, and social engagement, we selected the following key databases:
 
--   [OpenAlex](https://openalex.org)
--   [Dimensions](https://www.dimensions.ai)
--   [Altmetric](https://www.altmetric.com)
+- [OpenAlex](https://openalex.org){target="_blank"}
+- [Dimensions](https://www.dimensions.ai){target="_blank"}
+- [Altmetric](https://www.altmetric.com){target="_blank"}
 
 Data were retrieved through dedicated APIs and processed using custom routines to match institutional identities and ensure accurate attribution of scientific output to each AHSC.
 

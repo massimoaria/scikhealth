@@ -16,6 +16,12 @@ website:
           href: sources.qmd
         - text: Performance Indicators
           href: performance.qmd
+      - text: Data repository
+        menu:
+        - text: Data Description
+          href: description.qmd
+        - text: AHC data
+          href: data.qmd
       - text: References & Products
         menu:
         - text: Project References
@@ -28,6 +34,7 @@ website:
           href: workshops.qmd
 format:
   html:
+    include-in-header: _includes/banner.html
     theme: lux
     css: styles.css
     toc: true
