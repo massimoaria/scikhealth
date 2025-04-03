@@ -1,0 +1,134 @@
+---
+format: html
+---
+
+## Performance Indicators
+
+The SciK-Health project aims to develop a multidimensional framework to assess the research performance of Italian Academic Health Science Centres (AHSCs).\
+By combining data from OpenAlex, Dimensions, and Altmetric, we identify key metrics across several dimensions, including bibliometrics, funding, innovation, and societal engagement.
+
+This section describes the indicators currently adopted to evaluate the scientific productivity, impact, collaboration patterns, thematic focus, and talent distribution within AHSCs.
+
+------------------------------------------------------------------------
+
+## 📚 Bibliometric Dimension
+
+### 🔹 Productivity
+
+Research output is measured by the total number of scientific articles published by each AHSC.\
+We also consider authorship patterns through:
+
+-   Average number of articles per internal author
+-   Share of internal authors in first, last, and corresponding positions
+-   Proportion of Open Access publications
+-   Number of single-authored articles
+
+These indicators reflect both institutional research engagement and the level of independent scholarship.
+
+------------------------------------------------------------------------
+
+### 🔹 Impact
+
+Citation-based indicators are used to assess research influence:
+
+-   Average citations per article
+-   Normalized citation scores (field-weighted)
+-   Share of publications in the top 10% journals (Scopus 2023)
+-   Citation trends over the past decade
+
+Together, these metrics provide insights into both short- and long-term academic visibility.
+
+------------------------------------------------------------------------
+
+### 🔹 Collaboration
+
+Collaboration is captured through:
+
+-   Percentage of articles with international co-authorship
+-   Cross-institutional affiliations among authors
+-   Average number of authors per article
+
+These indicators reveal the extent of networking, interdisciplinary effort, and participation in multi-center research projects.
+
+------------------------------------------------------------------------
+
+### 🔹 Topics
+
+Thematic orientation is analyzed using:
+
+-   MeSH terms and primary research topics
+-   Bigrams from titles and abstracts
+-   Trending topics over time
+-   Network similarity of research profiles across AHSCs
+
+These approaches help identify scientific specialization and thematic convergence/divergence among institutions.
+
+------------------------------------------------------------------------
+
+### 🔹 Talent
+
+Scientific talent is assessed through equity and leadership indicators:
+
+-   Gini coefficient on publication activity (equal and fractional)
+-   Identification of top contributors based on volume and impact
+-   Dominance indicators showing concentration of leadership roles (first, last, corresponding authors)
+
+These metrics shed light on internal talent distribution and the presence of high-performing researchers.
+
+------------------------------------------------------------------------
+
+## 🌍 Social and Digital Dimension
+
+This dimension evaluates the public and policy-level visibility of scientific research produced by AHSCs, using **altmetrics** as a complementary perspective to traditional citation-based indicators.
+
+Key indicators include:
+
+-   **Altmetric Attention Score (AAS)**: median score per institution, summarizing attention across platforms
+-   **Percentage of publications with an AAS \> 0**
+-   **Distribution of engagement types**: including media coverage, social media mentions, blog posts, policy citations, and Wikipedia references
+
+These indicators help quantify the **societal resonance** of research output, highlighting the extent to which AHSC-based publications are visible and engaged with outside of the academic community.
+
+------------------------------------------------------------------------
+
+## 💡 Research Innovation
+
+Innovation capacity is assessed through indicators based on **patents**, which serve as a proxy for knowledge transfer and technological advancement within AHSCs.
+
+Key indicators include:
+
+-   **Number of patents** registered per institution
+-   **Average number of jurisdictions** in which each patent is filed (as a proxy for market reach)
+-   **Classification of patents** by technological domain (e.g., medical devices, pharmaceuticals)
+-   **Identification of top inventors**, based on volume and relevance of patents filed
+
+These indicators provide insights into each AHSC’s role in translating research into applied technologies and highlight leadership in innovation-intensive domains.
+
+------------------------------------------------------------------------
+
+## 🧪 Clinical Research Activity
+
+Clinical trials represent a critical interface between scientific discovery and patient care. They reflect an institution’s capacity to translate research into evidence-based interventions.
+
+Key indicators include:
+
+-   **Number of newly initiated clinical trials** per AHSC
+-   **Average funding amount** per clinical trial (as a proxy for resource allocation)
+-   **Distribution by trial phase** (e.g., Phase I–IV), to distinguish early-stage vs. late-stage research engagement
+-   **Collaboration metrics**, capturing partnerships between AHSCs, healthcare providers, and external research centers
+
+These indicators highlight the role of AHSCs in driving medical innovation and their level of integration between academic research and clinical application.
+
+------------------------------------------------------------------------
+
+## 💶 Funding and Grants
+
+Research funding plays a central role in sustaining scientific activity and expanding institutional capabilities.
+
+Key indicators include:
+
+-   **Number of competitive research grants** awarded to each AHSC
+-   **Total funding amount** obtained, from both national and international sources
+-   **Grant success rate**, calculated as the proportion of submitted proposals that received funding
+
+These metrics reflect the institution’s ability to secure external resources, indicating both **research capacity** and **competitiveness** in the funding landscape.

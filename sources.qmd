@@ -1,0 +1,100 @@
+---
+format: html
+---
+
+## Data Sources and Collection Strategy
+
+The SciK-Health project relies on a set of high-quality, openly accessible data sources to map and evaluate the scientific activity and societal impact of Italian AHSCs.\
+To provide a comprehensive, multidimensional view of research productivity, funding, clinical trials, and social engagement, we selected the following key databases:
+
+-   [OpenAlex](https://openalex.org)
+-   [Dimensions](https://www.dimensions.ai)
+-   [Altmetric](https://www.altmetric.com)
+
+Data were retrieved through dedicated APIs and processed using custom routines to match institutional identities and ensure accurate attribution of scientific output to each AHSC.
+
+------------------------------------------------------------------------
+
+## 📚 OpenAlex
+
+OpenAlex serves as our primary bibliographic data source. It is an open, freely accessible platform that offers a wide-ranging collection of scientific publications, author metadata, institutional affiliations, and citation relationships.
+
+Unlike proprietary alternatives such as Web of Science or Scopus, OpenAlex ensures broader inclusion—particularly of smaller or underrepresented institutions—and enables full integration with open-source analysis workflows.
+
+For this project, we extracted publication-level data from OpenAlex via its API, using **institutional affiliations** as the main search criterion.\
+To improve the accuracy and completeness of institutional matching, we relied on the **Research Organization Registry (ROR)**, a global and community-led system for identifying research institutions. This allowed us to account for official names, common abbreviations, and alternative spellings of AHSCs.
+
+------------------------------------------------------------------------
+
+### 📄 Scientific Publications
+
+All scientific publications associated with Italian public AHSCs were retrieved from OpenAlex.
+
+To ensure data consistency and comparability across institutions and time, we applied the following **inclusion and exclusion criteria**:
+
+-   **Document Type**: Only articles were selected. Other formats—such as book chapters, conference proceedings, and editorials—were excluded due to their lower citation visibility and limited standardization.
+
+<!-- -->
+
+-   **Timeframe**: Articles published from 2000 to 2024 were considered.\
+-   **Language**: Articles written in English were included, to ensure coverage of internationally visible and standardized research output.
+
+This filtering strategy was designed to focus the analysis on high-quality, peer-reviewed research.
+
+------------------------------------------------------------------------
+
+### 🧠 Concepts
+
+OpenAlex provides a rich classification system for the **scientific content** of each publication through a set of hierarchical entities known as **Concepts**. These are semantically defined research topics assigned automatically to each article based on content analysis and citation patterns.
+
+For the SciK-Health project, we extracted all Concepts associated with each publication authored by AHSCs. This allowed us to reconstruct the **cognitive structure** of each institution's research activity, and to classify their scientific output by discipline, specialization, and thematic evolution.
+
+Each Concept was archived with its unique identifier, name, and relevance score. This facilitates advanced analyses such as clustering, thematic mapping, and comparative profiling across AHSCs.
+
+------------------------------------------------------------------------
+
+### 👤 Authorships
+
+For each article, the full authorship information was extracted and archived from OpenAlex.
+
+This includes, for every author, several information, such as: - **Full name and position in the author list** - **Corresponding author status** - **OpenAlex unique author ID** - **Affiliation at the time of publication**
+
+The availability of the **affiliation author ID** (when present) enabled us to enrich each author record with additional layers of information. Specifically, for each publication, we identified: - whether an author was **internal** to the AHSC under analysis (based on institutional affiliation at the time); - whether the internal author was also listed as **first**, **last**, or **corresponding** author.
+
+This information was crucial for measuring the strategic contribution of internal researchers to scientific production, and for evaluating leadership roles in collaborative research.
+
+------------------------------------------------------------------------
+
+## 🧬 Dimensions
+
+To complement the bibliometric coverage offered by OpenAlex, the SciK-Health project also integrates data from **Dimensions**, a multidisciplinary platform that aggregates a broad range of research outputs and metadata.
+
+Dimensions is particularly valuable for filling gaps related to:
+
+-   **Clinical trials**
+-   **Research grants**
+-   **Datasets**
+-   **Patents**
+
+By supplementing missing metadata on these components, Dimensions enables a **holistic assessment** of the role of AHSCs in the scientific ecosystem.
+
+This integration allows us to expand the evaluation beyond scientific publications and citations, capturing a broader spectrum of institutional impact—including **funding success**, **technological innovation**, and **translational research potential**.\
+In this way, we highlight not only the academic contributions of AHSCs, but also their operational relevance within the healthcare system. Only datasets, grants, patents, and clinical trials were extracted. Publications were excluded because they were more comprehensively covered by OpenAlex, while policy documents were omitted because of their limited availability for the AHSCs analyzed.
+
+------------------------------------------------------------------------
+
+## 🌍 Altmetric
+
+To capture the **social and digital impact** of scientific research, the SciK-Health project incorporates data from **Altmetric**, a platform that tracks and quantifies the online attention received by scholarly publications.
+
+Altmetric monitors mentions of scientific outputs across a wide array of sources, including:
+
+-   **Social media platforms** (e.g., Twitter/X, Facebook)
+-   **News outlets**
+-   **Blogs**
+-   **Policy documents**
+-   **Wikipedia**
+
+Using the DOIs of AHSC-affiliated publications retrieved from OpenAlex, we accessed Altmetric’s API to collect both **altmetric scores** and detailed **engagement data**. This allowed us to quantify public and institutional attention received by each research output beyond academic citations.
+
+The inclusion of Altmetric data enables an **alternative perspective** on research impact—highlighting visibility, outreach, and public engagement—as a complement to traditional bibliometric indicators.

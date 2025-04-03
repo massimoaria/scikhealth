@@ -1,0 +1,9 @@
+---
+title: "Workshops"
+format: html
+---
+
+This section will include workshops and training activities organized within the framework of the SciK-Health project.
+
+-   **Workshop on the SciK-Health project**, 10 June 2025\
+    *(Details coming soon)*

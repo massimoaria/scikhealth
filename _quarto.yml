@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SciK-Health"
+  navbar:
+    left:
+      - text: The Project
+        href: theProject.qmd
+      - text: Research Team
+        href: team.qmd
+      - text: Research Metrics
+        menu:
+        - text: Sources
+          href: sources.qmd
+        - text: Performance Indicators
+          href: performance.qmd
+      - text: References & Products
+        menu:
+        - text: Project References
+          href: references.qmd
+        - text: Publications
+          href: publications.qmd
+        - text: Conferences
+          href: conferences.qmd
+        - text: Workshops
+          href: workshops.qmd
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+editor: visual
+

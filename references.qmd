@@ -1,0 +1,72 @@
+---
+title: ""
+format: html
+---
+
+## Project References
+
+The following references represent key scientific contributions that frame and support the SciK-Health research project.\
+They include international studies on Academic Health Science Centres, their organizational models, policy evolution, and the role of research in shaping healthcare systems.
+
+------------------------------------------------------------------------
+-   Aria, M., & Cuccurullo, C. (2017). *bibliometrix: An R-tool for comprehensive science mapping analysis*. *Journal of Informetrics*.\
+
+-   Wartman, S. A. (2015). *The academic health center in a disrupted world*. *Pharos Alpha Omega Alpha Honor Medical Society*, 78(2), 2–9.\
+
+-   French, C. E., Ferlie, E., & Fulop, N. J. (2014). *The international spread of Academic Health Science Centres: a scoping review and the case of policy transfer to England*. *Health Policy*, 117(3), 382–391.\
+
+-   Lozon, J. C., & Fox, R. M. (2002). *Academic Health Sciences Centres Laid Bare*. *HealthcarePapers*, 2(3), 10–36.\
+
+-   Gallin, J. I., & Smits, H. L. (1998). *Managing the Interface Between Medical Schools, Hospitals, and Clinical Research*. *Survey of Anesthesiology*, 42(1), 651–654.\
+
+-   Nonnemaker, L., & Griner, P. F. (2001). *The Effects of a Changing Environment on Relationships between Medical Schools and Their Parent Universities*. *Academic Medicine*, 76(1), 9–18.\
+
+-   Wartman, S. A., et al. (2009). *An International Association of Academic Health Centres*. *The Lancet*, 374(9699), 1402–1403.\
+
+-   Ovseiko, P. V., Davies, S. M., & Buchan, A. M. (2010). *Organizational models of emerging academic health science centers in England*. *Academic Medicine*, 85(8), 1282–1289.\
+
+-   Ferlie, E., et al. (2005). *The nonspread of innovations: the mediating role of professionals*. *Academy of Management Journal*, 48(1), 117–134.\
+
+-   Brennan, T. A., et al. (2006). *Health Industry Practices That Create Conflicts of Interest: A Policy Proposal for Academic Medical Centers*. *JAMA*, 295(4), 429–433.\
+
+-   Cohen, J. J., & Siegel, E. K. (2005). *Academic Medical Centers and Medical Research: The Challenges Ahead*. *JAMA*, 294(11), 1367–1372.\
+
+-   Rothman, D. J., & Chimonas, S. (2010). *Academic Medical Centers’ Conflict of Interest Policies*. *JAMA*, 304(20), 2294–2295.\
+
+-   Washington, A., Coye, M. J., & Feinberg, D. T. (2013). *Academic Health Centers and the Evolution of the Health Care System*. *JAMA*, 310(18), 1929–1930.\
+
+-   Fish, D. R. (2013). *Academic Health Sciences Networks in England*. *The Lancet*, 381(9882), e18–e19.\
+
+-   Nicholson, K., Randhawa, J., & Steele, M. (2015). *Establishing the SouthWestern Academic Health Network (SWAHN)*. *Journal of Community Health*, 40(5), 927–939.\
+
+-   Ovseiko, P. V., et al. (2014). *Improving Accountability through Alignment: The Role of Academic Health Science Centres and Networks in England*. *BMC Health Services Research*, 14, 24.\
+
+-   Wijgert, J. van de. (2010). *Academic Health Science Systems*. *The Lancet*, 375(9728), 1782.\
+
+-   Edelman, A., et al. (2020). *Academic Health Science Centres as Vehicles for Knowledge Mobilisation in Australia? A Qualitative Study*. *International Journal of Health Policy and Management*.\
+
+-   Ferlie, E. (2022). *AHSCs as Health Policy Transfer: Some Emergent Evidence From Australia*. *International Journal of Health Policy and Management*.\
+
+-   Sanfilippo, F. (2009). *Academic Health Centers*. *Information, Knowledge, Systems Management*.\
+
+-   Barrett, D. J. (2008). *The Evolving Organizational Structure of Academic Health Centers: The Case of the University of Florida*. *Academic Medicine*.\
+
+-   Daniels, R. J., & Carson, L. D. (2011). *Academic Medical Centers – Organizational Integration and Discipline through Contractual and Firm Models*. *JAMA*.\
+
+-   Davies, S. M., et al. (2010). *Structure, Governance, and Organizational Dynamics of University Medical Centers in the Netherlands*. *Academic Medicine*.\
+
+-   Griner, P. F., & Blumenthal, D. (1998). *Reforming the Structure and Management of Academic Medical Centers: Case Studies of Ten Institutions*. *Academic Medicine*.\
+
+-   Gaynor, M., Laudicella, M., & Propper, C. (2012). *Can Governments Do It Better? Merger Mania and Hospital Outcomes in the English NHS*. *Journal of Health Economics*.\
+
+-   Fuchs, V. R. (2013). *Current Challenges to Academic Health Centers*. *JAMA*.\
+
+-   Levine, J. K. (2002). *Considering Alternative Organizational Structures for Academic Medical Centers*. *AAMC Academic Clinical Practice*.\
+
+-   Elizondo, A. R., et al. (2022). *The Three-Step Workflow: A Pragmatic Approach to Allocating Academic Hospitals’ Affiliations for Bibliometric Purposes*. *Journal of Data and Information Science*.\
+
+-   Ferrè, F., Cuccurullo, C., & Lega, F. (2012). *The challenge and the future of health care turnaround plans: evidence from the Italian experience*. *Health Policy*.\
+
+-   Nuti, S., Ruggieri, T. G., & Podetti, S. (2016). *Do university hospitals perform better than general hospitals? A comparative analysis among Italian regions*. *BMJ Open*.\
+
+

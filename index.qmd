@@ -1,0 +1,31 @@
+---
+format: html
+page-layout: custom
+---
+
+:::::: {.container style="margin-top: 3em;"}
+::::: {style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2em;"}
+<!-- Left: logo -->
+
+::: {style="flex: 1; min-width: 200px;"}
+![](www/scik-health-logo.png){width="180px"}
+:::
+
+<!-- Right: title + description + button -->
+
+::: {style="flex: 3; min-width: 300px;"}
+## SciK-Health
+
+### ***Scientific Knowledge in Health***
+
+<p style="font-size: 1.1em; line-height: 1.6;">
+
+**SciK-Health** is a national research project funded through the PRIN 2022 programme.\
+This research aims to explore how scientific knowledge contributes to the quality and effectiveness of patient care, with a particular focus on Italy’s Academic Health Science Centres.
+
+</p>
+
+<a href="theProject.qmd" class="btn btn-primary" role="button">The Project</a>
+:::
+:::::
+::::::
