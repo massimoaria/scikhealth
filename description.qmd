@@ -1,0 +1,156 @@
+---
+title: "Data Description"
+format: html
+---
+
+## Overview
+
+This section provides detailed metadata documentation for the variables used in the SciK-Health project datasets. Each block corresponds to a thematic group of indicators derived from OpenAlex and other integrated sources.\
+The indicators are designed to support reproducible, comparative research on Italian Academic Health Science Centres (AHSCs).
+
+------------------------------------------------------------------------
+
+## 📊 Bibliometric Output and Co-authorship Indicators
+
+These indicators describe the scientific production volume, authorship patterns, and collaboration dynamics of AHSCs.\
+They are primarily computed using publication metadata from OpenAlex and enriched with journal quality metrics from SCOPUS.
+
++------------------------+---------------------------------------------------------------------------------+
+| **Variable**           | **Description**                                                                 |
++========================+=================================================================================+
+| AHC                    | Name (short label) of the hospital/university institution                       |
++------------------------+---------------------------------------------------------------------------------+
+| PY                     | Publication Year                                                                |
++------------------------+---------------------------------------------------------------------------------+
+| nTotDoc                | Total number of documents/articles published in the year                        |
++------------------------+---------------------------------------------------------------------------------+
+| meanAUPerArt           | Average number of authors per article                                           |
++------------------------+---------------------------------------------------------------------------------+
+| meanAU_IN_PerArt       | Average number of internal authors (AU_IN) per article                          |
++------------------------+---------------------------------------------------------------------------------+
+| meanArtAU_IN           | Average number of articles per internal author                                  |
++------------------------+---------------------------------------------------------------------------------+
+| meanArtPer_AU_IN_FIRST | Average number of articles per internal author as first author                  |
++------------------------+---------------------------------------------------------------------------------+
+| meanArtPer_AU_IN_LAST  | Average number of articles per internal author as last author                   |
++------------------------+---------------------------------------------------------------------------------+
+| meanArtPer_AU_IN_CORR  | Average number of articles per internal author as corresponding author          |
++------------------------+---------------------------------------------------------------------------------+
+| ArtOA                  | Percentage of Open Access articles                                              |
++------------------------+---------------------------------------------------------------------------------+
+| singleAuArt            | Number of single-author articles                                                |
++------------------------+---------------------------------------------------------------------------------+
+| Q1_nSJR                | Number of articles published in Q1 journals (quartile 1) according to SJR**\*** |
++------------------------+---------------------------------------------------------------------------------+
+| Q2_nSJR                | Number of articles published in Q2 journals according to SJR                    |
++------------------------+---------------------------------------------------------------------------------+
+| Q4_nSJR                | Number of articles published in Q4 journals according to SJR                    |
++------------------------+---------------------------------------------------------------------------------+
+| Q3_nSJR                | Number of articles published in Q3 journals according to SJR                    |
++------------------------+---------------------------------------------------------------------------------+
+| Q1_percSJR             | Percentage of articles published in Q1 journals                                 |
++------------------------+---------------------------------------------------------------------------------+
+| Q2_percSJR             | Percentage of articles published in Q2 journals                                 |
++------------------------+---------------------------------------------------------------------------------+
+| Q4_percSJR             | Percentage of articles published in Q4 journals                                 |
++------------------------+---------------------------------------------------------------------------------+
+| Q3_percSJR             | Percentage of articles published in Q3 journals                                 |
++------------------------+---------------------------------------------------------------------------------+
+| meanTCperArt           | Average number of citations per article                                         |
++------------------------+---------------------------------------------------------------------------------+
+| mean_NTC               | Average Normalized Total Citations (NTC) per institution and year**\*\***       |
++------------------------+---------------------------------------------------------------------------------+
+| InternCoauthorship     | Percentage of articles with international co-authors                            |
++------------------------+---------------------------------------------------------------------------------+
+| AffCoauthorship        | Percentage of articles with co-authors affiliated with different institutions   |
++------------------------+---------------------------------------------------------------------------------+
+| meanCitationTrend      | Average citation trend over time**\*\*\***                                      |
++------------------------+---------------------------------------------------------------------------------+
+
+**\*** Indicator based on data from SCOPUS. Journals assigned to multiple subject categories were selected based on the best percentile.\
+**\*\*** Measures the average citation performance of an institution’s publications in a given year, normalized to the global average citation rate for that year. Enables cross-institution comparison.\
+**\*\*\*** Citation trend is a metric assigned to articles by OpenAlex starting from 2012.
+
+## 👤🔬 Author Contribution & Talent Distribution
+
+These indicators focus on the concentration and distribution of scientific contributions across internal and external authors.  
+They provide insights into the presence of high-performing individuals, institutional equity, and authorship leadership roles.
+
+| **Variable**                  | **Description**                                                                                                                                              |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GC_AUIN_wFractional           | Gini concentration index (fractional) on internal authors*                                                                                                   |
+| GC_AUIN_FIRSTname             | Gini concentration index on internal authors in first position (first name)**                                                                               |
+| GC_AUIN_LASTname              | Gini concentration index on internal authors in last position**                                                                                             |
+| GC_AUIN_CORRESP               | Gini concentration index on internal corresponding authors**                                                                                                |
+| top_AU                        | List of top authors (internal and external) by frequency                                                                                                    |
+| top_AU_freq                   | Absolute frequencies of top authors (internal and external) in `top_AU`                                                                                     |
+| top_AU_wFract                 | List of top authors (internal and external) by fractional frequency                                                                                         |
+| top_AU_freq_wFract            | Fractional frequencies associated with each author in `top_AU_wFract`                                                                                      |
+| top_AUIN                      | List of top internal authors by simple frequency                                                                                                            |
+| top_AUIN_freq                 | Absolute frequencies of internal authors in `top_AUIN`                                                                                                      |
+| top_AUIN_wFract               | List of top internal authors by fractional frequency                                                                                                        |
+| top_AUIN_freq_wFract          | Fractional frequencies associated with each internal author in `top_AUIN_wFract`                                                                           |
+| topAUbyCit                    | List of top authors by total citations                                                                                                                      |
+| topAUbyCit_TC                 | Total citations associated with each author in `topAUbyCit`                                                                                                 |
+| topAUINbyCit                  | List of top internal authors by total citations                                                                                                             |
+| topAUINbyCit_TC               | Total citations associated with internal authors in `topAUINbyCit`                                                                                          |
+| topAUINbyCit_norm_byYear      | List of top internal authors by normalized citations per year***                                                                                           |
+| topAUINbyCit_TC_norm_byYear   | Normalized citations associated with internal authors in `topAUINbyCit_norm_byYear`                                                                        |
+
+\* The weight assigned to each author is fractional (considering both publication count and co-authorship).  
+\** Gini concentration computed using the number of published articles per author as weight.  
+\*** Top cited authors, where citation counts are normalized by dividing each article’s citation count by the average citations of all articles published in the same year.
+
+
+## 🧠 Top Concepts, Topics, and Keywords
+
+This group of indicators summarizes the conceptual and thematic content of the scientific output produced by AHSCs.  
+It includes hierarchical concept levels (from general disciplines to specific biomedical entities), MeSH terms, authors' keywords, and text-mined bigrams from titles and abstracts.
+
+| **Variable**                    | **Description**                                                                                                        |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| topConcept_L0                  | Top level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY)                                                    |
+| topFreq_L0                     | Frequencies associated with top level 0 concepts                                                                       |
+| topConcept_L1                  | Top level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY)                                     |
+| topFreq_L1                     | Frequencies associated with top level 1 concepts                                                                       |
+| topConcept_L2                  | Top level 2 concepts (more specific topics)                                                                            |
+| topFreq_L2                     | Frequencies associated with top level 2 concepts                                                                       |
+| topConcept_L3                  | Top level 3 concepts (more detailed, e.g., related to diseases or methods)                                             |
+| topFreq_L3                     | Frequencies associated with top level 3 concepts                                                                       |
+| topConcept_L4                  | Top level 4 concepts (highest specificity, e.g., biological entities, anatomical structures)                           |
+| topFreq_L4                     | Frequencies associated with top level 4 concepts                                                                       |
+| topMESH                        | List of main MeSH terms associated with the articles                                                                   |
+| topMESH_n                      | Frequencies of the top MeSH terms                                                                                      |
+| topprimary_topic.display_name  | Top primary topics
+
+
+
+## 📣 Altmetrics: Social & Digital Attention
+
+This section includes indicators that capture the online visibility, public engagement, and media attention of scientific publications produced by AHSCs.  
+Metrics are collected via the Altmetric API and provide aggregated and disaggregated views of attention across platforms such as social media, blogs, news outlets, and policy documents.
+
+| **Variable**                    | **Description**                                                                                                   |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| nDoc_wALTM                     | Number of articles in the year with at least one Altmetric Score (Altmetric Score > 0)                           |
+| percDoc_wALTM                  | Percentage of articles with Altmetric Score > 0 out of total articles published                                  |
+| nDoc_wALTM_top25               | Number of articles in the top 25% of the Altmetric Score distribution                                            |
+| percDoc_wALTM_top25            | Percentage of articles in the top 25% by Altmetric Score relative to the total published in that year           |
+| altmetric_score                | Altmetric Score value, an aggregated indicator of online attention (mean, min, and max)                          |
+| cited_by_accounts_count        | Number of unique accounts mentioning the article (mean, min, and max)                                            |
+| cited_by_fbwalls_count         | Number of Facebook wall mentions (mean, min, and max)                                                            |
+| cited_by_feeds_count           | Number of mentions in RSS feeds and blogs (mean, min, and max)                                                   |
+| cited_by_gplus_count           | Number of mentions on Google+ (historical only; mean, min, and max)                                              |
+| cited_by_msm_count             | Number of mentions in mainstream media (newspapers, magazines, etc.) (mean, min, and max)                        |
+| cited_by_patents_count         | Number of mentions in patents (mean, min, and max)                                                               |
+| cited_by_peer_review_sites_count | Number of mentions on peer review sites (e.g., PubPeer) (mean, min, and max)                                    |
+| cited_by_policies_count        | Number of citations in policy documents (mean, min, and max)                                                     |
+| cited_by_posts_count           | Total mentions in posts (including blogs, forums, etc.) (mean, min, and max)                                     |
+| cited_by_rdts_count            | Number of mentions in Reddit threads (mean, min, and max)                                                        |
+| cited_by_rh_count              | Number of mentions in Research Highlights (mean, min, and max)                                                   |
+| cited_by_tweeters_count        | Number of Twitter/X users who mentioned the article (mean, min, and max)                                         |
+| cited_by_videos_count          | Number of mentions in video content (e.g., YouTube) (mean, min, and max)                                         |
+| cited_by_wikipedia_count       | Number of citations on Wikipedia (mean, min, and max)                                                            |
+| cohorts.com                    | Number of general public users interacting with the article (mean, min, and max)                                 |
+| cohorts.doc                    | Number of interactions by professionals (clinicians, operators, policy makers)
+

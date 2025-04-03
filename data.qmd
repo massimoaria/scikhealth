@@ -1,0 +1,60 @@
+---
+format: html
+---
+
+## 🏥 AHC Data Repository
+
+Below you can download the `.csv` file for each Italian Academic Health Science Centre (AHSC).\
+Each file contains key performance indicators extracted from OpenAlex, Dimensions, and Altmetric data.
+
+| AHC | AHC (short name) | Data (.csv) |
+|----------------|--------------------------------|-------------------------|
+| AZIENDA OSPEDALIERA DI PERUGIA | AOU_PERUGIA | <a href="ahc_indicators_csv/AOU_PERUGIA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERA UNIVERSITA' PADOVA | AOU_PADOVA | <a href="ahc_indicators_csv/AOU_PADOVA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERA UNIVERSITARIA INTEGRATA SSN LUIGI VANVITELLI | AOUSSN_VANVITELLI | <a href="ahc_indicators_csv/AOUSSN_VANVITELLI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA CAREGGI | AOU_CAREGGI | <a href="ahc_indicators_csv/AOU_CAREGGI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA CITTA' DELLA SALUTE E DELLA SCIENZA | AOU_CITTADELLASCIENZA | <a href="ahc_indicators_csv/AOU_CITTADELLASCIENZA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA DI FERRARA | AOU_FERRARA | <a href="ahc_indicators_csv/AOU_FERRARA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA DI MODENA | AOU_MODENA | <a href="ahc_indicators_csv/AOU_MODENA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA DI PARMA | AOU_PARMA | <a href="ahc_indicators_csv/AOU_PARMA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN CAGLIARI | AOUSSN_CAGLIARI | <a href="ahc_indicators_csv/AOUSSN_CAGLIARI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN FEDERICO II DI NAPOLI | AOUSSN_FEDERICOII | <a href="ahc_indicators_csv/AOUSSN_FEDERICOII.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN G. MARTINO | AOUSSN_GMARTINO | <a href="ahc_indicators_csv/AOUSSN_GMARTINO.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN P.GIACCONE | AOUSSN_GIACCONE | <a href="ahc_indicators_csv/AOUSSN_GIACCONE.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO BARI | AOUSSN_POLICLINICOBARI | <a href="ahc_indicators_csv/AOUSSN_POLICLINICOBARI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO UMBERTO I | AOUSSN_UMBERTOI | <a href="ahc_indicators_csv/AOUSSN_UMBERTOI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO VITTORIO EMANUELE | AOUSSN_VITTORIOEMANUELE | <a href="ahc_indicators_csv/AOUSSN_VITTORIOEMANUELE.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN SASSARI | AOUSSN_SASSARI | <a href="ahc_indicators_csv/AOUSSN_SASSARI.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA VERONA | AOU_VERONA | <a href="ahc_indicators_csv/AOU_VERONA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA MAGGIORE DELLA CARITA' | AOU_NOVARAGALLIATE | <a href="ahc_indicators_csv/AOU_NOVARAGALLIATE.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDALI RIUNITI ANCONA | AOU_RIUNITIANCONA | <a href="ahc_indicators_csv/AOU_RIUNITIANCONA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA PISANA | AOU_PISANA | <a href="ahc_indicators_csv/AOU_PISANA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA POLICLINICO RIUNITI FOGGIA | AOU_RIUNITIFOGGIA | <a href="ahc_indicators_csv/AOU_RIUNITIFOGGIA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA POLICLINICO TOR VERGATA | AOU_TORVERGATA | <a href="ahc_indicators_csv/AOU_TORVERGATA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA S.LUIGI GONZAGA | AOU_GONZAGA | <a href="ahc_indicators_csv/AOU_GONZAGA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA SAN GIOVANNI DI DIO E RUGGI D'ARAGONA | AOU_SANGIOVANNIDIDIO | <a href="ahc_indicators_csv/AOU_SANGIOVANNIDIDIO.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA SANT\`ANDREA | AOU_SANTANDREA | <a href="ahc_indicators_csv/AOU_SANTANDREA.csv" download>Download</a> |
+| AZIENDA OSPEDALIERO UNIVERSITARIA SENESE | AOU_SENESE | <a href="ahc_indicators_csv/AOU_SENESE.csv" download>Download</a> |
+| IRCCS AUSL DI REGGIO EMILIA | IRCCS_AUSLREGGIOEMILIA | <a href="ahc_indicators_csv/IRCCS_AUSLREGGIOEMILIA.csv" download>Download</a> |
+| IRCCS BURLO GAROFOLO | IRCCS_BURLOGAROFOLO | <a href="ahc_indicators_csv/IRCCS_BURLOGAROFOLO.csv" download>Download</a> |
+| IRCCS CA' GRANDA | IRCCS_CAGRANDA | <a href="ahc_indicators_csv/IRCCS_CAGRANDA.csv" download>Download</a> |
+| IRCCS CENTRO NEUROLESI BONINO PULEJO | IRCCS_BONINOPULEJO | <a href="ahc_indicators_csv/IRCCS_BONINOPULEJO.csv" download>Download</a> |
+| IRCCS CENTRO RIFERIMENTO ONCOLOGICO | IRCCS_CRO | <a href="ahc_indicators_csv/IRCCS_CRO.csv" download>Download</a> |
+| IRCCS CROB | IRCCS_CROB | <a href="ahc_indicators_csv/IRCCS_CROB.csv" download>Download</a> |
+| IRCCS INMI LAZZARO SPALLANZANI | IRCCS_SPALLANZANIROMA | <a href="ahc_indicators_csv/IRCCS_SPALLANZANIROMA.csv" download>Download</a> |
+| IRCCS IOV | IRCCS_IOV | <a href="ahc_indicators_csv/IRCCS_IOV.csv" download>Download</a> |
+| IRCCS IST.NAZIONALE NEUROLOGICO C.BESTA | IRCCS_BESTA | <a href="ahc_indicators_csv/IRCCS_BESTA.csv" download>Download</a> |
+| IRCCS ISTITITUTO NAZIONALE TUMORI MILANO | IRCCS_TUMORIMILAN | <a href="ahc_indicators_csv/IRCCS_TUMORIMILAN.csv" download>Download</a> |
+| IRCCS ISTITUTI FISIOTERAPICI OSPITALIERI | IRCCS_IFO | <a href="ahc_indicators_csv/IRCCS_IFO.csv" download>Download</a> |
+| IRCCS ISTITUTO DELLE SCIENZE NEUROLOGICHE DI BOLOGNA | IRCCS_ISNB | <a href="ahc_indicators_csv/IRCCS_ISNB.csv" download>Download</a> |
+| IRCCS ISTITUTO G.GASLINI | IRCCS_GASLINI | <a href="ahc_indicators_csv/IRCCS_GASLINI.csv" download>Download</a> |
+| IRCCS ISTITUTO NAZIONALE TUMORI DI NAPOLI G.PASCALE | IRCCS_PASCALE | <a href="ahc_indicators_csv/IRCCS_PASCALE.csv" download>Download</a> |
+| IRCCS ISTITUTO ORTOPEDICO RIZZOLI | IRCCS_RIZZOLI | <a href="ahc_indicators_csv/IRCCS_RIZZOLI.csv" download>Download</a> |
+| IRCCS ISTITUTO TUMORI GIOVANNI PAOLO II | IRCCS_TUMORIBARI | <a href="ahc_indicators_csv/IRCCS_TUMORIBARI.csv" download>Download</a> |
+| IRCCS MEYER | IRCCS_MEYER | <a href="ahc_indicators_csv/IRCCS_MEYER.csv" download>Download</a> |
+| IRCCS OSPEDALE POLICLINICO SAN MARTINO | IRCCS_SANMARTINO | <a href="ahc_indicators_csv/IRCCS_SANMARTINO.csv" download>Download</a> |
+| IRCCS OSPEDALI INRCA MARCHE | IRCCS_INRCA | <a href="ahc_indicators_csv/IRCCS_INRCA.csv" download>Download</a> |
+| IRCCS POLICLINICO DI SANT'ORSOLA BOLOGNA | IRCCS_SANTORSOLA | <a href="ahc_indicators_csv/IRCCS_SANTORSOLA.csv" download>Download</a> |
+| IRCCS POLICLINICO SAN MATTEO | IRCCS_SANMATTEO | <a href="ahc_indicators_csv/IRCCS_SANMATTEO.csv" download>Download</a> |
+| IRCCS SAN GERARDO DEI TINTORI | IRCCS_SANGERARDO | <a href="ahc_indicators_csv/IRCCS_SANGERARDO.csv" download>Download</a> |
+| IRCCS SAVERIO DE BELLIS | IRCCS_DEBELLIS | <a href="ahc_indicators_csv/IRCCS_DEBELLIS.csv" download>Download</a> |
