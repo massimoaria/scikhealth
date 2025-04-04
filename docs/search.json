@@ -105,39 +105,18 @@
     "text": "🌍 Altmetric\nTo capture the social and digital impact of scientific research, the SciK-Health project incorporates data from Altmetric, a platform that tracks and quantifies the online attention received by scholarly publications.\nAltmetric monitors mentions of scientific outputs across a wide array of sources, including:\n\nSocial media platforms (e.g., Twitter/X, Facebook)\nNews outlets\nBlogs\nPolicy documents\nWikipedia\n\nUsing the DOIs of AHSC-affiliated publications retrieved from OpenAlex, we accessed Altmetric’s API to collect both altmetric scores and detailed engagement data. This allowed us to quantify public and institutional attention received by each research output beyond academic citations.\nThe inclusion of Altmetric data enables an alternative perspective on research impact—highlighting visibility, outreach, and public engagement—as a complement to traditional bibliometric indicators."
   },
   {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Research Team",
-    "section": "",
-    "text": "Massimo Aria\nFull Professor in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\nScientific Responsible of University of Naples Federico II Research Unit"
-  },
-  {
     "objectID": "team.html#principal-investigator",
     "href": "team.html#principal-investigator",
     "title": "Research Team",
-    "section": "",
-    "text": "Massimo Aria\nFull Professor in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\nScientific Responsible of University of Naples Federico II Research Unit"
-  },
-  {
-    "objectID": "team.html#research-unit-unina",
-    "href": "team.html#research-unit-unina",
-    "title": "Research Team",
-    "section": "Research unit: UNINA",
-    "text": "Research unit: UNINA\n\nUniversity of Naples Federico II\n\n\n\n\n\n\n\nMaria Spano\nAssistant Professor in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nCarla Guerriero\nAssociate Professor in Finance\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nSergio Beraldo\nAssociate Professor in Economics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nCarmela Iorio\nAssociate Professor in Statistics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nWalter Giordano\nResearcher in English for Business Communication\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nGermana Scepi\nAssociate Professor in Statistics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nLuca D’Aniello\nResearch Fellow in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n  \n\n\n\n\n\n\n\n\n\n\nAgostino Gnasso\nPhD Candidate in Economics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II"
-  },
-  {
-    "objectID": "team.html#research-unit-unicampania",
-    "href": "team.html#research-unit-unicampania",
-    "title": "Research Team",
-    "section": "Research unit: UNICAMPANIA",
-    "text": "Research unit: UNICAMPANIA\n\nUniversity of Campania Luigi Vanvitelli\n\n\n\n\n\n\n\nCorrado Cuccurullo\nFull professor in Corporate Governance and Valuation and Fair Value Accounting, Reporting and Valuation\nDepartment of Economics\nUniversity of Campania Luigi Vanvitelli\nScientific Responsible of University of Campania Luigi Vanvitelli Research Unit\n\n  \n\n\n\n\n\n\n\n\n\n\nRosaria Lombardo\nFull professor in Statistics\nDepartment of Economics\nUniversity of Campania Luigi Vanvitelli\n\n\n  \n\n\n\n\n\n\n\n\n\n\nIda Camminatiello\nAssociate professor in Statistics\nDepartment of Economics\nUniversity of Campania Luigi Vanvitelli"
+    "section": "Principal Investigator",
+    "text": "Principal Investigator\n\n\n\n\n\n\n\nMassimo Aria\nFull Professor in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n\n  \n\n\n\n\nResearch unit: University of Naples Federico II\n\n\n\n\n\n\n\nMaria Spano\nAssistant Professor in Statistics for Social Sciences\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCarla Guerriero\nAssociate Professor in Finance\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\n\n\n\n\n\nSergio Beraldo\nAssociate Professor in Economics\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCarmela Iorio\nAssociate Professor in Statistics\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\n\n\n\n\n\nWalter Giordano\nResearcher in English for Business Communication\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\n\n\n\n\n\nGermana Scepi\nAssociate Professor in Statistics\nDepartment of Economics and Statistics\n\n\n  \n\n\n\n\n\nResearch unit: University of Campania Luigi Vanvitelli\n\n\n\n\n\n\n\nCorrado Cuccurullo\nFull professor in Corporate Governance and Valuation\nDepartment of Management and Economics\nResearch Unit Scientific Coordinator\n\n  \n\n\n\n\n\n\n\n\n\n\nRosaria Lombardo\nFull professor in Statistics\nDepartment of Economics\nUniversity of Campania Luigi Vanvitelli\n\n\n  \n\n\n\n\n\n\n\n\n\n\nIda Camminatiello\nAssociate professor in Statistics\nDepartment of Economics"
   },
   {
     "objectID": "team.html#research-fellows-and-associates",
     "href": "team.html#research-fellows-and-associates",
     "title": "Research Team",
     "section": "Research Fellows and Associates",
-    "text": "Research Fellows and Associates\nThe following researchers have contributed to the SciK-Health project through research contracts or fellowships funded by the PRIN 2022 programme.\n\n\n\n\n\n\n\nCarlo Alabiso\nResearch Fellow\nDepartment of Economics\nUniversity of Naples Federico II"
+    "text": "Research Fellows and Associates\nThe following researchers have contributed to the SciK-Health project through research contracts or fellowships funded by the PRIN 2022 programme.\n\n\n\n\n\n\n\nLuca D’Aniello\nResearch Fellow in Statistics for Social Sciences\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n\n  \n\n\n\n\n\n\n\n\n\n\nCarlo Alabiso\nResearch Fellow\nDepartment of Economics\nUniversity of Naples Federico II\n\n\n \n\n\n\n\n\n\n\n\n\n\nAgostino Gnasso\nPhD Candidate in Economics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II\n\n\n  \n\n\n\n\n\n\n\n\n\n\nMichela Collaro\nResearch Fellow in Economics\nDepartment of Economics and Statistics\nUniversity of Naples Federico II"
   },
   {
     "objectID": "workshops.html",
@@ -151,7 +130,7 @@
     "href": "conferences.html",
     "title": "Conferences",
     "section": "",
-    "text": "Below is a list of scientific conferences where works related to the SciK-Health project have been presented:\n\n5th Data Science and Social Research – DSSR 2025, Pescara, 19–21 February 2025\n28th International Conference on Science, Technology and Innovation Indicators – STI 2024, Berlin, 18–20 September 2024\nAssociation for Applied Statistics - ASA 2024 – Measuring and Interpreting World Changes with Statistics, Data Science and AI, Rome, 18–20 September 2024\n26th International Conference on Computational Statistics - COMPSTAT 2024, Justus-Liebig-University of Giessen, Germany 27-30 August 2024\n17th International Conference on Statistical Analysis of Textual Data – JADT 2024, Brussels, 25–27 June 2024\n52nd Scientific Meeting of the Italian Statistical Society - SIS 2024 – Bari, 17–20 June 2024\n4th International Conference on Data Science and Social Research - DSSR 2024 – Naples, 25–27 March 2024\nNinth Italian Conference on Computational Linguistics - CLiC-it 2023 – Venice, 30 November – 2 December 2023"
+    "text": "Below is a list of scientific conferences where works related to the SciK-Health project have been presented:\n\n5th Data Science and Social Research – DSSR 2025, Pescara, 19–21 February 2025\n28th International Conference on Science, Technology and Innovation Indicators – STI 2024, Berlin, 18–20 September 2024\nMeasuring and Interpreting World Changes with Statistics, Data Science and AI, Association for Applied Statistics - ASA 2024 – , Rome, 18–20 September 2024\n26th International Conference on Computational Statistics - COMPSTAT 2024, Justus-Liebig-University of Giessen, Germany 27-30 August 2024\n17th International Conference on Statistical Analysis of Textual Data – JADT 2024, Brussels, 25–27 June 2024\n52nd Scientific Meeting of the Italian Statistical Society - SIS 2024 – Bari, 17–20 June 2024\n4th International Conference on Data Science and Social Research - DSSR 2024 – Naples, 25–27 March 2024\n9th Italian Conference on Computational Linguistics - CLiC-it 2023 – Venice, 30 November – 2 December 2023"
   },
   {
     "objectID": "index.html#scik-health",

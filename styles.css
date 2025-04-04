@@ -1,2 +1,9 @@
 /* css styles */
-
+/* Riduce i margini laterali del contenuto principale */
+main.content {
+  max-width: auto /*1140px;  /* default è ~1140px, puoi abbassarlo anche a 880 o 800 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
