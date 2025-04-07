@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -225,8 +225,8 @@ The indicators are designed to support reproducible, comparative research on Ita
 They are primarily computed using publication metadata from OpenAlex and enriched with journal quality metrics from SCOPUS.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 76%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -288,12 +288,12 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <td>Number of articles published in Q2 journals according to SJR</td>
 </tr>
 <tr class="even">
-<td>Q4_nSJR</td>
-<td>Number of articles published in Q4 journals according to SJR</td>
-</tr>
-<tr class="odd">
 <td>Q3_nSJR</td>
 <td>Number of articles published in Q3 journals according to SJR</td>
+</tr>
+<tr class="odd">
+<td>Q4_nSJR</td>
+<td>Number of articles published in Q4 journals according to SJR</td>
 </tr>
 <tr class="even">
 <td>Q1_percSJR</td>
@@ -304,12 +304,12 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <td>Percentage of articles published in Q2 journals</td>
 </tr>
 <tr class="even">
-<td>Q4_percSJR</td>
-<td>Percentage of articles published in Q4 journals</td>
-</tr>
-<tr class="odd">
 <td>Q3_percSJR</td>
 <td>Percentage of articles published in Q3 journals</td>
+</tr>
+<tr class="odd">
+<td>Q4_percSJR</td>
+<td>Percentage of articles published in Q4 journals</td>
 </tr>
 <tr class="even">
 <td>meanTCperArt</td>
@@ -343,8 +343,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 They provide insights into the presence of high-performing individuals, institutional equity, and authorship leadership roles.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 83%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -437,8 +437,8 @@ They provide insights into the presence of high-performing individuals, institut
 It includes hierarchical concept levels (from general disciplines to specific biomedical entities), MeSH terms, authors’ keywords, and text-mined bigrams from titles and abstracts.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 78%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -508,8 +508,8 @@ It includes hierarchical concept levels (from general disciplines to specific bi
 Metrics are collected via the Altmetric API and provide aggregated and disaggregated views of attention across platforms such as social media, blogs, news outlets, and policy documents.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 78%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -527,16 +527,8 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <td>Percentage of articles with Altmetric Score &gt; 0 out of total articles published</td>
 </tr>
 <tr class="odd">
-<td>nDoc_wALTM_top25</td>
-<td>Number of articles in the top 25% of the Altmetric Score distribution</td>
-</tr>
-<tr class="even">
-<td>percDoc_wALTM_top25</td>
-<td>Percentage of articles in the top 25% by Altmetric Score relative to the total published in that year</td>
-</tr>
-<tr class="odd">
-<td>altmetric_score</td>
-<td>Altmetric Score value, an aggregated indicator of online attention (mean, min, and max)</td>
+<td>medianAltmetricScore</td>
+<td>Altmetric Score value, an aggregated indicator of online attention (median)</td>
 </tr>
 <tr class="even">
 <td>cited_by_accounts_count</td>
@@ -604,6 +596,9 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 </tr>
 </tbody>
 </table>
+<ul>
+<li>For all Altmetric <code>cited_by</code> indicators, mean, minimum, and maximum values were calculated based only on the top 25th percentile of the distribution. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.</li>
+</ul>
 
 
 </section>
@@ -691,8 +686,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -803,7 +796,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
