@@ -184,10 +184,18 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#bibliometric-output-and-co-authorship-indicators" id="toc-bibliometric-output-and-co-authorship-indicators" class="nav-link" data-scroll-target="#bibliometric-output-and-co-authorship-indicators">📊 Bibliometric Output and Co-authorship Indicators</a></li>
-  <li><a href="#author-contribution-talent-distribution" id="toc-author-contribution-talent-distribution" class="nav-link" data-scroll-target="#author-contribution-talent-distribution">👤🔬 Author Contribution &amp; Talent Distribution</a></li>
-  <li><a href="#top-concepts-topics-and-keywords" id="toc-top-concepts-topics-and-keywords" class="nav-link" data-scroll-target="#top-concepts-topics-and-keywords">🧠 Top Concepts, Topics, and Keywords</a></li>
+  <li><a href="#bibliometric-dimension" id="toc-bibliometric-dimension" class="nav-link" data-scroll-target="#bibliometric-dimension">📊 Bibliometric Dimension</a>
+  <ul class="collapse">
+  <li><a href="#productivity" id="toc-productivity" class="nav-link" data-scroll-target="#productivity">🔹 Productivity</a></li>
+  <li><a href="#impact" id="toc-impact" class="nav-link" data-scroll-target="#impact">🔹 Impact</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration">🔹 Collaboration</a></li>
+  <li><a href="#talent" id="toc-talent" class="nav-link" data-scroll-target="#talent">🔹 Talent</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">🔹 Topics</a></li>
+  </ul></li>
   <li><a href="#altmetrics-social-digital-attention" id="toc-altmetrics-social-digital-attention" class="nav-link" data-scroll-target="#altmetrics-social-digital-attention">📣 Altmetrics: Social &amp; Digital Attention</a></li>
+  <li><a href="#industrial-impact-research-innovation" id="toc-industrial-impact-research-innovation" class="nav-link" data-scroll-target="#industrial-impact-research-innovation">💡 Industrial Impact &amp; Research Innovation</a></li>
+  <li><a href="#clinical-research-activity" id="toc-clinical-research-activity" class="nav-link" data-scroll-target="#clinical-research-activity">🧪 Clinical Research Activity</a></li>
+  <li><a href="#funding-and-grants" id="toc-funding-and-grants" class="nav-link" data-scroll-target="#funding-and-grants">💶 Funding and Grants</a></li>
   </ul>
 </nav>
     </div>
@@ -219,10 +227,12 @@ ul.task-list li input[type="checkbox"] {
 The indicators are designed to support reproducible, comparative research on Italian Academic Health Science Centres (AHSCs).</p>
 <hr>
 </section>
-<section id="bibliometric-output-and-co-authorship-indicators" class="level2">
-<h2 class="anchored" data-anchor-id="bibliometric-output-and-co-authorship-indicators">📊 Bibliometric Output and Co-authorship Indicators</h2>
+<section id="bibliometric-dimension" class="level2">
+<h2 class="anchored" data-anchor-id="bibliometric-dimension">📊 Bibliometric Dimension</h2>
 <p>These indicators describe the scientific production volume, authorship patterns, and collaboration dynamics of AHSCs.<br>
 They are primarily computed using publication metadata from OpenAlex and enriched with journal quality metrics from SCOPUS.</p>
+<section id="productivity" class="level3">
+<h3 class="anchored" data-anchor-id="productivity">🔹 Productivity</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -279,55 +289,64 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <td>singleAuArt</td>
 <td>Number of single-author articles</td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</section>
+<section id="impact" class="level3">
+<h3 class="anchored" data-anchor-id="impact">🔹 Impact</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>Q1_nSJR</td>
 <td>Number of articles published in Q1 journals (quartile 1) according to SJR<strong>*</strong></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Q2_nSJR</td>
 <td>Number of articles published in Q2 journals according to SJR</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Q3_nSJR</td>
 <td>Number of articles published in Q3 journals according to SJR</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Q4_nSJR</td>
 <td>Number of articles published in Q4 journals according to SJR</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Q1_percSJR</td>
 <td>Percentage of articles published in Q1 journals</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Q2_percSJR</td>
 <td>Percentage of articles published in Q2 journals</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Q3_percSJR</td>
 <td>Percentage of articles published in Q3 journals</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Q4_percSJR</td>
 <td>Percentage of articles published in Q4 journals</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>meanTCperArt</td>
 <td>Average number of citations per article</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>mean_NTC</td>
 <td>Average Normalized Total Citations (NTC) per institution and year<strong>**</strong></td>
 </tr>
-<tr class="even">
-<td>InternCoauthorship</td>
-<td>Percentage of articles with international co-authors</td>
-</tr>
 <tr class="odd">
-<td>AffCoauthorship</td>
-<td>Percentage of articles with co-authors affiliated with different institutions</td>
-</tr>
-<tr class="even">
 <td>meanCitationTrend</td>
 <td>Average citation trend over time<strong>***</strong></td>
 </tr>
@@ -337,8 +356,33 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <strong>**</strong> Measures the average citation performance of an institution’s publications in a given year, normalized to the global average citation rate for that year. Enables cross-institution comparison.<br>
 <strong>***</strong> Citation trend is a metric assigned to articles by OpenAlex starting from 2012.</p>
 </section>
-<section id="author-contribution-talent-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="author-contribution-talent-distribution">👤🔬 Author Contribution &amp; Talent Distribution</h2>
+<section id="collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="collaboration">🔹 Collaboration</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>InternCoauthorship</td>
+<td>Percentage of articles with international co-authors</td>
+</tr>
+<tr class="even">
+<td>AffCoauthorship</td>
+<td>Percentage of articles with co-authors affiliated with different institutions</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="talent" class="level3">
+<h3 class="anchored" data-anchor-id="talent">🔹 Talent</h3>
 <p>These indicators focus on the concentration and distribution of scientific contributions across internal and external authors.<br>
 They provide insights into the presence of high-performing individuals, institutional equity, and authorship leadership roles.</p>
 <table class="caption-top table">
@@ -431,8 +475,8 @@ They provide insights into the presence of high-performing individuals, institut
 ** Gini concentration computed using the number of published articles per author as weight.<br>
 *** Top cited authors, where citation counts are normalized by dividing each article’s citation count by the average citations of all articles published in the same year.</p>
 </section>
-<section id="top-concepts-topics-and-keywords" class="level2">
-<h2 class="anchored" data-anchor-id="top-concepts-topics-and-keywords">🧠 Top Concepts, Topics, and Keywords</h2>
+<section id="topics" class="level3">
+<h3 class="anchored" data-anchor-id="topics">🔹 Topics</h3>
 <p>This group of indicators summarizes the conceptual and thematic content of the scientific output produced by AHSCs.<br>
 It includes hierarchical concept levels (from general disciplines to specific biomedical entities), MeSH terms, authors’ keywords, and text-mined bigrams from titles and abstracts.</p>
 <table class="caption-top table">
@@ -501,6 +545,7 @@ It includes hierarchical concept levels (from general disciplines to specific bi
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 <section id="altmetrics-social-digital-attention" class="level2">
 <h2 class="anchored" data-anchor-id="altmetrics-social-digital-attention">📣 Altmetrics: Social &amp; Digital Attention</h2>
@@ -599,6 +644,15 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <ul>
 <li>For all Altmetric <code>cited_by</code> indicators, mean, minimum, and maximum values were calculated based only on the top 25th percentile of the distribution. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.</li>
 </ul>
+</section>
+<section id="industrial-impact-research-innovation" class="level2">
+<h2 class="anchored" data-anchor-id="industrial-impact-research-innovation">💡 Industrial Impact &amp; Research Innovation</h2>
+</section>
+<section id="clinical-research-activity" class="level2">
+<h2 class="anchored" data-anchor-id="clinical-research-activity">🧪 Clinical Research Activity</h2>
+</section>
+<section id="funding-and-grants" class="level2">
+<h2 class="anchored" data-anchor-id="funding-and-grants">💶 Funding and Grants</h2>
 
 
 </section>

@@ -10,13 +10,15 @@ The indicators are designed to support reproducible, comparative research on Ita
 
 ------------------------------------------------------------------------
 
-## 📊 Bibliometric Output and Co-authorship Indicators
+## 📊 Bibliometric Dimension
 
 These indicators describe the scientific production volume, authorship patterns, and collaboration dynamics of AHSCs.\
 They are primarily computed using publication metadata from OpenAlex and enriched with journal quality metrics from SCOPUS.
 
+### 🔹 Productivity
+
 | **Variable** | **Description** |
-|----|----|
+|------------------------------------|------------------------------------|
 | AHC | Name (short label) of the hospital/university institution |
 | PY | Publication Year |
 | nTotDoc | Total number of documents/articles published in the year |
@@ -28,6 +30,10 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 | meanArtPer_AU_IN_CORR | Average number of articles per internal author as corresponding author |
 | ArtOA | Percentage of Open Access articles |
 | singleAuArt | Number of single-author articles |
+
+### 🔹 Impact
+ **Variable** | **Description** |
+|------------------------------------|------------------------------------|
 | Q1_nSJR | Number of articles published in Q1 journals (quartile 1) according to SJR**\*** |
 | Q2_nSJR | Number of articles published in Q2 journals according to SJR |
 | Q3_nSJR | Number of articles published in Q3 journals according to SJR |
@@ -38,21 +44,27 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 | Q4_percSJR | Percentage of articles published in Q4 journals |
 | meanTCperArt | Average number of citations per article |
 | mean_NTC | Average Normalized Total Citations (NTC) per institution and year**\*\*** |
-| InternCoauthorship | Percentage of articles with international co-authors |
-| AffCoauthorship | Percentage of articles with co-authors affiliated with different institutions |
 | meanCitationTrend | Average citation trend over time**\*\*\*** |
 
 **\*** Indicator based on data from SCOPUS. Journals assigned to multiple subject categories were selected based on the best percentile.\
 **\*\*** Measures the average citation performance of an institution’s publications in a given year, normalized to the global average citation rate for that year. Enables cross-institution comparison.\
 **\*\*\*** Citation trend is a metric assigned to articles by OpenAlex starting from 2012.
 
-## 👤🔬 Author Contribution & Talent Distribution
+### 🔹 Collaboration
+
+| **Variable**       | **Description**                                                        |
+|--------------------|------------------------------------------------------------------------|
+| InternCoauthorship | Percentage of articles with international co-authors                   |
+| AffCoauthorship    | Percentage of articles with co-authors affiliated with different institutions |
+
+
+### 🔹 Talent
 
 These indicators focus on the concentration and distribution of scientific contributions across internal and external authors.\
 They provide insights into the presence of high-performing individuals, institutional equity, and authorship leadership roles.
 
 | **Variable** | **Description** |
-|----|----|
+|------------------------------------|------------------------------------|
 | GC_AUIN_wFractional | Gini concentration index (fractional) on internal authors\* |
 | GC_AUIN_FIRSTname | Gini concentration index on internal authors in first position (first name)\*\* |
 | GC_AUIN_LASTname | Gini concentration index on internal authors in last position\*\* |
@@ -76,13 +88,13 @@ They provide insights into the presence of high-performing individuals, institut
 \*\* Gini concentration computed using the number of published articles per author as weight.\
 \*\*\* Top cited authors, where citation counts are normalized by dividing each article’s citation count by the average citations of all articles published in the same year.
 
-## 🧠 Top Concepts, Topics, and Keywords
+### 🔹 Topics
 
 This group of indicators summarizes the conceptual and thematic content of the scientific output produced by AHSCs.\
 It includes hierarchical concept levels (from general disciplines to specific biomedical entities), MeSH terms, authors' keywords, and text-mined bigrams from titles and abstracts.
 
 | **Variable** | **Description** |
-|----|----|
+|------------------------------------|------------------------------------|
 | topConcept_L0 | Top level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY) |
 | topFreq_L0 | Frequencies associated with top level 0 concepts |
 | topConcept_L1 | Top level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY) |
@@ -103,7 +115,7 @@ This section includes indicators that capture the online visibility, public enga
 Metrics are collected via the Altmetric API and provide aggregated and disaggregated views of attention across platforms such as social media, blogs, news outlets, and policy documents.
 
 | **Variable** | **Description** |
-|----|----|
+|------------------------------------|------------------------------------|
 | nDoc_wALTM | Number of articles in the year with at least one Altmetric Score (Altmetric Score \> 0) |
 | percDoc_wALTM | Percentage of articles with Altmetric Score \> 0 out of total articles published |
 | medianAltmetricScore | Altmetric Score value, an aggregated indicator of online attention (median) |
@@ -125,3 +137,7 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 | cohorts.doc | Number of interactions by professionals (clinicians, operators, policy makers) |
 
 -   For all Altmetric `cited_by` indicators, mean, minimum, and maximum values were calculated based only on the top 25th percentile of the distribution. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.
+
+## 💡 Industrial Impact & Research Innovation
+## 🧪 Clinical Research Activity
+## 💶 Funding and Grants
