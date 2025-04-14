@@ -16,6 +16,8 @@ website:
           href: sources.qmd
         - text: Performance Indicators
           href: performance.qmd
+        - text: R-daisy
+          href: rdaisy.qmd
       - text: Data repository
         menu:
         - text: Data Description
@@ -32,7 +34,7 @@ website:
           href: publications.qmd
         - text: Conferences
           href: conferences.qmd
-        - text: Workshops
+        - text: Workshops & Team Meetings
           href: workshops.qmd
 format:
   html:

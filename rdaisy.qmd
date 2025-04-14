@@ -1,0 +1,23 @@
+---
+format: html
+---
+
+## 🌼 R-daisy: A Synthetic Performance Dashboard for AHSCs
+
+R-daisy is a strategic tool designed for academic managers, research directors, policy-makers, and public or private funding institutions. It provides a concise and interpretable single-score indicator that summarizes the research performance profile of each Italian Academic Health Science Centre (AHSC).
+
+The name “R-daisy” metaphorically reflects the structure of the indicator: each petal of the daisy represents one of the key dimensions of research performance, derived from a rich and multi-source dataset:
+
+-   📚 **Bibliometric dimension** (e.g., scientific productivity, impact, collaboration)
+
+-   🌐 **Social and digital dimension** (e.g., online attention, altmetric score)
+
+-   **💡** **Industrial impact &** **Research innovation** (e.g., patent production and technological domains)
+
+-   🧪 **Clinical research activity** (e.g., number, phase, and funding of clinical trials)
+
+-   💶 **Funding and grants** (e.g., grant volume, funding sources, success rates)
+
+Each of these dimensions is based on rigorously harmonized metadata from sources like OpenAlex, Dimensions, and Altmetric, and contributes to a transparent and reproducible performance synthesis.
+
+The R-daisy score is not publicly accessible: it is reserved for authorized stakeholders who submit a formal request (e.g., institutions, government agencies, or funding bodies). Access will be granted on a case-by-case basis.

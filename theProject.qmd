@@ -40,39 +40,54 @@ Over the past decades, Italian AHSCs have undergone significant institutional an
 
 Based on their institutional configurations and the nature of their university–hospital integration, Italian AHSCs can be classified into three main categories:
 
-- **Fully integrated AHSCs**, historically managed by universities (*AOU SSN*): N = 9, covering approximately 18.37%  
-- **Affiliated AHSCs**, autonomous hospitals integrated with a School of Medicine (*AOU*): N = 17, around 34.69%  
-- **Research-focused AHSCs**, prioritizing research over teaching missions (*IRCCS*): N = 23, approximately 46.94%
+-   **Fully integrated AHSCs**, historically managed by universities (*AOU SSN*): N = 9, covering approximately 18.37%\
+-   **Affiliated AHSCs**, autonomous hospitals integrated with a School of Medicine (*AOU*): N = 17, around 34.69%\
+-   **Research-focused AHSCs**, prioritizing research over teaching missions (*IRCCS*): N = 23, approximately 46.94%
 
 These institutions also vary in ownership (public, private, or non-profit), service profiles, and the availability of facilities such as emergency departments.
 
 While benchmarking studies—such as those conducted by the Interregional Performance Evaluation System (IRPES)—have focused primarily on healthcare delivery and performance, they have largely overlooked the systematic evaluation of research output and scientific impact.
 
-
 ------------------------------------------------------------------------
 
 ### Research Contribution
 
-The SciK-Health project proposes a three-step contribution:
+SciK-Health Its aim is to offer a science-based decision-making tool for citizens, healthcare professionals, academic leaders, and policymakers mapping and evaluating the scientific production of Italian public Academic Health Science Centres from 2000 to the present.
 
-1.  **Database Construction**\
-    We will build a comprehensive database containing bibliometric and scientometric metadata for the scientific output of Italian public AHSCs from 2000 to the present. This longitudinal perspective will help identify atypical patterns and trends.
+The project unfolds in four main phases:
 
-2.  **Composite Indicator**\
-    We will measure research productivity, growth, impact, and novelty, and then develop a combined and weighted indicator of scientific output for each AHSC.
+1.  🧩 **Data Collection and Integration**
 
-3.  **Linking Research and Patient Care**\
-    We will investigate the extent to which academic research performance affects patient care through an econometric analysis.\
-    The patient care dimensions considered will include:
+    We collect and integrate data from multiple sources — including OpenAlex, Dimensions, and Altmetric — covering a broad range of scientific outputs:
 
-    -   30-day mortality
-    -   Hospital readmissions
-    -   Waiting lists
-    -   Patient mobility
-    -   Hospital case mix
+    -   Peer-reviewed publications
 
-Our core research questions are:
+    -   Clinical trials
 
--   Does academic research performance in public AHSCs lead to better healthcare outcomes?
--   Is academic research performance a driver of hospital case mix?
--   Does academic research performance influence patient mobility?
+    -   Competitive research grants
+
+    -   Patents
+
+    -   Altmetric data (social and policy impact)
+
+Data are cleaned, normalized, and stored in a unified, longitudinal dataset covering 52 public AHSCs.
+
+2.  🗺️ **Science Mapping and Indicator Development**
+
+    We apply science mapping techniques to examine the conceptual and social structure of AHSC research. In parallel, we calculate a wide set of performance indicators across five key dimensions: 📚 Bibliometric – 🌐 Social & Digital – 🧬 Industrial Impact & Research Innovation – 🧪 Clinical Research – 💶 Funding & grant. These are then aggregated into a composite score reflecting the overall scientific capacity of each AHSC.
+
+3.  🌐 Tool Design and Dissemination We are developing two interactive tools:
+
+SciK-Health Web App – An open-access tool offering intuitive access to key research indicators and thematic trends. It supports health literacy, scientific navigation, and public decision-making.
+
+R-daisy – A second-level dashboard designed for institutional users (managers, donors, agencies). It summarizes AHSC research performance into a single daisy-like score, available upon request only.
+
+4.  ✅ Validation and Engagement The final phase involves a validation process through focus groups and stakeholder consultation, involving:
+
+    -   3 academic hospitals
+
+    -   1 research hospital
+
+    -   1 regional health agency
+
+        These institutions are formally engaged through letters of intent.
