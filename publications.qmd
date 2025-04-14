@@ -7,7 +7,17 @@ format: html
 
 -   Aria, M., Cuccurullo, C., D’Aniello, L., Misuraca, M., Spano, M. (2024). *Comparative science mapping: a novel conceptual structure analysis with metadata*. *Scientometrics*, 129, 7055–7081. <https://doi.org/10.1007/s11192-024-05161-6>
 
--   Aria, M., Gnasso, A., Rivieccio, R., & Siciliano, R. (2024). Predicting depression in Italy using Random Forest through the E2Tree methodology. *\[forthcoming\]*
+-   Musella, M., Camminatiello, I., Izzo, F. (2024). Caritas’s Work for the Goals of Agenda 2030: A Study on the Services Provided in Campania. *Mathematics,* 12 (15), 2301. <https://doi.org/10.3390/math12152301>
+
+-   Takane, Y., Beh, E.J., Lombardo, R. (2024) A theory of contrasts for modified Freeman–Tukey statistics and its applications to Tukey’s post hoc tests for contingency tables. *Computational Statistics,* 40, 1423–1446. <https://doi.org/10.1007/s00180-024-01537-7>.
+
+-   Aria, M., Gnasso, A., Rivieccio, R., Siciliano, R. (2024). Predicting depression in Italy using Random Forest through the E2Tree methodology. *\[forthcoming\]*
+
+-   Wang, T., Beh, E.J., Lombardo, R., Renner, W. I., (2024). Profile Transformations for Reciprocal Averaging and Singular Value Decomposition. *Computational Statistics*, 40, 1217–1251.<https://doi.org/10.1007/s00180-024-01517-x>
+
+-   Beh, E.J., Lombardo, R. (2024) Correspondence Analysis Using the Cressie–Read Family of Divergence Statistics. International Statistical Review, 92(1), 17-42. <https://doi.org/10.1111/insr.12541>
+
+-   Lombardo, R., Beh E. J., Prattichizzo, F., Lucisano, G., Nicolucci, A., Eliasson, B., Carlsen, H. K., La Grotta, R., Pellegrini, V., Ceriello, A. (2024) Testing and Visualization of Associations in Three-Way Contingency Tables: A Study of the Gender Gap in Patients with Type 1 Diabetes and Cardiovascular Complications. *Mathematics,* 12 (14), 2186. <https://doi.org/10.3390/math12142186>
 
 ------------------------------------------------------------------------
 
@@ -16,6 +26,10 @@ format: html
 -   Aria, M., Cuccurullo, C., D’Aniello, L., Misuraca, M., Spano, M. (2025). *TALL: A New Shiny App for Text Analysis*. In: Pollice, A., Mariani, P. (eds) *Methodological and Applied Statistics and Demography III*. SIS 2024. *Italian Statistical Society Series on Advances in Statistics*. Springer, Cham. <https://doi.org/10.1007/978-3-031-64431-3_11>
 
 -   Gnasso, A., Aria, M., Iorio, C., Fokkema, M. (2025). *Explainable Decision Tree Ensembles*. In: Pollice, A., Mariani, P. (eds) *Methodological and Applied Statistics and Demography IV*. SIS 2024. *Italian Statistical Society Series on Advances in Statistics*. Springer, Cham. <https://doi.org/10.1007/978-3-031-64447-4_21>
+
+-   Lombardo, R., Durand, J. F., Camminatiello, I. (2025) Spline identity and functional partial least-squares regression for analysing Italian poverty. In: Pollice A., Mariani P. (eds) *Methodological and Applied Statistics and Demography II*. SIS 2024. *Italian Statistical Society Series on Advances in Statistics*. Springer, Cham. <https://doi.org/10.1007/978-3-031-64350-7_47>
+
+-   Camminatiello, I., Iacono, M.P., Lombardo, R. (2025). A Model for the Evaluation of the Italian University System. In: Pollice, A., Mariani, P. (eds) *Methodological and Applied Statistics and Demography I*. SIS 2024. *Italian Statistical Society Series on Advances in Statistics*. Springer, Cham. <https://doi.org/10.1007/978-3-031-64346-0_26>
 
 -   D'Aniello, L., Robinson-Garcia, N., Aria, M., & Cuccurullo, C. (2024). *Decoding Knowledge Claims: The Evaluation of Scientific Publication Contributions through Semantic Analysis*. *arXiv preprint* arXiv:2407.18646. Presented at 28th International Conference on Science, Technology and Innovation Indicators – STI2024, Berlin, 18–20 September 2024.
 
