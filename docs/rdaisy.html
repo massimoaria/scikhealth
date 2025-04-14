@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>theproject – SciK-Health</title>
+<title>rdaisy – SciK-Health</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./theProject.html" aria-current="page"> 
+    <a class="nav-link" href="./theProject.html"> 
 <span class="menu-text">The Project</span></a>
   </li>  
   <li class="nav-item">
@@ -191,10 +191,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#scik-health" id="toc-scik-health" class="nav-link active" data-scroll-target="#scik-health">SciK-Health</a></li>
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#ahsc-in-the-italian-context" id="toc-ahsc-in-the-italian-context" class="nav-link" data-scroll-target="#ahsc-in-the-italian-context">AHSC in the Italian Context</a></li>
-  <li><a href="#research-contribution" id="toc-research-contribution" class="nav-link" data-scroll-target="#research-contribution">Research Contribution</a></li>
+  <li><a href="#r-daisy-a-synthetic-performance-dashboard-for-ahscs" id="toc-r-daisy-a-synthetic-performance-dashboard-for-ahscs" class="nav-link active" data-scroll-target="#r-daisy-a-synthetic-performance-dashboard-for-ahscs">🌼 R-daisy: A Synthetic Performance Dashboard for AHSCs</a></li>
   </ul>
 </nav>
     </div>
@@ -204,75 +201,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="scik-health" class="level3">
-<h3 class="anchored" data-anchor-id="scik-health">SciK-Health</h3>
-<p><strong>Project Code:</strong> 2022825Y5E<br>
-<strong>CUP:</strong> E53D2300611006<br>
-<strong>Funding Scheme:</strong> PRIN 2022 (Progetti di Ricerca di Rilevante Interesse Nazionale)</p>
-<hr>
-<p><strong>Scientific Knowledge in Health (SciK-Health)</strong> is a national research project funded under the PRIN 2022 programme. It investigates the role of scientific production in shaping the quality and effectiveness of patient care within the Italian healthcare system, focusing specifically on Academic Health Science Centres (AHSCs).</p>
-<p>AHSCs are institutions that integrate healthcare delivery, medical education, and research. Their mission is to provide advanced clinical services, train future healthcare professionals, and promote scientific innovation. In recent years, these centres have played an increasingly strategic role in connecting scientific knowledge with clinical practice.</p>
-<p>Despite the growing emphasis on research and innovation, little is known about how scientific output actually translates into measurable improvements in patient care. SciK-Health addresses this gap by combining bibliometric and scientometric analysis with healthcare performance data, aiming to explore the relationship between research activity and clinical outcomes.</p>
-<hr>
-</section>
-<section id="project-overview" class="level3">
-<h3 class="anchored" data-anchor-id="project-overview">Project Overview</h3>
-<p>Academic Health Science Centres (AHSCs) pursue a threefold strategic mission.</p>
-<p>First, they train healthcare professionals to treat and reduce the burden of disease using increasingly effective and valuable health technologies.<br>
-Second, they serve as innovation hubs for new treatment methods, health technologies, tools, and digital solutions, with the aim of making the European health industry more pioneering, sustainable, and globally competitive.<br>
-Third, they provide advanced, high-quality care through the adoption of groundbreaking and data-driven solutions that are tailored to patient needs.</p>
-<p>Balancing these three missions is inherently complex, and several side effects have been documented—such as strategic ambiguity and organizational tension. While some studies have explored the impact of teaching on patient care, little is known about how the missions interact, particularly regarding the role of research in improving care delivery.</p>
-<p>Disciplines such as <strong>bibliometrics</strong> and <strong>scientometrics</strong> have made it possible to measure and analyze scientific outputs. The research production of AHSCs includes not only scientific publications but also clinical trials, patents, research grants, and social impact (e.g., altmetrics). While these outputs are typically measured separately, they remain underutilized as indicators of health system performance.</p>
-<hr>
-</section>
-<section id="ahsc-in-the-italian-context" class="level3">
-<h3 class="anchored" data-anchor-id="ahsc-in-the-italian-context">AHSC in the Italian Context</h3>
-<p>This research is focused on the Italian AHSCs, which represent a particularly diverse and dynamic field of investigation due to the heterogeneity of their missions, governance models, and institutional relationships. In particular, we studied 49 public centres distributed across both metropolitan areas and smaller cities. They differ significantly in terms of organizational structure, operational scope, and the formal ties between hospitals and universities.</p>
-<p>Over the past decades, Italian AHSCs have undergone significant institutional and regulatory transformations, shaped by reforms in the healthcare system (Legislative Decree 517/1999), in the university sector (Legislative Decree 240/2010), and by changes in regional health reimbursement policies.</p>
-<p>Based on their institutional configurations and the nature of their university–hospital integration, Italian AHSCs can be classified into three main categories:</p>
+<section id="r-daisy-a-synthetic-performance-dashboard-for-ahscs" class="level2">
+<h2 class="anchored" data-anchor-id="r-daisy-a-synthetic-performance-dashboard-for-ahscs">🌼 R-daisy: A Synthetic Performance Dashboard for AHSCs</h2>
+<p>R-daisy is a strategic tool designed for academic managers, research directors, policy-makers, and public or private funding institutions. It provides a concise and interpretable single-score indicator that summarizes the research performance profile of each Italian Academic Health Science Centre (AHSC).</p>
+<p>The name “R-daisy” metaphorically reflects the structure of the indicator: each petal of the daisy represents one of the key dimensions of research performance, derived from a rich and multi-source dataset:</p>
 <ul>
-<li><strong>Fully integrated AHSCs</strong>, historically managed by universities (<em>AOU SSN</em>): N = 9, covering approximately 18.37%<br>
-</li>
-<li><strong>Affiliated AHSCs</strong>, autonomous hospitals integrated with a School of Medicine (<em>AOU</em>): N = 17, around 34.69%<br>
-</li>
-<li><strong>Research-focused AHSCs</strong>, prioritizing research over teaching missions (<em>IRCCS</em>): N = 23, approximately 46.94%</li>
+<li><p>📚 <strong>Bibliometric dimension</strong> (e.g., scientific productivity, impact, collaboration)</p></li>
+<li><p>🌐 <strong>Social and digital dimension</strong> (e.g., online attention, altmetric score)</p></li>
+<li><p><strong>💡</strong> <strong>Industrial impact &amp;</strong> <strong>Research innovation</strong> (e.g., patent production and technological domains)</p></li>
+<li><p>🧪 <strong>Clinical research activity</strong> (e.g., number, phase, and funding of clinical trials)</p></li>
+<li><p>💶 <strong>Funding and grants</strong> (e.g., grant volume, funding sources, success rates)</p></li>
 </ul>
-<p>These institutions also vary in ownership (public, private, or non-profit), service profiles, and the availability of facilities such as emergency departments.</p>
-<p>While benchmarking studies—such as those conducted by the Interregional Performance Evaluation System (IRPES)—have focused primarily on healthcare delivery and performance, they have largely overlooked the systematic evaluation of research output and scientific impact.</p>
-<hr>
-</section>
-<section id="research-contribution" class="level3">
-<h3 class="anchored" data-anchor-id="research-contribution">Research Contribution</h3>
-<p>SciK-Health Its aim is to offer a science-based decision-making tool for citizens, healthcare professionals, academic leaders, and policymakers mapping and evaluating the scientific production of Italian public Academic Health Science Centres from 2000 to the present.</p>
-<p>The project unfolds in four main phases:</p>
-<ol type="1">
-<li><p>🧩 <strong>Data Collection and Integration</strong></p>
-<p>We collect and integrate data from multiple sources — including OpenAlex, Dimensions, and Altmetric — covering a broad range of scientific outputs:</p>
-<ul>
-<li><p>Peer-reviewed publications</p></li>
-<li><p>Clinical trials</p></li>
-<li><p>Competitive research grants</p></li>
-<li><p>Patents</p></li>
-<li><p>Altmetric data (social and policy impact)</p></li>
-</ul></li>
-</ol>
-<p>Data are cleaned, normalized, and stored in a unified, longitudinal dataset covering 52 public AHSCs.</p>
-<ol start="2" type="1">
-<li><p>🗺️ <strong>Science Mapping and Indicator Development</strong></p>
-<p>We apply science mapping techniques to examine the conceptual and social structure of AHSC research. In parallel, we calculate a wide set of performance indicators across five key dimensions: 📚 Bibliometric – 🌐 Social &amp; Digital – 🧬 Industrial Impact &amp; Research Innovation – 🧪 Clinical Research – 💶 Funding &amp; grant. These are then aggregated into a composite score reflecting the overall scientific capacity of each AHSC.</p></li>
-<li><p>🌐 Tool Design and Dissemination We are developing two interactive tools:</p></li>
-</ol>
-<p>SciK-Health Web App – An open-access tool offering intuitive access to key research indicators and thematic trends. It supports health literacy, scientific navigation, and public decision-making.</p>
-<p>R-daisy – A second-level dashboard designed for institutional users (managers, donors, agencies). It summarizes AHSC research performance into a single daisy-like score, available upon request only.</p>
-<ol start="4" type="1">
-<li><p>✅ Validation and Engagement The final phase involves a validation process through focus groups and stakeholder consultation, involving:</p>
-<ul>
-<li><p>3 academic hospitals</p></li>
-<li><p>1 research hospital</p></li>
-<li><p>1 regional health agency</p>
-<p>These institutions are formally engaged through letters of intent.</p></li>
-</ul></li>
-</ol>
+<p>Each of these dimensions is based on rigorously harmonized metadata from sources like OpenAlex, Dimensions, and Altmetric, and contributes to a transparent and reproducible performance synthesis.</p>
+<p>The R-daisy score is not publicly accessible: it is reserved for authorized stakeholders who submit a formal request (e.g., institutions, government agencies, or funding bodies). Access will be granted on a case-by-case basis.</p>
 
 
 </section>
