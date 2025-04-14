@@ -1,0 +1,116 @@
+---
+title: "Data Structure"
+---
+
+### 🧱 Structure of the SciK-Health Database
+
+The SciK-Health project relies on a relational database designed to represent and manage the key entities and relationships that characterize scientific research in the public Italian AHC domain. This model enables the integration of heterogeneous data sources while maintaining consistency and integrity through relational constraints.
+
+::::: cell
+::: {style="border: 2px solid #ccc; padding: 10px; border-radius: 10px; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);"}
+```{r}
+#| echo: false
+library(visNetwork)
+
+# NODI
+nodes <- data.frame(
+  id = 1:7,
+  label = c("AHC", "Patent", "Dataset", "Grant", "Clinical_Trial", "Researcher", "Article"),
+  group = c("AHC", "Patent", "Dataset", "Grant", "Clinical_Trial", "Researcher", "Article"),
+  title = c("AHC", "Patent", "Dataset", "Grant", "Clinical_Trial", "Researcher", "Article")
+)
+
+# ARCHI
+edges <- data.frame(
+  from = c(1, 1, 1, 5, 2, 3, 6, 7),
+  to   = c(2, 3, 4, 1, 1, 1, 1, 6),
+  label = c("ASSOCIATED_WITH", "ASSOCIATED_WITH", "FUNDED_BY", "CONDUCTED_AT",
+            "ASSOCIATED_WITH", "ASSOCIATED_WITH", "ASSOCIATED_WITH", "WRITTEN_BY"),
+  arrows = "to"
+)
+
+# Aggiungi arco Article → Article (CITES)
+edges <- rbind(edges, data.frame(from = 7, to = 7, label = "CITES", arrows = "to"))
+
+# Aggiungi arco Researcher → Researcher (COLLABORATED_WITH)
+edges <- rbind(edges, data.frame(from = 6, to = 6, label = "COLLABORATED_WITH", arrows = "to"))
+
+# Palette professionale
+colors <- list(
+  AHC             = "rgba(93, 114, 144, 0.6)",
+  Patent          = "rgba(124, 144, 193, 0.6)",
+  Dataset         = "rgba(76, 154, 145, 0.6)",
+  Grant           = "rgba(122, 155, 95, 0.6)",
+  Clinical_Trial  = "rgba(212, 180, 131, 0.6)",
+  Researcher      = "rgba(158, 61, 61, 0.6)",
+  Article         = "rgba(60, 60, 60, 0.6)"
+)
+
+# Assegna direttamente ai nodi
+nodes$color.background <- sapply(nodes$group, function(g) colors[[g]])
+nodes$color.border <- "#2B7CE9"
+nodes$color.highlight.background <- "#FF8000"
+nodes$color.highlight.border <- "#2B7CE9"
+nodes$font <- list(face = "bold")
+
+# GRAFO
+visNetwork(nodes, edges, width = "800px", height = "600px") %>%
+  visEdges(
+    smooth = FALSE,
+    arrows = "to",
+    font = list(ital = TRUE, align = "top")
+  ) %>%
+  visOptions(highlightNearest = TRUE, nodesIdSelection = FALSE) %>%
+  visPhysics(solver = "repulsion", repulsion = list(nodeDistance = 300)) %>%
+  visLayout(randomSeed = 123)
+
+```
+:::
+
+::: text-center
+:::
+
+### 📌 Main Tables and Entities
+
+• **AHC (Academic Health Center)**: stores information about the academic and healthcare institutions involved.
+
+• **Patent**: contains data on patents, including titles, inventors, and registration dates.
+
+• **Dataset**: describes datasets used or produced in research, along with associated metadata.
+
+• **Grant**: includes funding details such as granting bodies, amounts, and durations.
+
+• **Clinical_Trial**: provides information on clinical studies, including phases, objectives, and results.
+
+• **Researcher**: contains researcher profiles, affiliations, and areas of expertise.
+
+• **Article**: archives scientific publications, including references and abstracts.
+
+### 🔗 Relationships Between Entities
+
+Relationships between entities are modeled using associative tables that implement foreign keys to preserve referential integrity. For example:
+
+• *ASSOCIATED_WITH*: links AHCs with Patents, Datasets, and Grants.
+
+• *CONDUCTED_AT*: connects Clinical_Trials with AHCs.
+
+• *WRITTEN_BY*: associates Articles with Researchers.
+
+• *CITES*: manages citation relationships between Articles.
+
+• *COLLABORATED_WITH*: represents collaboration networks among Researchers.
+
+These relationships are implemented through join tables that contain the primary keys of the involved entities, ensuring data consistency via referential constraints.
+
+### ⚙️ Technical Characteristics
+
+• **Normalization**: the tables are structured to minimize redundancy and improve query efficiency.
+
+• **Integrity Constraints**: use of primary and foreign keys to enforce data consistency. • Data Types: strict definition of data types for each attribute (e.g., strings, integers, dates).
+
+• **Indexing**: indexes are created on key attributes to optimize query performance.
+
+This relational design enables SciK-Health to efficiently manage the complex and interconnected information typical of scientific research in the healthcare sector.
+:::::
+
+:::::

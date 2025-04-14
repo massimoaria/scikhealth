@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data – SciK-Health</title>
+<title>Data Structure – SciK-Health</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,6 +84,10 @@ ul.task-list li input[type="checkbox"] {
 </head><body class="nav-fixed"><div class="scik-banner">
   <img src="www/BannerPNRRFII.png" alt="SciK-Health Banner">
 </div>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/vis-9.1.0/vis-network.min.css" rel="stylesheet">
+<script src="site_libs/vis-9.1.0/vis-network.min.js"></script>
+<script src="site_libs/visNetwork-binding-2.1.2/visNetwork.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -187,281 +191,76 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ahc-data-repository" id="toc-ahc-data-repository" class="nav-link active" data-scroll-target="#ahc-data-repository">🏥 AHC Data Repository</a></li>
+  <li><a href="#structure-of-the-scik-health-database" id="toc-structure-of-the-scik-health-database" class="nav-link active" data-scroll-target="#structure-of-the-scik-health-database">🧱 Structure of the SciK-Health Database</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Structure</h1>
+</div>
 
 
 
-<section id="ahc-data-repository" class="level2">
-<h2 class="anchored" data-anchor-id="ahc-data-repository">🏥 AHC Data Repository</h2>
-<p>Below you can download the <code>.csv</code> file for each Italian Academic Health Science Centre (AHSC).<br>
-Each file contains key performance indicators extracted from OpenAlex, Dimensions, and Altmetric data.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 43%">
-<col style="width: 34%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>AHC</th>
-<th>AHC (short name)</th>
-<th>Data (.csv)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERA DI PERUGIA</td>
-<td>AOU_PERUGIA</td>
-<td><a href="ahc_indicators_csv/AOU_PERUGIA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERA UNIVERSITA’ PADOVA</td>
-<td>AOU_PADOVA</td>
-<td><a href="ahc_indicators_csv/AOU_PADOVA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERA UNIVERSITARIA INTEGRATA SSN LUIGI VANVITELLI</td>
-<td>AOUSSN_VANVITELLI</td>
-<td><a href="ahc_indicators_csv/AOUSSN_VANVITELLI.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA CAREGGI</td>
-<td>AOU_CAREGGI</td>
-<td><a href="ahc_indicators_csv/AOU_CAREGGI.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA CITTA’ DELLA SALUTE E DELLA SCIENZA</td>
-<td>AOU_CITTADELLASCIENZA</td>
-<td><a href="ahc_indicators_csv/AOU_CITTADELLASCIENZA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA DI FERRARA</td>
-<td>AOU_FERRARA</td>
-<td><a href="ahc_indicators_csv/AOU_FERRARA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA DI MODENA</td>
-<td>AOU_MODENA</td>
-<td><a href="ahc_indicators_csv/AOU_MODENA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA DI PARMA</td>
-<td>AOU_PARMA</td>
-<td><a href="ahc_indicators_csv/AOU_PARMA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN CAGLIARI</td>
-<td>AOUSSN_CAGLIARI</td>
-<td><a href="ahc_indicators_csv/AOUSSN_CAGLIARI.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN FEDERICO II DI NAPOLI</td>
-<td>AOUSSN_FEDERICOII</td>
-<td><a href="ahc_indicators_csv/AOUSSN_FEDERICOII.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN G. MARTINO</td>
-<td>AOUSSN_GMARTINO</td>
-<td><a href="ahc_indicators_csv/AOUSSN_GMARTINO.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN P.GIACCONE</td>
-<td>AOUSSN_GIACCONE</td>
-<td><a href="ahc_indicators_csv/AOUSSN_GIACCONE.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO BARI</td>
-<td>AOUSSN_POLICLINICOBARI</td>
-<td><a href="ahc_indicators_csv/AOUSSN_POLICLINICOBARI.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO UMBERTO I</td>
-<td>AOUSSN_UMBERTOI</td>
-<td><a href="ahc_indicators_csv/AOUSSN_UMBERTOI.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN POLICLINICO VITTORIO EMANUELE</td>
-<td>AOUSSN_VITTORIOEMANUELE</td>
-<td><a href="ahc_indicators_csv/AOUSSN_VITTORIOEMANUELE.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA SSN SASSARI</td>
-<td>AOUSSN_SASSARI</td>
-<td><a href="ahc_indicators_csv/AOUSSN_SASSARI.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA INTEGRATA VERONA</td>
-<td>AOU_VERONA</td>
-<td><a href="ahc_indicators_csv/AOU_VERONA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA MAGGIORE DELLA CARITA’</td>
-<td>AOU_NOVARAGALLIATE</td>
-<td><a href="ahc_indicators_csv/AOU_NOVARAGALLIATE.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDALI RIUNITI ANCONA</td>
-<td>AOU_RIUNITIANCONA</td>
-<td><a href="ahc_indicators_csv/AOU_RIUNITIANCONA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA PISANA</td>
-<td>AOU_PISANA</td>
-<td><a href="ahc_indicators_csv/AOU_PISANA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA POLICLINICO RIUNITI FOGGIA</td>
-<td>AOU_RIUNITIFOGGIA</td>
-<td><a href="ahc_indicators_csv/AOU_RIUNITIFOGGIA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA POLICLINICO TOR VERGATA</td>
-<td>AOU_TORVERGATA</td>
-<td><a href="ahc_indicators_csv/AOU_TORVERGATA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA S.LUIGI GONZAGA</td>
-<td>AOU_GONZAGA</td>
-<td><a href="ahc_indicators_csv/AOU_GONZAGA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA SAN GIOVANNI DI DIO E RUGGI D’ARAGONA</td>
-<td>AOU_SANGIOVANNIDIDIO</td>
-<td><a href="ahc_indicators_csv/AOU_SANGIOVANNIDIDIO.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA SANT`ANDREA</td>
-<td>AOU_SANTANDREA</td>
-<td><a href="ahc_indicators_csv/AOU_SANTANDREA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>AZIENDA OSPEDALIERO UNIVERSITARIA SENESE</td>
-<td>AOU_SENESE</td>
-<td><a href="ahc_indicators_csv/AOU_SENESE.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS AUSL DI REGGIO EMILIA</td>
-<td>IRCCS_AUSLREGGIOEMILIA</td>
-<td><a href="ahc_indicators_csv/IRCCS_AUSLREGGIOEMILIA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS BURLO GAROFOLO</td>
-<td>IRCCS_BURLOGAROFOLO</td>
-<td><a href="ahc_indicators_csv/IRCCS_BURLOGAROFOLO.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS CA’ GRANDA</td>
-<td>IRCCS_CAGRANDA</td>
-<td><a href="ahc_indicators_csv/IRCCS_CAGRANDA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS CENTRO NEUROLESI BONINO PULEJO</td>
-<td>IRCCS_BONINOPULEJO</td>
-<td><a href="ahc_indicators_csv/IRCCS_BONINOPULEJO.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS CENTRO RIFERIMENTO ONCOLOGICO</td>
-<td>IRCCS_CRO</td>
-<td><a href="ahc_indicators_csv/IRCCS_CRO.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS CROB</td>
-<td>IRCCS_CROB</td>
-<td><a href="ahc_indicators_csv/IRCCS_CROB.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS INMI LAZZARO SPALLANZANI</td>
-<td>IRCCS_SPALLANZANIROMA</td>
-<td><a href="ahc_indicators_csv/IRCCS_SPALLANZANIROMA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS IOV</td>
-<td>IRCCS_IOV</td>
-<td><a href="ahc_indicators_csv/IRCCS_IOV.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS IST.NAZIONALE NEUROLOGICO C.BESTA</td>
-<td>IRCCS_BESTA</td>
-<td><a href="ahc_indicators_csv/IRCCS_BESTA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS ISTITITUTO NAZIONALE TUMORI MILANO</td>
-<td>IRCCS_TUMORIMILAN</td>
-<td><a href="ahc_indicators_csv/IRCCS_TUMORIMILAN.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS ISTITUTI FISIOTERAPICI OSPITALIERI</td>
-<td>IRCCS_IFO</td>
-<td><a href="ahc_indicators_csv/IRCCS_IFO.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS ISTITUTO DELLE SCIENZE NEUROLOGICHE DI BOLOGNA</td>
-<td>IRCCS_ISNB</td>
-<td><a href="ahc_indicators_csv/IRCCS_ISNB.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS ISTITUTO G.GASLINI</td>
-<td>IRCCS_GASLINI</td>
-<td><a href="ahc_indicators_csv/IRCCS_GASLINI.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS ISTITUTO NAZIONALE TUMORI DI NAPOLI G.PASCALE</td>
-<td>IRCCS_PASCALE</td>
-<td><a href="ahc_indicators_csv/IRCCS_PASCALE.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS ISTITUTO ORTOPEDICO RIZZOLI</td>
-<td>IRCCS_RIZZOLI</td>
-<td><a href="ahc_indicators_csv/IRCCS_RIZZOLI.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS ISTITUTO TUMORI GIOVANNI PAOLO II</td>
-<td>IRCCS_TUMORIBARI</td>
-<td><a href="ahc_indicators_csv/IRCCS_TUMORIBARI.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS MEYER</td>
-<td>IRCCS_MEYER</td>
-<td><a href="ahc_indicators_csv/IRCCS_MEYER.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS OSPEDALE POLICLINICO SAN MARTINO</td>
-<td>IRCCS_SANMARTINO</td>
-<td><a href="ahc_indicators_csv/IRCCS_SANMARTINO.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS OSPEDALI INRCA MARCHE</td>
-<td>IRCCS_INRCA</td>
-<td><a href="ahc_indicators_csv/IRCCS_INRCA.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS POLICLINICO DI SANT’ORSOLA BOLOGNA</td>
-<td>IRCCS_SANTORSOLA</td>
-<td><a href="ahc_indicators_csv/IRCCS_SANTORSOLA.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS POLICLINICO SAN MATTEO</td>
-<td>IRCCS_SANMATTEO</td>
-<td><a href="ahc_indicators_csv/IRCCS_SANMATTEO.csv" download="">Download</a></td>
-</tr>
-<tr class="even">
-<td>IRCCS SAN GERARDO DEI TINTORI</td>
-<td>IRCCS_SANGERARDO</td>
-<td><a href="ahc_indicators_csv/IRCCS_SANGERARDO.csv" download="">Download</a></td>
-</tr>
-<tr class="odd">
-<td>IRCCS SAVERIO DE BELLIS</td>
-<td>IRCCS_DEBELLIS</td>
-<td><a href="ahc_indicators_csv/IRCCS_DEBELLIS.csv" download="">Download</a></td>
-</tr>
-</tbody>
-</table>
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="structure-of-the-scik-health-database" class="level3">
+<h3 class="anchored" data-anchor-id="structure-of-the-scik-health-database">🧱 Structure of the SciK-Health Database</h3>
+<p>The SciK-Health project relies on a relational database designed to represent and manage the key entities and relationships that characterize scientific research in the public Italian AHC domain. This model enables the integration of heterogeneous data sources while maintaining consistency and integrity through relational constraints.</p>
+<div class="cell">
+<div style="border: 2px solid #ccc; padding: 10px; border-radius: 10px; box-shadow: 2px 2px 6px rgba(0,0,0,0.1);">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-eb8c8d524b82e4887c2d" style="width:800px;height:600px;" class="visNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb8c8d524b82e4887c2d">{"x":{"nodes":{"id":[1,2,3,4,5,6,7],"label":["AHC","Patent","Dataset","Grant","Clinical_Trial","Researcher","Article"],"group":["AHC","Patent","Dataset","Grant","Clinical_Trial","Researcher","Article"],"title":["AHC","Patent","Dataset","Grant","Clinical_Trial","Researcher","Article"],"color.background":["rgba(93, 114, 144, 0.6)","rgba(124, 144, 193, 0.6)","rgba(76, 154, 145, 0.6)","rgba(122, 155, 95, 0.6)","rgba(212, 180, 131, 0.6)","rgba(158, 61, 61, 0.6)","rgba(60, 60, 60, 0.6)"],"color.border":["#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9"],"color.highlight.background":["#FF8000","#FF8000","#FF8000","#FF8000","#FF8000","#FF8000","#FF8000"],"color.highlight.border":["#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9","#2B7CE9"],"font":["bold","bold","bold","bold","bold","bold","bold"]},"edges":{"from":[1,1,1,5,2,3,6,7,7,6],"to":[2,3,4,1,1,1,1,6,7,6],"label":["ASSOCIATED_WITH","ASSOCIATED_WITH","FUNDED_BY","CONDUCTED_AT","ASSOCIATED_WITH","ASSOCIATED_WITH","ASSOCIATED_WITH","WRITTEN_BY","CITES","COLLABORATED_WITH"],"arrows":["to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot"},"manipulation":{"enabled":false},"edges":{"arrows":"to","font":{"ital":true,"align":"top"},"smooth":false},"physics":{"solver":"repulsion","repulsion":{"nodeDistance":300}},"layout":{"randomSeed":123}},"groups":["AHC","Patent","Dataset","Grant","Clinical_Trial","Researcher","Article"],"width":"800px","height":"600px","idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":null,"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":1,"algorithm":"all","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":false,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div class="text-center">
+
+</div>
+<section id="main-tables-and-entities" class="level3">
+<h3 class="anchored" data-anchor-id="main-tables-and-entities">📌 Main Tables and Entities</h3>
+<p>• <strong>AHC (Academic Health Center)</strong>: stores information about the academic and healthcare institutions involved.</p>
+<p>• <strong>Patent</strong>: contains data on patents, including titles, inventors, and registration dates.</p>
+<p>• <strong>Dataset</strong>: describes datasets used or produced in research, along with associated metadata.</p>
+<p>• <strong>Grant</strong>: includes funding details such as granting bodies, amounts, and durations.</p>
+<p>• <strong>Clinical_Trial</strong>: provides information on clinical studies, including phases, objectives, and results.</p>
+<p>• <strong>Researcher</strong>: contains researcher profiles, affiliations, and areas of expertise.</p>
+<p>• <strong>Article</strong>: archives scientific publications, including references and abstracts.</p>
+</section>
+<section id="relationships-between-entities" class="level3">
+<h3 class="anchored" data-anchor-id="relationships-between-entities">🔗 Relationships Between Entities</h3>
+<p>Relationships between entities are modeled using associative tables that implement foreign keys to preserve referential integrity. For example:</p>
+<p>• <em>ASSOCIATED_WITH</em>: links AHCs with Patents, Datasets, and Grants.</p>
+<p>• <em>CONDUCTED_AT</em>: connects Clinical_Trials with AHCs.</p>
+<p>• <em>WRITTEN_BY</em>: associates Articles with Researchers.</p>
+<p>• <em>CITES</em>: manages citation relationships between Articles.</p>
+<p>• <em>COLLABORATED_WITH</em>: represents collaboration networks among Researchers.</p>
+<p>These relationships are implemented through join tables that contain the primary keys of the involved entities, ensuring data consistency via referential constraints.</p>
+</section>
+<section id="technical-characteristics" class="level3">
+<h3 class="anchored" data-anchor-id="technical-characteristics">⚙️ Technical Characteristics</h3>
+<p>• <strong>Normalization</strong>: the tables are structured to minimize redundancy and improve query efficiency.</p>
+<p>• <strong>Integrity Constraints</strong>: use of primary and foreign keys to enforce data consistency. • Data Types: strict definition of data types for each attribute (e.g., strings, integers, dates).</p>
+<p>• <strong>Indexing</strong>: indexes are created on key attributes to optimize query performance.</p>
+<p>This relational design enables SciK-Health to efficiently manage the complex and interconnected information typical of scientific research in the healthcare sector.</p>
+</section>
+</div>
+<p>:::::</p>
 
 
 </section>

@@ -20,6 +20,8 @@ website:
         menu:
         - text: Data Description
           href: description.qmd
+        - text: Data Structure
+          href: datastructure.qmd
         - text: AHC data
           href: data.qmd
       - text: References & Products
