@@ -51,7 +51,7 @@ nodes$color.background <- sapply(nodes$group, function(g) colors[[g]])
 nodes$color.border <- "#2B7CE9"
 nodes$color.highlight.background <- "#FF8000"
 nodes$color.highlight.border <- "#2B7CE9"
-nodes$font <- list(face = "bold")
+#nodes$font <- list(face = "bold")
 
 # GRAFO
 visNetwork(nodes, edges, width = "800px", height = "600px") %>%
