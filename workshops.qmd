@@ -1,9 +1,23 @@
 ---
-title: "Workshops"
 format: html
 ---
+## 🧪 Workshops
 
-This section will include workshops and training activities organized within the framework of the SciK-Health project.
+Seminars, training sessions, and dissemination activities organized within the framework of the **SciK-Health** project. These events aim to promote knowledge sharing among the research units and with external stakeholders.
 
--   **Workshop on the SciK-Health project**, 10 June 2025\
-    *(Details coming soon)*
+- **Workshop on research performance and impact** — *June 10, 2025*
+
+---
+
+## 🤝 Team Meetings
+
+Internal coordination meetings held among members of the SciK-Health research team. These moments serve to align the progress of activities, plan next steps, and ensure coherence across units and work packages.
+
+- **October 17, 2023**  
+  *Agenda*: Organization of project activities
+
+- **March 20, 2024**  
+  *Agenda*: Shared review of available data types and reflection on possible advances; Project reporting
+
+- **April 4, 2024**  
+  *Agenda*: Shared discussion of measured indicators across the five performance dimensions (📚 Bibliometric, 🌐 Social & Digital, 🧬 Industrial impact & Research innovation, 🧪 Clinical Research, 💶 Funding & grant), planning of upcoming conferences, and updates on the development of the dashboard and R-daisy tool

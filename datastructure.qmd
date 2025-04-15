@@ -112,5 +112,3 @@ These relationships are implemented through join tables that contain the primary
 
 This relational design enables SciK-Health to efficiently manage the complex and interconnected information typical of scientific research in the healthcare sector.
 :::::
-
-:::::
