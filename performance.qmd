@@ -96,7 +96,6 @@ Innovation capacity is assessed through indicators based on **patents**, which s
 Key indicators include:
 
 -   **Number of patents** registered per institution
--   **Average number of jurisdictions** in which each patent is filed (as a proxy for market reach)
 -   **Classification of patents** by technological domain (e.g., medical devices, pharmaceuticals)
 -   **Identification of top inventors**, based on volume and relevance of patents filed
 
