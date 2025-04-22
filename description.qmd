@@ -6,7 +6,7 @@ format: html
 ## Overview
 
 This section provides detailed metadata documentation for the variables used in the SciK-Health project datasets. Each block corresponds to a thematic group of indicators derived from OpenAlex and other integrated sources.\
-The indicators are designed to support reproducible, comparative research on Italian Academic Health Science Centres (AHSCs).
+The indicators are designed to support reproducible and comparative research on Italian AHSCs. They are measured by `AHC` (the short name of the hospital/university institution) and `PY` (Publication Year)
 
 ------------------------------------------------------------------------
 
@@ -19,32 +19,31 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 
 | **Variable** | **Description** |
 |------------------------------------|------------------------------------|
-| AHC | Name (short label) of the hospital/university institution |
-| PY | Publication Year |
-| nTotDoc | Total number of documents/articles published in the year |
-| meanAUPerArt | Average number of authors per article |
-| meanAU_IN_PerArt | Average number of internal authors (AU_IN) per article |
-| meanArtAU_IN | Average number of articles per internal author |
-| meanArtPer_AU_IN_FIRST | Average number of articles per internal author as first author |
-| meanArtPer_AU_IN_LAST | Average number of articles per internal author as last author |
-| meanArtPer_AU_IN_CORR | Average number of articles per internal author as corresponding author |
-| ArtOA | Percentage of Open Access articles |
-| singleAuArt | Number of single-author articles |
+| `nTotDoc` | Total number of documents/articles published in the year |
+| `meanAUPerArt` | Average number of authors per article |
+| `meanAU_IN_PerArt` | Average number of internal authors (`AU_IN`) per article |
+| `meanArtAU_IN` | Average number of articles per internal author |
+| `meanArtPer_AU_IN_FIRST` | Average number of articles per internal author as first author |
+| `meanArtPer_AU_IN_LAST` | Average number of articles per internal author as last author |
+| `meanArtPer_AU_IN_CORR` | Average number of articles per internal author as corresponding author |
+| `ArtOA` | Percentage of Open Access articles |
+| `singleAuArt` | Number of single-author articles |
 
 ### 🔹 Impact
- **Variable** | **Description** |
+
+| **Variable** | **Description** |
 |------------------------------------|------------------------------------|
-| Q1_nSJR | Number of articles published in Q1 journals (quartile 1) according to SJR**\*** |
-| Q2_nSJR | Number of articles published in Q2 journals according to SJR |
-| Q3_nSJR | Number of articles published in Q3 journals according to SJR |
-| Q4_nSJR | Number of articles published in Q4 journals according to SJR |
-| Q1_percSJR | Percentage of articles published in Q1 journals |
-| Q2_percSJR | Percentage of articles published in Q2 journals |
-| Q3_percSJR | Percentage of articles published in Q3 journals |
-| Q4_percSJR | Percentage of articles published in Q4 journals |
-| meanTCperArt | Average number of citations per article |
-| mean_NTC | Average Normalized Total Citations (NTC) per institution and year**\*\*** |
-| meanCitationTrend | Average citation trend over time**\*\*\*** |
+| `Q1_nSJR` | Number of articles published in Q1 journals (quartile 1) according to SJR**\*** |
+| `Q2_nSJR` | Number of articles published in Q2 journals according to SJR |
+| `Q3_nSJR` | Number of articles published in Q3 journals according to SJR |
+| `Q4_nSJR` | Number of articles published in Q4 journals according to SJR |
+| `Q1_percSJR` | Percentage of articles published in Q1 journals |
+| `Q2_percSJR` | Percentage of articles published in Q2 journals |
+| `Q3_percSJR` | Percentage of articles published in Q3 journals |
+| `Q4_percSJR` | Percentage of articles published in Q4 journals |
+| `meanTCperArt` | Average number of citations per article |
+| `mean_NTC` | Average Normalized Total Citations (NTC) per institution and year**\*\*** |
+| `meanCitationTrend` | Average citation trend over time**\*\*\*** |
 
 **\*** Indicator based on data from SCOPUS. Journals assigned to multiple subject categories were selected based on the best percentile.\
 **\*\*** Measures the average citation performance of an institution’s publications in a given year, normalized to the global average citation rate for that year. Enables cross-institution comparison.\
@@ -52,11 +51,10 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 
 ### 🔹 Collaboration
 
-| **Variable**       | **Description**                                                        |
-|--------------------|------------------------------------------------------------------------|
-| InternCoauthorship | Percentage of articles with international co-authors                   |
-| AffCoauthorship    | Percentage of articles with co-authors affiliated with different institutions |
-
+| **Variable** | **Description** |
+|------------------------|------------------------------------------------|
+| `InternCoauthorship` | Percentage of articles with international co-authors |
+| `AffCoauthorship` | Percentage of articles with co-authors affiliated with different institutions |
 
 ### 🔹 Talent
 
@@ -65,24 +63,20 @@ They provide insights into the presence of high-performing individuals, institut
 
 | **Variable** | **Description** |
 |------------------------------------|------------------------------------|
-| GC_AUIN_wFractional | Gini concentration index (fractional) on internal authors\* |
-| GC_AUIN_FIRSTname | Gini concentration index on internal authors in first position (first name)\*\* |
-| GC_AUIN_LASTname | Gini concentration index on internal authors in last position\*\* |
-| GC_AUIN_CORRESP | Gini concentration index on internal corresponding authors\*\* |
-| top_AU | List of top authors (internal and external) by frequency |
-| top_AU_freq | Absolute frequencies of top authors (internal and external) in `top_AU` |
-| top_AU_wFract | List of top authors (internal and external) by fractional frequency |
-| top_AU_freq_wFract | Fractional frequencies associated with each author in `top_AU_wFract` |
-| top_AUIN | List of top internal authors by simple frequency |
-| top_AUIN_freq | Absolute frequencies of internal authors in `top_AUIN` |
-| top_AUIN_wFract | List of top internal authors by fractional frequency |
-| top_AUIN_freq_wFract | Fractional frequencies associated with each internal author in `top_AUIN_wFract` |
-| topAUbyCit | List of top authors by total citations |
-| topAUbyCit_TC | Total citations associated with each author in `topAUbyCit` |
-| topAUINbyCit | List of top internal authors by total citations |
-| topAUINbyCit_TC | Total citations associated with internal authors in `topAUINbyCit` |
-| topAUINbyCit_norm_byYear | List of top internal authors by normalized citations per year\*\*\* |
-| topAUINbyCit_TC_norm_byYear | Normalized citations associated with internal authors in `topAUINbyCit_norm_byYear` |
+| `GC_AUIN_wFractional` | Gini concentration index (fractional) on internal authors\* |
+| `GC_AUIN_FIRSTname` | Gini concentration index on internal authors in first position (first name)\*\* |
+| `GC_AUIN_LASTname` | Gini concentration index on internal authors in last position\*\* |
+| `GC_AUIN_CORRESP` | Gini concentration index on internal corresponding authors\*\* |
+| `top_AU` | Most frequent authors (internal and external) (names, `_freq`: frequencies) |
+| `top_AU_wFract` | Most frequent authors (internal and external) by fractional frequency |
+| `top_AU_freq_wFract` | Fractional frequencies associated with each author in `top_AU_wFract` |
+| `top_AUIN` | Most frequent internal authors (names, `_freq`: frequencies) |
+| `top_AUIN_wFract` | Most frequent internal authors by fractional frequency |
+| `top_AUIN_freq_wFract` | Fractional frequencies associated with each internal author in `top_AUIN_wFract` |
+| `topAUbyCit` | Most cited (internal and external) authors (names; `_TC` total citations value) |
+| `topAUINbyCit` | Most cited internal authors (names; `_TC` total citations value) |
+| `topAUINbyCit_norm_byYear` | Most cited internal authors by normalized citations per year\*\*\* |
+| `topAUINbyCit_TC_norm_byYear` | Normalized citations associated with most cited internal authors in `topAUINbyCit_norm_byYear` |
 
 \* The weight assigned to each author is fractional (considering both publication count and co-authorship).\
 \*\* Gini concentration computed using the number of published articles per author as weight.\
@@ -95,19 +89,21 @@ It includes hierarchical concept levels (from general disciplines to specific bi
 
 | **Variable** | **Description** |
 |------------------------------------|------------------------------------|
-| topConcept_L0 | Top level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY) |
-| topFreq_L0 | Frequencies associated with top level 0 concepts |
-| topConcept_L1 | Top level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY) |
-| topFreq_L1 | Frequencies associated with top level 1 concepts |
-| topConcept_L2 | Top level 2 concepts (more specific topics) |
-| topFreq_L2 | Frequencies associated with top level 2 concepts |
-| topConcept_L3 | Top level 3 concepts (more detailed, e.g., related to diseases or methods) |
-| topFreq_L3 | Frequencies associated with top level 3 concepts |
-| topConcept_L4 | Top level 4 concepts (highest specificity, e.g., biological entities, anatomical structures) |
-| topFreq_L4 | Frequencies associated with top level 4 concepts |
-| topMESH | List of main MeSH terms associated with the articles |
-| topMESH_n | Frequencies of the top MeSH terms |
-| topprimary_topic.display_name | Top primary topics |
+| `topConcept_L0` | Most frequent level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY) |
+| `topFreq_L0` | Frequencies associated with top level 0 concepts |
+| `topConcept_L1` | Most frequent level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY) |
+| `topFreq_L1` | Frequencies associated with top level 1 concepts |
+| `topConcept_L2` | Most frequent level 2 concepts (more specific topics) |
+| `topFreq_L2` | Frequencies associated with top level 2 concepts |
+| `topConcept_L3` | Most frequent level 3 concepts (more detailed, e.g., related to diseases or methods) |
+| `topFreq_L3` | Frequencies associated with top level 3 concepts |
+| `topConcept_L4` | Most frequent level 4 concepts (highest specificity, e.g., biological entities, anatomical structures) |
+| `topFreq_L4` | Frequencies associated with top level 4 concepts |
+| `topMESH` | Most frequent MeSH terms associated with the articles (names; `_n` frequency) |
+| `topprimary_topic.display_name` | Most frequent primary topics (names; `_n` frequency) |
+| `topDE` | Most frequent authors' keywords (names; `_n` frequency) |
+| `topTI_TM` | Most frequent bigrams extracted from titles (names; `_n` frequency) |
+| `topAB_TM` | Most frequent bigrams extracted from abstracts (names; `_n` frequency) |
 
 ## 📣 Altmetrics: Social & Digital Attention
 
@@ -116,28 +112,125 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 
 | **Variable** | **Description** |
 |------------------------------------|------------------------------------|
-| nDoc_wALTM | Number of articles in the year with at least one Altmetric Score (Altmetric Score \> 0) |
-| percDoc_wALTM | Percentage of articles with Altmetric Score \> 0 out of total articles published |
-| medianAltmetricScore | Altmetric Score value, an aggregated indicator of online attention (median) |
-| cited_by_accounts_count | Number of unique accounts mentioning the article (mean, min, and max) |
-| cited_by_fbwalls_count | Number of Facebook wall mentions (mean, min, and max) |
-| cited_by_feeds_count | Number of mentions in RSS feeds and blogs (mean, min, and max) |
-| cited_by_gplus_count | Number of mentions on Google+ (historical only; mean, min, and max) |
-| cited_by_msm_count | Number of mentions in mainstream media (newspapers, magazines, etc.) (mean, min, and max) |
-| cited_by_patents_count | Number of mentions in patents (mean, min, and max) |
-| cited_by_peer_review_sites_count | Number of mentions on peer review sites (e.g., PubPeer) (mean, min, and max) |
-| cited_by_policies_count | Number of citations in policy documents (mean, min, and max) |
-| cited_by_posts_count | Total mentions in posts (including blogs, forums, etc.) (mean, min, and max) |
-| cited_by_rdts_count | Number of mentions in Reddit threads (mean, min, and max) |
-| cited_by_rh_count | Number of mentions in Research Highlights (mean, min, and max) |
-| cited_by_tweeters_count | Number of Twitter/X users who mentioned the article (mean, min, and max) |
-| cited_by_videos_count | Number of mentions in video content (e.g., YouTube) (mean, min, and max) |
-| cited_by_wikipedia_count | Number of citations on Wikipedia (mean, min, and max) |
-| cohorts.com | Number of general public users interacting with the article (mean, min, and max) |
-| cohorts.doc | Number of interactions by professionals (clinicians, operators, policy makers) |
+| `nDoc_wALTM` | Number of articles in the year with at least one Altmetric Score (Altmetric Score \> 0) |
+| `percDoc_wALTM` | Percentage of articles with Altmetric Score \> 0 out of total articles published |
+| `medianAltmetricScore` | Altmetric Score value, an aggregated indicator of online attention (median) |
 
--   For all Altmetric `cited_by` indicators, mean, minimum, and maximum values were calculated based only on the top 25th percentile of the distribution. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.
+***Indicators measured in the top 25th percentile of the Altmetric Score distribution\****:
+
+|  |  |
+|------------------------------------|------------------------------------|
+| `altmetric_score` | Altmetric Score value (mean, min, and max) |
+| `cited_by_accounts_count` | Number of unique accounts mentioning the article (mean, min, and max) |
+| `cited_by_fbwalls_count` | Number of Facebook wall mentions (mean, min, and max) |
+| `cited_by_feeds_count` | Number of mentions in RSS feeds and blogs (mean, min, and max) |
+| `cited_by_gplus_count` | Number of mentions on Google+ (historical only; mean, min, and max) |
+| `cited_by_msm_count` | Number of mentions in mainstream media (newspapers, magazines, etc.) (mean, min, and max) |
+| `cited_by_patents_count` | Number of mentions in patents (mean, min, and max) |
+| `cited_by_peer_review_sites_count` | Number of mentions on peer review sites (e.g., PubPeer) (mean, min, and max) |
+| `cited_by_policies_count` | Number of citations in policy documents (mean, min, and max) |
+| `cited_by_posts_count` | Total mentions in posts (including blogs, forums, etc.) (mean, min, and max) |
+| `cited_by_rdts_count` | Number of mentions in Reddit threads (mean, min, and max) |
+| `cited_by_rh_count` | Number of mentions in Research Highlights (mean, min, and max) |
+| `cited_by_tweeters_count` | Number of Twitter/X users who mentioned the article (mean, min, and max) |
+| `cited_by_videos_count` | Number of mentions in video content (e.g., YouTube) (mean, min, and max) |
+| `cited_by_wikipedia_count` | Number of citations on Wikipedia (mean, min, and max) |
+| `cohorts.com` | Number of general public users interacting with the article (mean, min, and max) |
+| `cohorts.doc` | Number of interactions by professionals (clinicians, operators, policy makers) |
+
+\* Mean, minimum, and maximum values were calculated for these indicators. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.
 
 ## 💡 Industrial Impact & Research Innovation
+
+This section includes a description of the key indicators measured on patents collected from the Dimensions database. These variables describe yearly statistics on patent status, classification, inventorship, and jurisdiction, along with metadata from original documentation.
+
+| **Variable** | **Description** |
+|------------------------------------|------------------------------------|
+| `n_patentsDistinct` | Number of distinct patents (unique Family ID) per year. |
+| `nPatentStatus_` | Number of patents by legal status relates to information on the events during the lifetime of a patent application (e.g., Abandoned, Pending, Expired). |
+| `nPatentPubType_Application` | Number of patents of type 'Application'. |
+| `nPatentPubType_Grant` | Number of patents of type 'Grant'. |
+| `nPatentPubType_N/A` | Number of patents with unspecified publication type. |
+| `avg_citations_Patent` | Average number of citations received by patents per year. |
+| `avg_Inventors_Patent` | Average number of inventors per patent per year. |
+| `avg_InstitutesInvolved_Patent` | Average number of institutes involved per patent per year. |
+| `nPatent_singleInventor` | Number of patents with a single inventor. |
+| `n_Patents_CoAff` | Number of patents with institutional co-affiliations (institutions involved \> 1). |
+| `n_Jurisdiction_distinct` | Number of distinct jurisdictions where patents were granted. |
+| `nJurisd_` | Number of patents granted in one of the Jurisdictions (AU = Australia, US = United States, CH = Switzerland, etc.). |
+| `nPatentKC_` | Number of patents by Kind Code (a standardized alphanumeric code used to classify and categorize patents based on their type and purpose) from DOCDB. |
+| `top_Inventor names_Patent` | Most frequent inventors of the patent (names; `_n` frequency). |
+| `top_Original assignee names_Patent` | Most frequent organisations that first owned the patent, as they appear in the original document (names; `_n` frequency). |
+| `top_Fields of Research (ANZSRC 2020)_Patent` | Most frequent Fields of Research covers all areas of research and emerging areas of study from the Australian and New Zealand Standard Research Classification (ANZSRC) (names; `_n` frequency). |
+| `top_RCDC Categories_Patent` | Most frequent Research, Condition, and Disease Categorization (RCDC) categories used by the NIH (names; `_n` frequency). |
+| `top_HRCS RAC Categories_Patent` | Most frequent Health Research Classification System (HRCS) subdivided into the Research Activity Classifications (RAC) (names; `_n` frequency). |
+| `top_IPCR_Patent` | Most frequent ICRP Cancer Types (names; `_n` frequency). |
+| `top_CPC_Patent` | Most frequent Cooperative Patent Classification Categorization (names; `_n` frequency). |
+
 ## 🧪 Clinical Research Activity
+
+This section provides indicators derived from clinical trials and dataset data. These indicators support analysis of research activity using data exported from Dimensions.
+
+### 🔹 Clinical Trials
+
+| **Variable** | **Description** |
+|------------------------------------|-----------------------------------|
+| `n_clTrial` | Number of clinical trials started in the given year. |
+| `avg_durationYear_clTrial` | Average duration of clinical trials (in years). |
+| `avg_participants_clTrial` | Average number of participants per trial. |
+| `nClTrial_w_AltmScore` | Number of trials with an Altmetric score. |
+| `avg_sponsor_clTrial` | Average number of sponsors/collaborators per trial. |
+| `nclTrialPhase_` | Number of clinical trials by Phase (e.g., Phase 1, Phase 1/2 combined). |
+| `nclTrialPhase_N/A` | Trials with no phase declared. N/A (not applicable) typically indicates a single-arm trial. |
+| `nclTrialPhase_Post Authorisation Studies` | Number of post-authorisation studies. |
+| `nclTrial_StudyType_` | Number of clinical trials by study type (e.g., interventional, observational). |
+| `nclTrial_Gender_` | Number of clinical trials by gender subjects included (All, Male, Female). |
+| `nclTrial_Registry_ClinicalTrials.gov` | Number of trials registered in the ClinicalTrials.gov registry. |
+| `top_funder_country` | Most frequent funder countries (names, `_n`: frequency). |
+| `top_Fields of Research (ANZSRC 2020)_clTrial` | Most frequent fields of research (names, `_n`: frequency). |
+| `top_RCDC Categories_clTrial` | Most frequent RCDC categories (names, `_n`: frequency). |
+| `top_HRCS HC Categories_clTrial` | Most frequent HRCS health categories (names, `_n`: frequency). |
+| `top_HRCS RAC Categories_clTrial` | Most frequent HRCS research activity categories (names, `_n`: frequency). |
+| `top_Cancer Types_clTrial` | Most frequent cancer types (names, `_n`: frequency). |
+| `top_CSO Categories_clTrial` | Most frequent CSO categories (names, `_n`: frequency). |
+
+### 🔹 Datasets
+
+| **Variable** | **Description** |
+|-------------------------------------|-----------------------------------|
+| `n_dataset` | Number of of free-available datasets published in the year. |
+| `top_Repository_Dataset` | Most frequent dataset repositories (names, `_n`: frequency) |
+| `top_Fields of Research (ANZSRC 2020)_Dataset` | Most frequent fields of research (names, `_n`: frequency). |
+| `top_RCDC Categories_Dataset` | Most frequent RCDC categories (names, `_n`: frequency). |
+| `top_HRCS HC Categories_Dataset` | Most frequent HRCS health categories (names, `_n`: frequency). |
+| `top_HRCS RAC Categories_Dataset` | Most frequent HRCS research activity categories (names, `_n`: frequency). |
+| `top_Health Research Areas_Dataset` | Most frequent health research areas (names, `_n`: frequency) |
+| `top_Broad Research Areas_Dataset` | Most frequent broad research areas (names, `_n`: frequency) |
+| `top_Cancer Types_Dataset` | Most frequent cancer types addressed in datasets (names, `_n`: frequency) |
+| `top_Sustainable Development Goals_Dataset` | Most frequently addressed Sustainable Development Goals (names, `_n`: frequencies) |
+
 ## 💶 Funding and Grants
+
+This section presents indicators related to competitive funding obtained by Italian AHSCs, covering financial aspects, international collaborations, outputs, and key actors involved in funded research projects.
+
+| **Variable** | **Description** |
+|-------------------------------------|-----------------------------------|
+| `avg_funding_EUR` | Average total funding per grant (in EUR). |
+| `avg_funding_EUR_perOrganization` | Average funding per research organization involved in a grant (in EUR). |
+| `avg_durationYear_grant` | Average duration of grants (in years). |
+| `avg_Organization_per_grant` | Average number of research organizations involved per grant. |
+| `avg_countries_per_grant` | Average number of distinct countries involved per grant. |
+| `perc_grant_internationalColl` | Proportion of grants with international collaboration. |
+| `avg_ResultingPublications_per_grant` | Average number of resulting publications per grant. |
+| `top_Research Organization - standardized_Grants` | Most frequent research organizations (names; `_n` frequency). |
+| `top_Funder_Grants` | Most frequent funding bodies (names; `_n` frequency). |
+| `top_Funder Group_Grants` | Most frequent funder groups (names; `_n` frequency). |
+| `top_Program_Grants` | Most frequent funding programs (names; `_n` frequency). |
+| `top_Fields of Research (ANZSRC 2020)_Grants` | Most frequent research fields based on ANZSRC 2020 (names; `_n` frequency). |
+| `top_RCDC Categories_Grants` | Most RCDC categories (names; `_n` frequency). |
+| `top_HRCS HC Categories_Grants` | Most frequent HRCS Health Categories (names; `_n` frequency). |
+| `top_HRCS RAC Categories_Grants` | Most frequent HRCS Research Activities Categories (names; `_n` frequency). |
+| `top_Cancer Types_Grants` | Most frequent studied cancer types (names; `_n` frequency). |
+| `top_CSO Categories_Grants` | Most frequent Common Scientific Outline (CSO) categories (names; `_n` frequency). |
+| `top_Units of Assessment_Grants` | Most frequent Units of Assessment (names; `_n` frequency). |
+| `top_Sustainable Development Goals_Grants` | Most frequently addressed Sustainable Development Goals (names; `_n` frequency). |

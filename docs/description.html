@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -202,7 +202,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#altmetrics-social-digital-attention" id="toc-altmetrics-social-digital-attention" class="nav-link" data-scroll-target="#altmetrics-social-digital-attention">📣 Altmetrics: Social &amp; Digital Attention</a></li>
   <li><a href="#industrial-impact-research-innovation" id="toc-industrial-impact-research-innovation" class="nav-link" data-scroll-target="#industrial-impact-research-innovation">💡 Industrial Impact &amp; Research Innovation</a></li>
-  <li><a href="#clinical-research-activity" id="toc-clinical-research-activity" class="nav-link" data-scroll-target="#clinical-research-activity">🧪 Clinical Research Activity</a></li>
+  <li><a href="#clinical-research-activity" id="toc-clinical-research-activity" class="nav-link" data-scroll-target="#clinical-research-activity">🧪 Clinical Research Activity</a>
+  <ul class="collapse">
+  <li><a href="#clinical-trials" id="toc-clinical-trials" class="nav-link" data-scroll-target="#clinical-trials">🔹 Clinical Trials</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">🔹 Datasets</a></li>
+  </ul></li>
   <li><a href="#funding-and-grants" id="toc-funding-and-grants" class="nav-link" data-scroll-target="#funding-and-grants">💶 Funding and Grants</a></li>
   </ul>
 </nav>
@@ -232,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This section provides detailed metadata documentation for the variables used in the SciK-Health project datasets. Each block corresponds to a thematic group of indicators derived from OpenAlex and other integrated sources.<br>
-The indicators are designed to support reproducible, comparative research on Italian Academic Health Science Centres (AHSCs).</p>
+The indicators are designed to support reproducible and comparative research on Italian AHSCs. They are measured by <code>AHC</code> (the short name of the hospital/university institution) and <code>PY</code> (Publication Year)</p>
 <hr>
 </section>
 <section id="bibliometric-dimension" class="level2">
@@ -254,47 +258,39 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 </thead>
 <tbody>
 <tr class="odd">
-<td>AHC</td>
-<td>Name (short label) of the hospital/university institution</td>
-</tr>
-<tr class="even">
-<td>PY</td>
-<td>Publication Year</td>
-</tr>
-<tr class="odd">
-<td>nTotDoc</td>
+<td><code>nTotDoc</code></td>
 <td>Total number of documents/articles published in the year</td>
 </tr>
 <tr class="even">
-<td>meanAUPerArt</td>
+<td><code>meanAUPerArt</code></td>
 <td>Average number of authors per article</td>
 </tr>
 <tr class="odd">
-<td>meanAU_IN_PerArt</td>
-<td>Average number of internal authors (AU_IN) per article</td>
+<td><code>meanAU_IN_PerArt</code></td>
+<td>Average number of internal authors (<code>AU_IN</code>) per article</td>
 </tr>
 <tr class="even">
-<td>meanArtAU_IN</td>
+<td><code>meanArtAU_IN</code></td>
 <td>Average number of articles per internal author</td>
 </tr>
 <tr class="odd">
-<td>meanArtPer_AU_IN_FIRST</td>
+<td><code>meanArtPer_AU_IN_FIRST</code></td>
 <td>Average number of articles per internal author as first author</td>
 </tr>
 <tr class="even">
-<td>meanArtPer_AU_IN_LAST</td>
+<td><code>meanArtPer_AU_IN_LAST</code></td>
 <td>Average number of articles per internal author as last author</td>
 </tr>
 <tr class="odd">
-<td>meanArtPer_AU_IN_CORR</td>
+<td><code>meanArtPer_AU_IN_CORR</code></td>
 <td>Average number of articles per internal author as corresponding author</td>
 </tr>
 <tr class="even">
-<td>ArtOA</td>
+<td><code>ArtOA</code></td>
 <td>Percentage of Open Access articles</td>
 </tr>
 <tr class="odd">
-<td>singleAuArt</td>
+<td><code>singleAuArt</code></td>
 <td>Number of single-author articles</td>
 </tr>
 </tbody>
@@ -315,47 +311,47 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 </thead>
 <tbody>
 <tr class="odd">
-<td>Q1_nSJR</td>
+<td><code>Q1_nSJR</code></td>
 <td>Number of articles published in Q1 journals (quartile 1) according to SJR<strong>*</strong></td>
 </tr>
 <tr class="even">
-<td>Q2_nSJR</td>
+<td><code>Q2_nSJR</code></td>
 <td>Number of articles published in Q2 journals according to SJR</td>
 </tr>
 <tr class="odd">
-<td>Q3_nSJR</td>
+<td><code>Q3_nSJR</code></td>
 <td>Number of articles published in Q3 journals according to SJR</td>
 </tr>
 <tr class="even">
-<td>Q4_nSJR</td>
+<td><code>Q4_nSJR</code></td>
 <td>Number of articles published in Q4 journals according to SJR</td>
 </tr>
 <tr class="odd">
-<td>Q1_percSJR</td>
+<td><code>Q1_percSJR</code></td>
 <td>Percentage of articles published in Q1 journals</td>
 </tr>
 <tr class="even">
-<td>Q2_percSJR</td>
+<td><code>Q2_percSJR</code></td>
 <td>Percentage of articles published in Q2 journals</td>
 </tr>
 <tr class="odd">
-<td>Q3_percSJR</td>
+<td><code>Q3_percSJR</code></td>
 <td>Percentage of articles published in Q3 journals</td>
 </tr>
 <tr class="even">
-<td>Q4_percSJR</td>
+<td><code>Q4_percSJR</code></td>
 <td>Percentage of articles published in Q4 journals</td>
 </tr>
 <tr class="odd">
-<td>meanTCperArt</td>
+<td><code>meanTCperArt</code></td>
 <td>Average number of citations per article</td>
 </tr>
 <tr class="even">
-<td>mean_NTC</td>
+<td><code>mean_NTC</code></td>
 <td>Average Normalized Total Citations (NTC) per institution and year<strong>**</strong></td>
 </tr>
 <tr class="odd">
-<td>meanCitationTrend</td>
+<td><code>meanCitationTrend</code></td>
 <td>Average citation trend over time<strong>***</strong></td>
 </tr>
 </tbody>
@@ -368,8 +364,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <h3 class="anchored" data-anchor-id="collaboration">🔹 Collaboration</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 78%">
+<col style="width: 33%">
+<col style="width: 66%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -379,11 +375,11 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 </thead>
 <tbody>
 <tr class="odd">
-<td>InternCoauthorship</td>
+<td><code>InternCoauthorship</code></td>
 <td>Percentage of articles with international co-authors</td>
 </tr>
 <tr class="even">
-<td>AffCoauthorship</td>
+<td><code>AffCoauthorship</code></td>
 <td>Percentage of articles with co-authors affiliated with different institutions</td>
 </tr>
 </tbody>
@@ -406,76 +402,60 @@ They provide insights into the presence of high-performing individuals, institut
 </thead>
 <tbody>
 <tr class="odd">
-<td>GC_AUIN_wFractional</td>
+<td><code>GC_AUIN_wFractional</code></td>
 <td>Gini concentration index (fractional) on internal authors*</td>
 </tr>
 <tr class="even">
-<td>GC_AUIN_FIRSTname</td>
+<td><code>GC_AUIN_FIRSTname</code></td>
 <td>Gini concentration index on internal authors in first position (first name)**</td>
 </tr>
 <tr class="odd">
-<td>GC_AUIN_LASTname</td>
+<td><code>GC_AUIN_LASTname</code></td>
 <td>Gini concentration index on internal authors in last position**</td>
 </tr>
 <tr class="even">
-<td>GC_AUIN_CORRESP</td>
+<td><code>GC_AUIN_CORRESP</code></td>
 <td>Gini concentration index on internal corresponding authors**</td>
 </tr>
 <tr class="odd">
-<td>top_AU</td>
-<td>List of top authors (internal and external) by frequency</td>
+<td><code>top_AU</code></td>
+<td>Most frequent authors (internal and external) (names, <code>_freq</code>: frequencies)</td>
 </tr>
 <tr class="even">
-<td>top_AU_freq</td>
-<td>Absolute frequencies of top authors (internal and external) in <code>top_AU</code></td>
+<td><code>top_AU_wFract</code></td>
+<td>Most frequent authors (internal and external) by fractional frequency</td>
 </tr>
 <tr class="odd">
-<td>top_AU_wFract</td>
-<td>List of top authors (internal and external) by fractional frequency</td>
-</tr>
-<tr class="even">
-<td>top_AU_freq_wFract</td>
+<td><code>top_AU_freq_wFract</code></td>
 <td>Fractional frequencies associated with each author in <code>top_AU_wFract</code></td>
 </tr>
-<tr class="odd">
-<td>top_AUIN</td>
-<td>List of top internal authors by simple frequency</td>
-</tr>
 <tr class="even">
-<td>top_AUIN_freq</td>
-<td>Absolute frequencies of internal authors in <code>top_AUIN</code></td>
+<td><code>top_AUIN</code></td>
+<td>Most frequent internal authors (names, <code>_freq</code>: frequencies)</td>
 </tr>
 <tr class="odd">
-<td>top_AUIN_wFract</td>
-<td>List of top internal authors by fractional frequency</td>
+<td><code>top_AUIN_wFract</code></td>
+<td>Most frequent internal authors by fractional frequency</td>
 </tr>
 <tr class="even">
-<td>top_AUIN_freq_wFract</td>
+<td><code>top_AUIN_freq_wFract</code></td>
 <td>Fractional frequencies associated with each internal author in <code>top_AUIN_wFract</code></td>
 </tr>
 <tr class="odd">
-<td>topAUbyCit</td>
-<td>List of top authors by total citations</td>
+<td><code>topAUbyCit</code></td>
+<td>Most cited (internal and external) authors (names; <code>_TC</code> total citations value)</td>
 </tr>
 <tr class="even">
-<td>topAUbyCit_TC</td>
-<td>Total citations associated with each author in <code>topAUbyCit</code></td>
+<td><code>topAUINbyCit</code></td>
+<td>Most cited internal authors (names; <code>_TC</code> total citations value)</td>
 </tr>
 <tr class="odd">
-<td>topAUINbyCit</td>
-<td>List of top internal authors by total citations</td>
+<td><code>topAUINbyCit_norm_byYear</code></td>
+<td>Most cited internal authors by normalized citations per year***</td>
 </tr>
 <tr class="even">
-<td>topAUINbyCit_TC</td>
-<td>Total citations associated with internal authors in <code>topAUINbyCit</code></td>
-</tr>
-<tr class="odd">
-<td>topAUINbyCit_norm_byYear</td>
-<td>List of top internal authors by normalized citations per year***</td>
-</tr>
-<tr class="even">
-<td>topAUINbyCit_TC_norm_byYear</td>
-<td>Normalized citations associated with internal authors in <code>topAUINbyCit_norm_byYear</code></td>
+<td><code>topAUINbyCit_TC_norm_byYear</code></td>
+<td>Normalized citations associated with most cited internal authors in <code>topAUINbyCit_norm_byYear</code></td>
 </tr>
 </tbody>
 </table>
@@ -500,56 +480,64 @@ It includes hierarchical concept levels (from general disciplines to specific bi
 </thead>
 <tbody>
 <tr class="odd">
-<td>topConcept_L0</td>
-<td>Top level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY)</td>
+<td><code>topConcept_L0</code></td>
+<td>Most frequent level 0 concepts (general disciplines, e.g., MEDICINE, BIOLOGY)</td>
 </tr>
 <tr class="even">
-<td>topFreq_L0</td>
+<td><code>topFreq_L0</code></td>
 <td>Frequencies associated with top level 0 concepts</td>
 </tr>
 <tr class="odd">
-<td>topConcept_L1</td>
-<td>Top level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY)</td>
+<td><code>topConcept_L1</code></td>
+<td>Most frequent level 1 concepts (subdisciplines or specializations, e.g., CARDIOLOGY, SURGERY)</td>
 </tr>
 <tr class="even">
-<td>topFreq_L1</td>
+<td><code>topFreq_L1</code></td>
 <td>Frequencies associated with top level 1 concepts</td>
 </tr>
 <tr class="odd">
-<td>topConcept_L2</td>
-<td>Top level 2 concepts (more specific topics)</td>
+<td><code>topConcept_L2</code></td>
+<td>Most frequent level 2 concepts (more specific topics)</td>
 </tr>
 <tr class="even">
-<td>topFreq_L2</td>
+<td><code>topFreq_L2</code></td>
 <td>Frequencies associated with top level 2 concepts</td>
 </tr>
 <tr class="odd">
-<td>topConcept_L3</td>
-<td>Top level 3 concepts (more detailed, e.g., related to diseases or methods)</td>
+<td><code>topConcept_L3</code></td>
+<td>Most frequent level 3 concepts (more detailed, e.g., related to diseases or methods)</td>
 </tr>
 <tr class="even">
-<td>topFreq_L3</td>
+<td><code>topFreq_L3</code></td>
 <td>Frequencies associated with top level 3 concepts</td>
 </tr>
 <tr class="odd">
-<td>topConcept_L4</td>
-<td>Top level 4 concepts (highest specificity, e.g., biological entities, anatomical structures)</td>
+<td><code>topConcept_L4</code></td>
+<td>Most frequent level 4 concepts (highest specificity, e.g., biological entities, anatomical structures)</td>
 </tr>
 <tr class="even">
-<td>topFreq_L4</td>
+<td><code>topFreq_L4</code></td>
 <td>Frequencies associated with top level 4 concepts</td>
 </tr>
 <tr class="odd">
-<td>topMESH</td>
-<td>List of main MeSH terms associated with the articles</td>
+<td><code>topMESH</code></td>
+<td>Most frequent MeSH terms associated with the articles (names; <code>_n</code> frequency)</td>
 </tr>
 <tr class="even">
-<td>topMESH_n</td>
-<td>Frequencies of the top MeSH terms</td>
+<td><code>topprimary_topic.display_name</code></td>
+<td>Most frequent primary topics (names; <code>_n</code> frequency)</td>
 </tr>
 <tr class="odd">
-<td>topprimary_topic.display_name</td>
-<td>Top primary topics</td>
+<td><code>topDE</code></td>
+<td>Most frequent authors’ keywords (names; <code>_n</code> frequency)</td>
+</tr>
+<tr class="even">
+<td><code>topTI_TM</code></td>
+<td>Most frequent bigrams extracted from titles (names; <code>_n</code> frequency)</td>
+</tr>
+<tr class="odd">
+<td><code>topAB_TM</code></td>
+<td>Most frequent bigrams extracted from abstracts (names; <code>_n</code> frequency)</td>
 </tr>
 </tbody>
 </table>
@@ -572,95 +560,439 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 </thead>
 <tbody>
 <tr class="odd">
-<td>nDoc_wALTM</td>
+<td><code>nDoc_wALTM</code></td>
 <td>Number of articles in the year with at least one Altmetric Score (Altmetric Score &gt; 0)</td>
 </tr>
 <tr class="even">
-<td>percDoc_wALTM</td>
+<td><code>percDoc_wALTM</code></td>
 <td>Percentage of articles with Altmetric Score &gt; 0 out of total articles published</td>
 </tr>
 <tr class="odd">
-<td>medianAltmetricScore</td>
+<td><code>medianAltmetricScore</code></td>
 <td>Altmetric Score value, an aggregated indicator of online attention (median)</td>
 </tr>
+</tbody>
+</table>
+<p><strong><em>Indicators measured in the top 25th percentile of the Altmetric Score distribution*</em></strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><code>altmetric_score</code></td>
+<td>Altmetric Score value (mean, min, and max)</td>
+</tr>
 <tr class="even">
-<td>cited_by_accounts_count</td>
+<td><code>cited_by_accounts_count</code></td>
 <td>Number of unique accounts mentioning the article (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_fbwalls_count</td>
+<td><code>cited_by_fbwalls_count</code></td>
 <td>Number of Facebook wall mentions (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_feeds_count</td>
+<td><code>cited_by_feeds_count</code></td>
 <td>Number of mentions in RSS feeds and blogs (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_gplus_count</td>
+<td><code>cited_by_gplus_count</code></td>
 <td>Number of mentions on Google+ (historical only; mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_msm_count</td>
+<td><code>cited_by_msm_count</code></td>
 <td>Number of mentions in mainstream media (newspapers, magazines, etc.) (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_patents_count</td>
+<td><code>cited_by_patents_count</code></td>
 <td>Number of mentions in patents (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_peer_review_sites_count</td>
+<td><code>cited_by_peer_review_sites_count</code></td>
 <td>Number of mentions on peer review sites (e.g., PubPeer) (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_policies_count</td>
+<td><code>cited_by_policies_count</code></td>
 <td>Number of citations in policy documents (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_posts_count</td>
+<td><code>cited_by_posts_count</code></td>
 <td>Total mentions in posts (including blogs, forums, etc.) (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_rdts_count</td>
+<td><code>cited_by_rdts_count</code></td>
 <td>Number of mentions in Reddit threads (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_rh_count</td>
+<td><code>cited_by_rh_count</code></td>
 <td>Number of mentions in Research Highlights (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_tweeters_count</td>
+<td><code>cited_by_tweeters_count</code></td>
 <td>Number of Twitter/X users who mentioned the article (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cited_by_videos_count</td>
+<td><code>cited_by_videos_count</code></td>
 <td>Number of mentions in video content (e.g., YouTube) (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cited_by_wikipedia_count</td>
+<td><code>cited_by_wikipedia_count</code></td>
 <td>Number of citations on Wikipedia (mean, min, and max)</td>
 </tr>
 <tr class="even">
-<td>cohorts.com</td>
+<td><code>cohorts.com</code></td>
 <td>Number of general public users interacting with the article (mean, min, and max)</td>
 </tr>
 <tr class="odd">
-<td>cohorts.doc</td>
+<td><code>cohorts.doc</code></td>
 <td>Number of interactions by professionals (clinicians, operators, policy makers)</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>For all Altmetric <code>cited_by</code> indicators, mean, minimum, and maximum values were calculated based only on the top 25th percentile of the distribution. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.</li>
-</ul>
+<p>* Mean, minimum, and maximum values were calculated for these indicators. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.</p>
 </section>
 <section id="industrial-impact-research-innovation" class="level2">
 <h2 class="anchored" data-anchor-id="industrial-impact-research-innovation">💡 Industrial Impact &amp; Research Innovation</h2>
+<p>This section includes a description of the key indicators measured on patents collected from the Dimensions database. These variables describe yearly statistics on patent status, classification, inventorship, and jurisdiction, along with metadata from original documentation.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>n_patentsDistinct</code></td>
+<td>Number of distinct patents (unique Family ID) per year.</td>
+</tr>
+<tr class="even">
+<td><code>nPatentStatus_</code></td>
+<td>Number of patents by legal status relates to information on the events during the lifetime of a patent application (e.g., Abandoned, Pending, Expired).</td>
+</tr>
+<tr class="odd">
+<td><code>nPatentPubType_Application</code></td>
+<td>Number of patents of type ‘Application’.</td>
+</tr>
+<tr class="even">
+<td><code>nPatentPubType_Grant</code></td>
+<td>Number of patents of type ‘Grant’.</td>
+</tr>
+<tr class="odd">
+<td><code>nPatentPubType_N/A</code></td>
+<td>Number of patents with unspecified publication type.</td>
+</tr>
+<tr class="even">
+<td><code>avg_citations_Patent</code></td>
+<td>Average number of citations received by patents per year.</td>
+</tr>
+<tr class="odd">
+<td><code>avg_Inventors_Patent</code></td>
+<td>Average number of inventors per patent per year.</td>
+</tr>
+<tr class="even">
+<td><code>avg_InstitutesInvolved_Patent</code></td>
+<td>Average number of institutes involved per patent per year.</td>
+</tr>
+<tr class="odd">
+<td><code>nPatent_singleInventor</code></td>
+<td>Number of patents with a single inventor.</td>
+</tr>
+<tr class="even">
+<td><code>n_Patents_CoAff</code></td>
+<td>Number of patents with institutional co-affiliations (institutions involved &gt; 1).</td>
+</tr>
+<tr class="odd">
+<td><code>n_Jurisdiction_distinct</code></td>
+<td>Number of distinct jurisdictions where patents were granted.</td>
+</tr>
+<tr class="even">
+<td><code>nJurisd_</code></td>
+<td>Number of patents granted in one of the Jurisdictions (AU = Australia, US = United States, CH = Switzerland, etc.).</td>
+</tr>
+<tr class="odd">
+<td><code>nPatentKC_</code></td>
+<td>Number of patents by Kind Code (a standardized alphanumeric code used to classify and categorize patents based on their type and purpose) from DOCDB.</td>
+</tr>
+<tr class="even">
+<td><code>top_Inventor names_Patent</code></td>
+<td>Most frequent inventors of the patent (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Original assignee names_Patent</code></td>
+<td>Most frequent organisations that first owned the patent, as they appear in the original document (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_Fields of Research (ANZSRC 2020)_Patent</code></td>
+<td>Most frequent Fields of Research covers all areas of research and emerging areas of study from the Australian and New Zealand Standard Research Classification (ANZSRC) (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_RCDC Categories_Patent</code></td>
+<td>Most frequent Research, Condition, and Disease Categorization (RCDC) categories used by the NIH (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_HRCS RAC Categories_Patent</code></td>
+<td>Most frequent Health Research Classification System (HRCS) subdivided into the Research Activity Classifications (RAC) (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_IPCR_Patent</code></td>
+<td>Most frequent ICRP Cancer Types (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_CPC_Patent</code></td>
+<td>Most frequent Cooperative Patent Classification Categorization (names; <code>_n</code> frequency).</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="clinical-research-activity" class="level2">
 <h2 class="anchored" data-anchor-id="clinical-research-activity">🧪 Clinical Research Activity</h2>
+<p>This section provides indicators derived from clinical trials and dataset data. These indicators support analysis of research activity using data exported from Dimensions.</p>
+<section id="clinical-trials" class="level3">
+<h3 class="anchored" data-anchor-id="clinical-trials">🔹 Clinical Trials</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>n_clTrial</code></td>
+<td>Number of clinical trials started in the given year.</td>
+</tr>
+<tr class="even">
+<td><code>avg_durationYear_clTrial</code></td>
+<td>Average duration of clinical trials (in years).</td>
+</tr>
+<tr class="odd">
+<td><code>avg_participants_clTrial</code></td>
+<td>Average number of participants per trial.</td>
+</tr>
+<tr class="even">
+<td><code>nClTrial_w_AltmScore</code></td>
+<td>Number of trials with an Altmetric score.</td>
+</tr>
+<tr class="odd">
+<td><code>avg_sponsor_clTrial</code></td>
+<td>Average number of sponsors/collaborators per trial.</td>
+</tr>
+<tr class="even">
+<td><code>nclTrialPhase_</code></td>
+<td>Number of clinical trials by Phase (e.g., Phase 1, Phase 1/2 combined).</td>
+</tr>
+<tr class="odd">
+<td><code>nclTrialPhase_N/A</code></td>
+<td>Trials with no phase declared. N/A (not applicable) typically indicates a single-arm trial.</td>
+</tr>
+<tr class="even">
+<td><code>nclTrialPhase_Post Authorisation Studies</code></td>
+<td>Number of post-authorisation studies.</td>
+</tr>
+<tr class="odd">
+<td><code>nclTrial_StudyType_</code></td>
+<td>Number of clinical trials by study type (e.g., interventional, observational).</td>
+</tr>
+<tr class="even">
+<td><code>nclTrial_Gender_</code></td>
+<td>Number of clinical trials by gender subjects included (All, Male, Female).</td>
+</tr>
+<tr class="odd">
+<td><code>nclTrial_Registry_ClinicalTrials.gov</code></td>
+<td>Number of trials registered in the ClinicalTrials.gov registry.</td>
+</tr>
+<tr class="even">
+<td><code>top_funder_country</code></td>
+<td>Most frequent funder countries (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Fields of Research (ANZSRC 2020)_clTrial</code></td>
+<td>Most frequent fields of research (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_RCDC Categories_clTrial</code></td>
+<td>Most frequent RCDC categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_HRCS HC Categories_clTrial</code></td>
+<td>Most frequent HRCS health categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_HRCS RAC Categories_clTrial</code></td>
+<td>Most frequent HRCS research activity categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Cancer Types_clTrial</code></td>
+<td>Most frequent cancer types (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_CSO Categories_clTrial</code></td>
+<td>Most frequent CSO categories (names, <code>_n</code>: frequency).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="datasets" class="level3">
+<h3 class="anchored" data-anchor-id="datasets">🔹 Datasets</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>n_dataset</code></td>
+<td>Number of of free-available datasets published in the year.</td>
+</tr>
+<tr class="even">
+<td><code>top_Repository_Dataset</code></td>
+<td>Most frequent dataset repositories (names, <code>_n</code>: frequency)</td>
+</tr>
+<tr class="odd">
+<td><code>top_Fields of Research (ANZSRC 2020)_Dataset</code></td>
+<td>Most frequent fields of research (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_RCDC Categories_Dataset</code></td>
+<td>Most frequent RCDC categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_HRCS HC Categories_Dataset</code></td>
+<td>Most frequent HRCS health categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_HRCS RAC Categories_Dataset</code></td>
+<td>Most frequent HRCS research activity categories (names, <code>_n</code>: frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Health Research Areas_Dataset</code></td>
+<td>Most frequent health research areas (names, <code>_n</code>: frequency)</td>
+</tr>
+<tr class="even">
+<td><code>top_Broad Research Areas_Dataset</code></td>
+<td>Most frequent broad research areas (names, <code>_n</code>: frequency)</td>
+</tr>
+<tr class="odd">
+<td><code>top_Cancer Types_Dataset</code></td>
+<td>Most frequent cancer types addressed in datasets (names, <code>_n</code>: frequency)</td>
+</tr>
+<tr class="even">
+<td><code>top_Sustainable Development Goals_Dataset</code></td>
+<td>Most frequently addressed Sustainable Development Goals (names, <code>_n</code>: frequencies)</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="funding-and-grants" class="level2">
 <h2 class="anchored" data-anchor-id="funding-and-grants">💶 Funding and Grants</h2>
+<p>This section presents indicators related to competitive funding obtained by Italian AHSCs, covering financial aspects, international collaborations, outputs, and key actors involved in funded research projects.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>avg_funding_EUR</code></td>
+<td>Average total funding per grant (in EUR).</td>
+</tr>
+<tr class="even">
+<td><code>avg_funding_EUR_perOrganization</code></td>
+<td>Average funding per research organization involved in a grant (in EUR).</td>
+</tr>
+<tr class="odd">
+<td><code>avg_durationYear_grant</code></td>
+<td>Average duration of grants (in years).</td>
+</tr>
+<tr class="even">
+<td><code>avg_Organization_per_grant</code></td>
+<td>Average number of research organizations involved per grant.</td>
+</tr>
+<tr class="odd">
+<td><code>avg_countries_per_grant</code></td>
+<td>Average number of distinct countries involved per grant.</td>
+</tr>
+<tr class="even">
+<td><code>perc_grant_internationalColl</code></td>
+<td>Proportion of grants with international collaboration.</td>
+</tr>
+<tr class="odd">
+<td><code>avg_ResultingPublications_per_grant</code></td>
+<td>Average number of resulting publications per grant.</td>
+</tr>
+<tr class="even">
+<td><code>top_Research Organization - standardized_Grants</code></td>
+<td>Most frequent research organizations (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Funder_Grants</code></td>
+<td>Most frequent funding bodies (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_Funder Group_Grants</code></td>
+<td>Most frequent funder groups (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Program_Grants</code></td>
+<td>Most frequent funding programs (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_Fields of Research (ANZSRC 2020)_Grants</code></td>
+<td>Most frequent research fields based on ANZSRC 2020 (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_RCDC Categories_Grants</code></td>
+<td>Most RCDC categories (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_HRCS HC Categories_Grants</code></td>
+<td>Most frequent HRCS Health Categories (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_HRCS RAC Categories_Grants</code></td>
+<td>Most frequent HRCS Research Activities Categories (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_Cancer Types_Grants</code></td>
+<td>Most frequent studied cancer types (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_CSO Categories_Grants</code></td>
+<td>Most frequent Common Scientific Outline (CSO) categories (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="even">
+<td><code>top_Units of Assessment_Grants</code></td>
+<td>Most frequent Units of Assessment (names; <code>_n</code> frequency).</td>
+</tr>
+<tr class="odd">
+<td><code>top_Sustainable Development Goals_Grants</code></td>
+<td>Most frequently addressed Sustainable Development Goals (names; <code>_n</code> frequency).</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -748,8 +1080,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -860,7 +1190,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
