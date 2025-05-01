@@ -8,7 +8,7 @@ Below you can download the `.csv` file for each Italian AHSC.\
 Each file contains key performance indicators extracted from OpenAlex, Dimensions, and Altmetric data.
 
 | AHC | AHC (short name) | Data |
-|--------------------------|----------------------------------|------------------------|
+|----------------------------|----------------|----------------------------|
 | AZIENDA OSPEDALIERA DI PERUGIA | AOU_PERUGIA | <a href="ahc_indicators_csv/AOU_PERUGIA.csv" download>Download</a> |
 | AZIENDA OSPEDALIERA UNIVERSITA' PADOVA | AOU_PADOVA | <a href="ahc_indicators_csv/AOU_PADOVA.csv" download>Download</a> |
 | AZIENDA OSPEDALIERA UNIVERSITARIA INTEGRATA SSN LUIGI VANVITELLI | AOUSSN_VANVITELLI | <a href="ahc_indicators_csv/AOUSSN_VANVITELLI.csv" download>Download</a> |

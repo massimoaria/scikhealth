@@ -235,8 +235,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This section provides detailed metadata documentation for the variables used in the SciK-Health project datasets. Each block corresponds to a thematic group of indicators derived from OpenAlex and other integrated sources.<br>
-The indicators are designed to support reproducible and comparative research on Italian AHSCs. They are measured by <code>AHC</code> (the short name of the hospital/university institution) and <code>PY</code> (Publication Year)</p>
+<p>This section provides detailed metadata documentation for the variables used in the SciK-Health project datasets. Each block corresponds to a thematic group of indicators derived from OpenAlex and other integrated sources. The indicators are designed to support reproducible and comparative research on Italian AHSCs. They are measured by <code>AHC</code> (the short name of the hospital/university institution) and <code>PY</code> (Publication Year).</p>
 <hr>
 </section>
 <section id="bibliometric-dimension" class="level2">
@@ -247,8 +246,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <h3 class="anchored" data-anchor-id="productivity">🔹 Productivity</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 27%">
+<col style="width: 73%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -300,8 +299,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <h3 class="anchored" data-anchor-id="impact">🔹 Impact</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 21%">
+<col style="width: 78%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -364,8 +363,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 <h3 class="anchored" data-anchor-id="collaboration">🔹 Collaboration</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 66%">
+<col style="width: 22%">
+<col style="width: 77%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -391,8 +390,8 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 They provide insights into the presence of high-performing individuals, institutional equity, and authorship leadership roles.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 24%">
+<col style="width: 75%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -469,8 +468,8 @@ They provide insights into the presence of high-performing individuals, institut
 It includes hierarchical concept levels (from general disciplines to specific biomedical entities), MeSH terms, authors’ keywords, and text-mined bigrams from titles and abstracts.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 24%">
+<col style="width: 75%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -549,8 +548,8 @@ It includes hierarchical concept levels (from general disciplines to specific bi
 Metrics are collected via the Altmetric API and provide aggregated and disaggregated views of attention across platforms such as social media, blogs, news outlets, and policy documents.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 16%">
+<col style="width: 83%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -567,82 +566,78 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <td><code>percDoc_wALTM</code></td>
 <td>Percentage of articles with Altmetric Score &gt; 0 out of total articles published</td>
 </tr>
-<tr class="odd">
-<td><code>medianAltmetricScore</code></td>
-<td>Altmetric Score value, an aggregated indicator of online attention (median)</td>
-</tr>
 </tbody>
 </table>
-<p><strong><em>Indicators measured in the top 25th percentile of the Altmetric Score distribution*</em></strong>:</p>
+<p><strong><em>The 75th percentile (top 25%) was computed for the following indicators*</em></strong>:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 31%">
+<col style="width: 68%">
 </colgroup>
 <tbody>
 <tr class="odd">
 <td><code>altmetric_score</code></td>
-<td>Altmetric Score value (mean, min, and max)</td>
+<td>Altmetric Score value</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_accounts_count</code></td>
-<td>Number of unique accounts mentioning the article (mean, min, and max)</td>
+<td>Number of unique accounts mentioning the article</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_fbwalls_count</code></td>
-<td>Number of Facebook wall mentions (mean, min, and max)</td>
+<td>Number of Facebook wall mentions</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_feeds_count</code></td>
-<td>Number of mentions in RSS feeds and blogs (mean, min, and max)</td>
+<td>Number of mentions in RSS feeds and blogs</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_gplus_count</code></td>
-<td>Number of mentions on Google+ (historical only; mean, min, and max)</td>
+<td>Number of mentions on Google+</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_msm_count</code></td>
-<td>Number of mentions in mainstream media (newspapers, magazines, etc.) (mean, min, and max)</td>
+<td>Number of mentions in mainstream media (newspapers, magazines, etc.)</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_patents_count</code></td>
-<td>Number of mentions in patents (mean, min, and max)</td>
+<td>Number of mentions in patents</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_peer_review_sites_count</code></td>
-<td>Number of mentions on peer review sites (e.g., PubPeer) (mean, min, and max)</td>
+<td>Number of mentions on peer review sites (e.g., PubPeer)</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_policies_count</code></td>
-<td>Number of citations in policy documents (mean, min, and max)</td>
+<td>Number of citations in policy documents</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_posts_count</code></td>
-<td>Total mentions in posts (including blogs, forums, etc.) (mean, min, and max)</td>
+<td>Total mentions in posts (including blogs, forums, etc.)</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_rdts_count</code></td>
-<td>Number of mentions in Reddit threads (mean, min, and max)</td>
+<td>Number of mentions in Reddit threads</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_rh_count</code></td>
-<td>Number of mentions in Research Highlights (mean, min, and max)</td>
+<td>Number of mentions in Research Highlights</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_tweeters_count</code></td>
-<td>Number of Twitter/X users who mentioned the article (mean, min, and max)</td>
+<td>Number of Twitter/X users who mentioned the article</td>
 </tr>
 <tr class="even">
 <td><code>cited_by_videos_count</code></td>
-<td>Number of mentions in video content (e.g., YouTube) (mean, min, and max)</td>
+<td>Number of mentions in video content (e.g., YouTube)</td>
 </tr>
 <tr class="odd">
 <td><code>cited_by_wikipedia_count</code></td>
-<td>Number of citations on Wikipedia (mean, min, and max)</td>
+<td>Number of citations on Wikipedia</td>
 </tr>
 <tr class="even">
 <td><code>cohorts.com</code></td>
-<td>Number of general public users interacting with the article (mean, min, and max)</td>
+<td>Number of general public users interacting with the article</td>
 </tr>
 <tr class="odd">
 <td><code>cohorts.doc</code></td>
@@ -650,15 +645,15 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 </tr>
 </tbody>
 </table>
-<p>* Mean, minimum, and maximum values were calculated for these indicators. This approach was adopted because a large proportion of publications either lack an Altmetric score or report zero activity across most altmetric sources, which would bias overall statistics.</p>
+<p>* For each Altmetric indicator, the 75th percentile (top 25% - <code>_thirdQu</code>) was calculated. The focus was placed on the 75th percentile to better capture significant engagement levels. This choice was made because a large proportion of publications lack Altmetric data or report zero activity across most sources, which could bias the overall statistics.</p>
 </section>
 <section id="industrial-impact-research-innovation" class="level2">
 <h2 class="anchored" data-anchor-id="industrial-impact-research-innovation">💡 Industrial Impact &amp; Research Innovation</h2>
 <p>This section includes a description of the key indicators measured on patents collected from the Dimensions database. These variables describe yearly statistics on patent status, classification, inventorship, and jurisdiction, along with metadata from original documentation.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 19%">
+<col style="width: 80%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -696,54 +691,58 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <td>Average number of inventors per patent per year.</td>
 </tr>
 <tr class="even">
+<td><code>inventor_per_AUIN_100</code></td>
+<td>Average number of inventors listed in patents per 100 internal authors (AUIN).</td>
+</tr>
+<tr class="odd">
 <td><code>avg_InstitutesInvolved_Patent</code></td>
 <td>Average number of institutes involved per patent per year.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>nPatent_singleInventor</code></td>
 <td>Number of patents with a single inventor.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>n_Patents_CoAff</code></td>
 <td>Number of patents with institutional co-affiliations (institutions involved &gt; 1).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>n_Jurisdiction_distinct</code></td>
 <td>Number of distinct jurisdictions where patents were granted.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>nJurisd_</code></td>
 <td>Number of patents granted in one of the Jurisdictions (AU = Australia, US = United States, CH = Switzerland, etc.).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>nPatentKC_</code></td>
 <td>Number of patents by Kind Code (a standardized alphanumeric code used to classify and categorize patents based on their type and purpose) from DOCDB.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Inventor names_Patent</code></td>
 <td>Most frequent inventors of the patent (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_Original assignee names_Patent</code></td>
 <td>Most frequent organisations that first owned the patent, as they appear in the original document (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Fields of Research (ANZSRC 2020)_Patent</code></td>
 <td>Most frequent Fields of Research covers all areas of research and emerging areas of study from the Australian and New Zealand Standard Research Classification (ANZSRC) (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_RCDC Categories_Patent</code></td>
 <td>Most frequent Research, Condition, and Disease Categorization (RCDC) categories used by the NIH (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_HRCS RAC Categories_Patent</code></td>
 <td>Most frequent Health Research Classification System (HRCS) subdivided into the Research Activity Classifications (RAC) (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_IPCR_Patent</code></td>
 <td>Most frequent ICRP Cancer Types (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_CPC_Patent</code></td>
 <td>Most frequent Cooperative Patent Classification Categorization (names; <code>_n</code> frequency).</td>
 </tr>
@@ -757,8 +756,8 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <h3 class="anchored" data-anchor-id="clinical-trials">🔹 Clinical Trials</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 49%">
+<col style="width: 32%">
+<col style="width: 67%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -780,8 +779,16 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <td>Average number of participants per trial.</td>
 </tr>
 <tr class="even">
+<td><code>clTrial_perAUIN_100</code></td>
+<td>Average number of clinical trials per 100 internal authors (AUIN)</td>
+</tr>
+<tr class="odd">
 <td><code>nClTrial_w_AltmScore</code></td>
 <td>Number of trials with an Altmetric score.</td>
+</tr>
+<tr class="even">
+<td><code>cl_AltmS_rel</code></td>
+<td>Percentage of clinical trials with an Altmetric score among all clinical trials started in the year.</td>
 </tr>
 <tr class="odd">
 <td><code>avg_sponsor_clTrial</code></td>
@@ -846,8 +853,8 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <h3 class="anchored" data-anchor-id="datasets">🔹 Datasets</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 51%">
-<col style="width: 48%">
+<col style="width: 36%">
+<col style="width: 63%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -905,8 +912,8 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 <p>This section presents indicators related to competitive funding obtained by Italian AHSCs, covering financial aspects, international collaborations, outputs, and key actors involved in funded research projects.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 51%">
-<col style="width: 48%">
+<col style="width: 26%">
+<col style="width: 73%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -916,78 +923,90 @@ Metrics are collected via the Altmetric API and provide aggregated and disaggreg
 </thead>
 <tbody>
 <tr class="odd">
+<td><code>n_grants</code></td>
+<td>Number of grants.</td>
+</tr>
+<tr class="even">
 <td><code>avg_funding_EUR</code></td>
 <td>Average total funding per grant (in EUR).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>avg_funding_EUR_perOrganization</code></td>
 <td>Average funding per research organization involved in a grant (in EUR).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>avg_durationYear_grant</code></td>
 <td>Average duration of grants (in years).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>avg_Organization_per_grant</code></td>
 <td>Average number of research organizations involved per grant.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>avg_countries_per_grant</code></td>
 <td>Average number of distinct countries involved per grant.</td>
 </tr>
-<tr class="even">
-<td><code>perc_grant_internationalColl</code></td>
-<td>Proportion of grants with international collaboration.</td>
-</tr>
 <tr class="odd">
+<td><code>perc_grant_internationalColl</code></td>
+<td>Percentage of grants with international collaboration.</td>
+</tr>
+<tr class="even">
 <td><code>avg_ResultingPublications_per_grant</code></td>
 <td>Average number of resulting publications per grant.</td>
 </tr>
+<tr class="odd">
+<td><code>totFundingOrgbyActivedGrant</code></td>
+<td>Total amount of funding (in EUR) available to the institution in a given year, based on grants active in that year.</td>
+</tr>
 <tr class="even">
+<td><code>avgPubByActivedFundingGrant_1000</code></td>
+<td>Number of publications produced per 1000 EUR of funding available to the institution in a given year, based on grants active in that year.</td>
+</tr>
+<tr class="odd">
 <td><code>top_Research Organization - standardized_Grants</code></td>
 <td>Most frequent research organizations (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_Funder_Grants</code></td>
 <td>Most frequent funding bodies (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Funder Group_Grants</code></td>
 <td>Most frequent funder groups (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_Program_Grants</code></td>
 <td>Most frequent funding programs (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Fields of Research (ANZSRC 2020)_Grants</code></td>
 <td>Most frequent research fields based on ANZSRC 2020 (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_RCDC Categories_Grants</code></td>
 <td>Most RCDC categories (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_HRCS HC Categories_Grants</code></td>
 <td>Most frequent HRCS Health Categories (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_HRCS RAC Categories_Grants</code></td>
 <td>Most frequent HRCS Research Activities Categories (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Cancer Types_Grants</code></td>
 <td>Most frequent studied cancer types (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_CSO Categories_Grants</code></td>
 <td>Most frequent Common Scientific Outline (CSO) categories (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>top_Units of Assessment_Grants</code></td>
 <td>Most frequent Units of Assessment (names; <code>_n</code> frequency).</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>top_Sustainable Development Goals_Grants</code></td>
 <td>Most frequently addressed Sustainable Development Goals (names; <code>_n</code> frequency).</td>
 </tr>
