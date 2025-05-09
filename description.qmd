@@ -95,10 +95,13 @@ They are primarily computed using publication metadata from OpenAlex and enriche
 | `nTotDoc` | Total number of documents/articles published in the year |
 | `meanAUPerArt` | Average number of authors per article |
 | `meanAU_IN_PerArt` | Average number of internal authors (`AU_IN`) per article |
-| `meanArtAU_IN` | Average number of articles per internal author |
-| `meanArtPer_AU_IN_FIRST` | Average number of articles per internal author as first author |
-| `meanArtPer_AU_IN_LAST` | Average number of articles per internal author as last author |
-| `meanArtPer_AU_IN_CORR` | Average number of articles per internal author as corresponding author |
+| `meanArtWith_AU_IN_FIRST` | Average number of articles per internal author as first author |
+| `meanArtWith_AU_IN_LAST` | Average number of articles per internal author as last author |
+| `meanArtWith_AU_IN_CORR` | Average number of articles per internal author as corresponding author |
+| `mean_articles_per_internal_author` | Average number of authored articles per internal author |
+| `mean_articles_per_internal_first_author` | Average number of first-authored articles per internal author |
+| `mean_articles_per_internal_last_author` | Average number of last-authored articles per internal author |
+| `mean_articles_per_internal_corresponding_author` | Average number of corresponding-authored articles per internal author |
 | `ArtOA` | Percentage of Open Access articles |
 | `singleAuArt` | Number of single-author articles |
 
