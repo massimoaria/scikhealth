@@ -9,6 +9,7 @@ The following references represent key scientific contributions that frame and s
 They include international studies on Academic Health Science Centres, their organizational models, policy evolution, and the role of research in shaping healthcare systems.
 
 ------------------------------------------------------------------------
+
 -   Aria, M., & Cuccurullo, C. (2017). *bibliometrix: An R-tool for comprehensive science mapping analysis*. *Journal of Informetrics*.\
 
 -   Wartman, S. A. (2015). *The academic health center in a disrupted world*. *Pharos Alpha Omega Alpha Honor Medical Society*, 78(2), 2–9.\
@@ -68,5 +69,3 @@ They include international studies on Academic Health Science Centres, their org
 -   Ferrè, F., Cuccurullo, C., & Lega, F. (2012). *The challenge and the future of health care turnaround plans: evidence from the Italian experience*. *Health Policy*.\
 
 -   Nuti, S., Ruggieri, T. G., & Podetti, S. (2016). *Do university hospitals perform better than general hospitals? A comparative analysis among Italian regions*. *BMJ Open*.\
-
-

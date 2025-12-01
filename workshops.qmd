@@ -1,23 +1,36 @@
 ---
 format: html
 ---
-## 🧪 Workshops
 
-Seminars, training sessions, and dissemination activities organized within the framework of the **SciK-Health** project. These events aim to promote knowledge sharing among the research units and with external stakeholders.
+## 📑 Workshops
 
-- **Workshop on research performance and impact** — *June 10, 2025*
+Seminars and training sessions organized within the framework of the **SciK-Health** project. These events aim to promote knowledge sharing among the research units and with external stakeholders.
 
----
+Next workshops:
+The upcoming  workshops are scheduled for February 26, 2025.
 
-## 🤝 Team Meetings
+------------------------------------------------------------------------
 
-Internal coordination meetings held among members of the SciK-Health research team. These moments serve to align the progress of activities, plan next steps, and ensure coherence across units and work packages.
+### Workshop: SciK-Health – Scientific Knowledge in Health
 
-- **October 17, 2023**  
-  *Agenda*: Organization of project activities
+**Date:** May 28, 2025\
+**Location:** Department of Economics and Statistics (DiSES), University of Naples Federico II
 
-- **March 20, 2024**  
-  *Agenda*: Shared review of available data types and reflection on possible advances; Project reporting
+This workshop marks a key milestone in the SciK-Health project, presenting the project website, data repository structure, and analytical framework. The event introduces the main performance indicators developed to evaluate Italian public Academic Health Science Centres across multiple dimensions: bibliometric impact, social and digital engagement, industrial innovation, clinical research activity, and funding capacity.
 
-- **April 4, 2024**  
-  *Agenda*: Shared discussion of measured indicators across the five performance dimensions (📚 Bibliometric, 🌐 Social & Digital, 🧬 Industrial impact & Research innovation, 🧪 Clinical Research, 💶 Funding & grant), planning of upcoming conferences, and updates on the development of the dashboard and R-daisy tool
+The workshop provides an overview of the data collection strategy, the structure of the relational database, and the preliminary design of the interactive dashboard. It also discusses dissemination strategies and outreach activities to maximize the project's impact on research policy and decision-making.
+
+[View workshop program](www/locandinaWorkshop_PRIN_May2025.pdf){target="_blank"}
+
+------------------------------------------------------------------------
+
+<!-- ### Workshop: Research Performance and Social Impact of Italian Public Academic Health Science Centers -->
+
+<!-- **Date:** June 10, 2025\ -->
+<!-- **Location:** Department of Economics and Statistics (DiSES), University of Naples Federico II -->
+
+<!-- This advanced workshop examines the relationship between research performance and healthcare outcomes in Italian public Academic Health Science Centres. It explores whether academic research drives healthcare quality, patient choice, and case-mix complexity, using bibliometric and scientometric methods. -->
+
+<!-- The event includes a session on bibliographic databases for systematic literature reviews—from classic to AI-powered solutions—delivered by Prof. Nicola De Bellis (University of Modena & Reggio Emilia). The workshop also presents methodologies to assess the scientific, social, and industrial impact of AHC activities, along with strategies for research dissemination and public engagement. -->
+
+<!-- [View workshop program](www/locandinaWorkshop_PNRR_June2025.pdf){target="_blank"} -->

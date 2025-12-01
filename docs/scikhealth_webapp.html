@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SciK-Health App – SciK-Health</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- banner.html -->
+<style>
+  .scik-banner {
+    background-color: #3A64AA;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .scik-banner img {
+    height: 100px; /* ← regola qui la dimensione dell'immagine */
+    width: auto;
+    display: inline-block;
+  }
+</style>
+
+</head><body class="nav-fixed"><div class="scik-banner">
+  <img src="www/BannerPNRRFII.png" alt="SciK-Health Banner">
+</div>
+
+
+<link rel="stylesheet" href="styles.css">
+
+
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SciK-Health</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./theProject.html"> 
+<span class="menu-text">The Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Research Team</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-metrics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research Metrics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-metrics">    
+        <li>
+    <a class="dropdown-item" href="./sources.html">
+ <span class="dropdown-text">Sources</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./performance.html">
+ <span class="dropdown-text">Performance Indicators</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rdaisy.html">
+ <span class="dropdown-text">R-daisy</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-repository" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data repository</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-repository">    
+        <li>
+    <a class="dropdown-item" href="./description.html">
+ <span class="dropdown-text">Data Description</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./datastructure.html">
+ <span class="dropdown-text">Data Structure</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data.html">
+ <span class="dropdown-text">AHC data</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./scikhealth_webapp.html" aria-current="page"> 
+<span class="menu-text">SciK-Health App</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-references--products" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">References &amp; Products</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-references--products">    
+        <li>
+    <a class="dropdown-item" href="./references.html">
+ <span class="dropdown-text">Project References</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conferences.html">
+ <span class="dropdown-text">Conferences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./workshops.html">
+ <span class="dropdown-text">Workshops</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./organizedSessions.html">
+ <span class="dropdown-text">Organized Conference Sessions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./teamMeetings.html">
+ <span class="dropdown-text">Team Meetings</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#scik-health-exploring-diseases-experts-and-research-centres-with-one-question" id="toc-scik-health-exploring-diseases-experts-and-research-centres-with-one-question" class="nav-link active" data-scroll-target="#scik-health-exploring-diseases-experts-and-research-centres-with-one-question">🌐 SciK-Health: Exploring Diseases, Experts, and Research Centres with One Question</a></li>
+  <li><a href="#the-data-foundation" id="toc-the-data-foundation" class="nav-link" data-scroll-target="#the-data-foundation">📊 The Data Foundation</a>
+  <ul class="collapse">
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  </ul></li>
+  <li><a href="#role-based-access-three-user-perspectives" id="toc-role-based-access-three-user-perspectives" class="nav-link" data-scroll-target="#role-based-access-three-user-perspectives">🎯 Role-Based Access: Three User Perspectives</a>
+  <ul class="collapse">
+  <li><a href="#citizens" id="toc-citizens" class="nav-link" data-scroll-target="#citizens">👥 Citizens</a></li>
+  <li><a href="#managers" id="toc-managers" class="nav-link" data-scroll-target="#managers">👔 Managers</a></li>
+  <li><a href="#funders" id="toc-funders" class="nav-link" data-scroll-target="#funders">💰 Funders</a></li>
+  </ul></li>
+  <li><a href="#key-functionalities" id="toc-key-functionalities" class="nav-link" data-scroll-target="#key-functionalities">🔍 Key Functionalities</a>
+  <ul class="collapse">
+  <li><a href="#multi-dimensional-search" id="toc-multi-dimensional-search" class="nav-link" data-scroll-target="#multi-dimensional-search">Multi-Dimensional Search</a></li>
+  <li><a href="#comprehensive-indicators" id="toc-comprehensive-indicators" class="nav-link" data-scroll-target="#comprehensive-indicators">Comprehensive Indicators</a></li>
+  <li><a href="#interactive-visualizations" id="toc-interactive-visualizations" class="nav-link" data-scroll-target="#interactive-visualizations">Interactive Visualizations</a></li>
+  <li><a href="#data-export" id="toc-data-export" class="nav-link" data-scroll-target="#data-export">Data Export</a></li>
+  </ul></li>
+  <li><a href="#access-and-availability" id="toc-access-and-availability" class="nav-link" data-scroll-target="#access-and-availability">🚀 Access and Availability</a></li>
+  <li><a href="#impact-and-applications" id="toc-impact-and-applications" class="nav-link" data-scroll-target="#impact-and-applications">📈 Impact and Applications</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SciK-Health App</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="scik-health-exploring-diseases-experts-and-research-centres-with-one-question" class="level2">
+<h2 class="anchored" data-anchor-id="scik-health-exploring-diseases-experts-and-research-centres-with-one-question">🌐 SciK-Health: Exploring Diseases, Experts, and Research Centres with One Question</h2>
+<p><strong>SciK-Health</strong> (<em>Scientific Knowledge in Health</em>) is an innovative web application designed to transform the scientific production of Italian Academic Health Science Centres (AHSCs) into actionable knowledge for citizens, healthcare professionals, policymakers, and researchers.</p>
+<p>The application provides intuitive access to a comprehensive database integrating over 25 years of scientific production from 49 Italian public AHSCs, enabling users to explore diseases, identify research experts, and evaluate institutional performance through a unified query interface.</p>
+<hr>
+</section>
+<section id="the-data-foundation" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-foundation">📊 The Data Foundation</h2>
+<p>SciK-Health is built on an integrated data pipeline that combines bibliometric records, clinical trials, patents, grants, datasets, and social impact metrics from multiple authoritative sources:</p>
+<section id="data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources">Data Sources</h3>
+<ul>
+<li><strong>OpenAlex</strong>: Over 220.000 scientific publications (2000–2024)
+<ul>
+<li>Full metadata including titles, abstracts, authors, affiliations, MeSH terms, concepts, and citation networks</li>
+<li>Open Access status and cost information</li>
+<li>Research Organization Registry (ROR) identifiers for institutional disambiguation</li>
+</ul></li>
+<li><strong>Dimensions</strong>: Comprehensive scientometric data
+<ul>
+<li>Clinical trials with participant information, phases, and investigator details</li>
+<li>Research grants with funding amounts and duration</li>
+<li>Patents with jurisdiction, inventor names, and classification codes</li>
+<li>Datasets with repository links and research categories</li>
+</ul></li>
+<li><strong>Altmetric</strong>: Social and digital impact metrics
+<ul>
+<li>Over 74.000 articles with Altmetric Attention Scores</li>
+<li>Mentions across social media, news outlets, policy documents, and Wikipedia</li>
+<li>Reader statistics from Mendeley and CiteULike</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="role-based-access-three-user-perspectives" class="level2">
+<h2 class="anchored" data-anchor-id="role-based-access-three-user-perspectives">🎯 Role-Based Access: Three User Perspectives</h2>
+<p>SciK-Health adopts a role-based design philosophy, offering tailored interfaces and functionalities for three primary user groups:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/accessUsers.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Role-based access system with three distinct user profiles</figcaption>
+</figure>
+</div>
+<section id="citizens" class="level3">
+<h3 class="anchored" data-anchor-id="citizens">👥 Citizens</h3>
+<p><strong>Purpose</strong>: Communication and public value</p>
+<p>For citizens seeking reliable health information, SciK-Health provides:</p>
+<ul>
+<li><strong>Unified Search</strong>: A single query interface to explore diseases, treatments, and research centers across all Italian AHSCs</li>
+<li><strong>Expert Identification</strong>: Find leading researchers by topic, disease, or medical specialty</li>
+<li><strong>Institutional Comparison</strong>: Compare AHSCs based on scientific production, clinical trials, and research impact</li>
+<li><strong>Transparent Metrics</strong>: Access comprehensive statistics on publications, citations, grants, and clinical trials per institution</li>
+<li><strong>Geographic Visualization</strong>: Interactive maps showing AHSC locations and their research profiles</li>
+</ul>
+<p>The citizen interface emphasizes accessibility and health literacy, enabling informed decision-making about healthcare providers and treatment options.</p>
+<p><strong>Unified Search Interface</strong></p>
+<p>The citizen portal provides an intuitive search system with regional filters and concept-based queries. Users can search by disease, treatment, or medical condition, with autocomplete suggestions helping to refine searches across nearly 30,000 indexed concepts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/search.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Citizen search interface with regional filters and concept-based search</figcaption>
+</figure>
+</div>
+<p><strong>Institutional Overview and Statistics</strong></p>
+<p>Once an AHSC is selected, users can access comprehensive statistics organized in four main tabs: Overview, Articles (Articoli), MedStars (top researchers), and Researchers (Ricercatori). The Overview tab provides key performance metrics including total publications, grants, clinical trials, citations, researchers on the topic, and average article age.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/mainInfoStructure.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Institutional overview with comprehensive statistics and geographic location</figcaption>
+</figure>
+</div>
+<p><strong>Detailed Tabs for In-Depth Exploration</strong></p>
+<p>The tabbed interface allows citizens to drill down into specific aspects of research performance:</p>
+<ul>
+<li><strong>Articles Tab</strong>: Browse publications by title, citations, and authors with links to PubMed and OpenAlex</li>
+<li><strong>MedStar Tab</strong>: Discover top-performing researchers ranked by publication volume and citation impact<br>
+</li>
+<li><strong>Researchers Tab</strong>: Search for specific researchers with detailed profiles showing article counts and total citations</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/tabs.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Multi-tab interface for articles, top researchers (MedStars), and complete researcher directory</figcaption>
+</figure>
+</div>
+</section>
+<section id="managers" class="level3">
+<h3 class="anchored" data-anchor-id="managers">👔 Managers</h3>
+<p><strong>Purpose</strong>: Internal resource management</p>
+<p>For academic and healthcare managers, the platform offers:</p>
+<ul>
+<li><strong>Performance Dashboards</strong>: Monitor institutional productivity across five dimensions (bibliometric, social &amp; digital, industrial impact, clinical research, funding &amp; grants)</li>
+<li><strong>Talent Analytics</strong>: Identify top-performing researchers (MedStars) based on publication volume, citation impact, and collaboration patterns</li>
+<li><strong>Temporal Trends</strong>: Track research output evolution over time with dynamic visualizations</li>
+<li><strong>Comparative Benchmarking</strong>: Position your institution relative to peer AHSCs</li>
+<li><strong>Indicator Selection</strong>: Customize dashboards with over 100 performance indicators across publication productivity, impact, collaboration, talent distribution, clinical trials, patents, grants, and altmetrics</li>
+</ul>
+<p>The manager interface supports strategic planning, resource allocation, and evidence-based decision-making at the institutional level.</p>
+<p><strong>Manager Dashboard: Institutional Performance at a Glance</strong></p>
+<p>The manager portal provides a comprehensive view of institutional performance with geographic positioning, detailed statistics (comprehensive and filtered), and temporal trend visualizations. Managers can monitor key metrics including total articles, grants, clinical trials, and track the evolution of top researchers (MedStars) over time.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/manegersAccess.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Manager dashboard with institutional overview, statistics, and MedStar production trends</figcaption>
+</figure>
+</div>
+<p><strong>Customizable Indicator Selection</strong></p>
+<p>Managers can select from over 100 performance indicators organized across the five key dimensions. The interface allows filtering by time period (2015-2024 slider), selecting specific indicator categories (Publication Productivity, Publication Impact, Publication Talent, Patents Data, Clinical Trials Data, Datasets Data, Altmetric Data, Grants Data), and exporting filtered data as CSV for further analysis.</p>
+<p>Each dimension offers detailed sub-indicators. For example: - <strong>Publication Productivity</strong>: Total annual publications, average authors per article, percentage of Open Access articles - <strong>Altmetric Data</strong>: Number of articles with Altmetric scores, percentage with Altmetric &gt; 0, mentions by platform (Facebook, RSS blogs, Google+) - <strong>Patents Data</strong>: Average institutions involved per patent, distinct jurisdictions, number of patents per jurisdiction, Kind Code classifications, top research fields by ANZSRC 2020, CPC categories</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/managersIndicators.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Manager indicator selection interface with expandable categories and time period controls</figcaption>
+</figure>
+</div>
+</section>
+<section id="funders" class="level3">
+<h3 class="anchored" data-anchor-id="funders">💰 Funders</h3>
+<p><strong>Purpose</strong>: Strategic investments</p>
+<p>For funding agencies and policymakers, SciK-Health provides:</p>
+<ul>
+<li><strong>Portfolio Analysis</strong>: Examine funded research across multiple dimensions and time periods</li>
+<li><strong>Impact Assessment</strong>: Evaluate research outputs, citations, and societal engagement resulting from investments</li>
+<li><strong>Innovation Metrics</strong>: Track patent production, technological domains, and knowledge transfer activities</li>
+<li><strong>International Collaboration</strong>: Assess cross-border research partnerships and grant co-funding patterns</li>
+<li><strong>Research Field Mapping</strong>: Identify emerging topics, research gaps, and strategic investment opportunities using ANZSRC, RCDC, HRCS, and CPC classifications</li>
+</ul>
+<p>The funder interface enables data-driven funding decisions and portfolio optimization based on comprehensive performance evidence.</p>
+<p><strong>Funder Interface: Strategic Investment Analysis</strong></p>
+<p>The funder portal provides specialized tools for analyzing research portfolios, innovation outputs, and funding effectiveness. The interface organizes indicators by research dimension with detailed metrics on patents (institutions per patent, jurisdictions, Kind Codes, ANZSRC research fields, CPC classifications) and grants (countries involved, international collaboration percentage, publications per grant, total funding availability, publication efficiency per 1000 EUR).</p>
+<p>Funders can track temporal trends from 2015 to 2024, compare institutions across innovation metrics, and identify emerging research fields through detailed classification schemes (ANZSRC 2020, RCDC Categories, HRCS categories, CPC codes).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/fundersAccess.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Funder interface with patent and grant indicators for strategic investment decisions</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="key-functionalities" class="level2">
+<h2 class="anchored" data-anchor-id="key-functionalities">🔍 Key Functionalities</h2>
+<section id="multi-dimensional-search" class="level3">
+<h3 class="anchored" data-anchor-id="multi-dimensional-search">Multi-Dimensional Search</h3>
+<ul>
+<li><strong>Concept-Based Search</strong>: Query by disease, treatment, medical condition, or research topic using hierarchical concept levels (L0–L4) and MeSH terms</li>
+<li><strong>Author Search</strong>: Find researchers by name with automatic disambiguation and affiliation tracking</li>
+<li><strong>Institution Search</strong>: Browse all 49 Italian public AHSCs with filtering by region, type, and research focus</li>
+<li><strong>Topic Exploration</strong>: Discover research themes through keyword analysis, bigram extraction from titles/abstracts, and network visualization</li>
+</ul>
+</section>
+<section id="comprehensive-indicators" class="level3">
+<h3 class="anchored" data-anchor-id="comprehensive-indicators">Comprehensive Indicators</h3>
+<p>The application computes and displays indicators across five performance dimensions:</p>
+<p><strong>📚 Bibliometric Dimension</strong> - Productivity: Total documents, average authors per article, Open Access percentage - Impact: Average citations, normalized citations (NTC), journal quartiles (Q1–Q4 by SJR), citation trends - Collaboration: International co-authorship, institutional affiliations, average authors per article - Topics: Most frequent concepts (5 hierarchical levels), MeSH terms, primary topics, keywords, title/abstract bigrams - Talent: Gini concentration indices, top authors by volume and impact, fractional credit assignment</p>
+<p><strong>🌐 Social &amp; Digital Impact (Altmetrics)</strong> - Altmetric Attention Score distribution (75th percentile) - Mentions by source: Facebook, Twitter/X, news media, policy documents, Wikipedia, YouTube, patents - Reader statistics: Mendeley, CiteULike - Percentage of publications with social impact (Altmetric Score &gt; 0)</p>
+<p><strong>💡 Industrial Impact &amp; Research Innovation (Patents)</strong> - Number of distinct patents by year - Patent status: Pending, Granted, Expired, Abandoned - Average citations per patent - Inventors per patent and per 100 internal authors - Jurisdictions: Number of countries where patents are registered - Classifications: Kind Codes (DOCDB), Fields of Research (ANZSRC 2020), RCDC Categories, HRCS RAC, IPCR, CPC - Top inventors and original assignees</p>
+<p><strong>🧪 Clinical Research Activity</strong> - Number of clinical trials initiated per year - Average trial duration and participant counts - Trials per 100 internal authors - Distribution by phase (Phase 1, 1/2, 2, 2/3, 3, 4, Post-Authorization, N/A) - Study types: Interventional, Observational - Gender inclusion: All, Male, Female - Registry information: ClinicalTrials.gov - Altmetric coverage of trials - Top funder countries and research classifications</p>
+<p><strong>💶 Funding &amp; Grants</strong> - Number of grants per year - Average funding amounts (EUR) and duration - Funding per organization involved - International collaboration percentage - Publications per grant and per 1000 EUR of active funding - Top funders, programs, research organizations - Research field classifications (ANZSRC 2020, RCDC, HRCS HC/RAC, Cancer Types, CSO, SDGs, Units of Assessment)</p>
+</section>
+<section id="interactive-visualizations" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-visualizations">Interactive Visualizations</h3>
+<p>SciK-Health provides rich visual analytics to support data exploration and comparative analysis across institutions and time periods:</p>
+<ul>
+<li><strong>Time Series Charts</strong>: Visualize trends in publication volume, citations, grants, trials, and patents over 25 years</li>
+<li><strong>Geographic Maps</strong>: Explore AHSC locations with OpenStreetMap and Google Maps integration</li>
+<li><strong>Network Graphs</strong>: Discover collaboration patterns among researchers, institutions, and countries (global collaboration map showing partnerships with Europe, North America, South America, and Australia)</li>
+<li><strong>Word Clouds</strong>: Identify dominant research themes from MeSH terms and keywords</li>
+<li><strong>Comparative Bar Charts</strong>: Benchmark institutions across selected indicators (e.g., article counts by concept/disease area: Immunotherapy, Breast cancer, Colorectal cancer, Clinical endpoints, etc.)</li>
+<li><strong>Heatmaps</strong>: Detect patterns in multi-indicator performance matrices</li>
+</ul>
+<p><strong>Example Visualizations</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="www/somePlots.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption>Multi-panel visualization dashboard showing concept-based article counts (bar chart), annual production trends (line chart), international collaboration map, and MeSH term word cloud</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-export" class="level3">
+<h3 class="anchored" data-anchor-id="data-export">Data Export</h3>
+<ul>
+<li><strong>CSV Downloads</strong>: Export filtered indicator data for external analysis</li>
+<li><strong>Time Period Selection</strong>: Focus on specific years (2015–2024 slider interface)</li>
+<li><strong>Indicator Customization</strong>: Select specific metrics for targeted exports</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="access-and-availability" class="level2">
+<h2 class="anchored" data-anchor-id="access-and-availability">🚀 Access and Availability</h2>
+<p><strong>Public Access (Citizens &amp; Researchers)</strong><br>
+The citizen-facing interface is freely accessible without registration, promoting health literacy and transparent access to scientific knowledge.</p>
+<p><strong>Restricted Access (Managers &amp; Funders)</strong><br>
+The manager and funder dashboards require institutional credentials. Access requests can be submitted through the registration portal, with approval granted to: - AHSC directors and academic managers - Regional health agencies and evaluation bodies - National and international funding organizations - Accredited research evaluation entities</p>
+<hr>
+</section>
+<section id="impact-and-applications" class="level2">
+<h2 class="anchored" data-anchor-id="impact-and-applications">📈 Impact and Applications</h2>
+<p>SciK-Health addresses critical needs across multiple stakeholder groups:</p>
+<p><strong>For Citizens</strong> - Identify specialized centers for specific medical conditions - Find research experts in particular disease areas - Make informed decisions about healthcare providers based on research excellence - Understand institutional strengths in clinical trials and innovation</p>
+<p><strong>For Healthcare Professionals</strong> - Discover collaborators with complementary expertise - Benchmark their institution’s performance - Identify emerging research topics and clinical trial opportunities - Track citation impact and research visibility</p>
+<p><strong>For Institutional Managers</strong> - Monitor research productivity and impact trends - Identify talent gaps and recruitment opportunities - Optimize resource allocation based on performance data - Support strategic planning with evidence-based insights - Prepare accreditation and evaluation reports</p>
+<p><strong>For Policymakers and Funders</strong> - Evaluate return on investment from research funding - Identify high-performing institutions for targeted support - Detect research gaps and strategic investment opportunities - Track innovation outputs (patents, datasets, clinical trials) - Assess societal impact through altmetrics</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

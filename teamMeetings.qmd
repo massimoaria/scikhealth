@@ -1,0 +1,159 @@
+---
+format: html
+---
+
+## 🤝 Team Meetings
+
+Internal coordination meetings held among members of the SciK-Health research team. These moments serve to align the progress of activities, plan next steps, and ensure coherence across units and work packages.
+
+------------------------------------------------------------------------
+
+### October 17, 2023
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Official project kick-off and team introduction
+- Overview of project objectives and expected deliverables
+- Organization of project activities and timeline
+- Distribution of responsibilities across research units (University of Naples Federico II and University of Campania Luigi Vanvitelli)
+- Definition of coordination mechanisms and meeting schedule
+- Initial discussion on data sources (OpenAlex, Dimensions, PubMed, Altmetric)
+
+</details>
+
+------------------------------------------------------------------------
+
+### December 12, 2023
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Progress update on Phase 1: Data Collection
+- Review of data retrieval from OpenAlex and Dimensions databases
+- Discussion on affiliation disambiguation strategies and ROR identifiers
+- Technical implementation of R packages (dimensionsR, pubmedR, openalexR)
+- Planning for data cleaning and normalization procedures
+- Identification of the 49 Italian public Academic Health Science Centres to be included
+- Challenges in institutional matching and proposed solutions
+
+</details>
+
+------------------------------------------------------------------------
+
+### March 20, 2024
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Shared review of available data types across multiple sources
+- Reflection on possible methodological advances for data integration
+- Status update on bibliometric and scientometric metadata collection
+- Discussion on data merging strategies at micro-level (DOI) and macro-level (affiliations)
+- Project reporting: milestones achieved and next steps
+- Preparation of PRISMA-based data cleaning workflow
+
+</details>
+
+------------------------------------------------------------------------
+
+### April 4, 2024
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Shared discussion of measured indicators across the five performance dimensions:
+  - 📚 **Bibliometric dimension** (productivity, impact, collaboration, talent, topics)
+  - 🌐 **Social & Digital dimension** (altmetric scores, online engagement)
+  - 🧬 **Industrial impact & Research innovation** (patents, technological domains)
+  - 🧪 **Clinical Research activity** (clinical trials, phases, participants)
+  - 💶 **Funding & grants** (competitive grants, funding volumes, success rates)
+- Planning of upcoming conference presentations and scientific dissemination
+- Updates on the development of the SciK-Health dashboard interface
+- Progress on the R-daisy synthetic performance indicator tool
+- Discussion on data visualization strategies and user experience design
+
+</details>
+
+------------------------------------------------------------------------
+
+### September 27, 2024
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Review of Phase 2 outputs: conceptual and social knowledge structures
+- Presentation of thematic evolution analysis and strategic diagrams
+- Discussion on co-word analysis results and emerging research themes
+- Review of collaboration networks at macro, meso, and micro levels
+- Planning for Phase 3: Web-app design and implementation
+- Updates on bibliometrix package upgrades for scientometric metadata
+- Preparation of scientific articles and conference submissions
+
+</details>
+
+------------------------------------------------------------------------
+
+### November 20, 2024
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Status update on SciK-Health web application development
+- Review of user interface mockups and dashboard design
+- Discussion on role-based access and functionalities for different user types (citizens, professionals, policymakers)
+- Progress on R-daisy consensus ranking algorithm implementation
+- Planning for the validation phase and focus group organization
+- Preparation of workshop materials for stakeholder engagement
+- Discussion on open-science dissemination strategies (GitHub, open data repositories)
+
+</details>
+
+------------------------------------------------------------------------
+
+### February 20, 2025
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Final review of SciK-Health web application features
+- Preparation for usability testing with target audiences
+- Organization of first focus group with healthcare professionals and citizens
+- Discussion on feedback collection mechanisms
+- Planning for Phase 4 validation activities
+- Updates on scientific publications submitted and accepted
+- Preparation of final project workshop and book presentation
+- Timeline for project closure and final deliverables
+
+</details>
+
+------------------------------------------------------------------------
+
+### May 12, 2025
+
+<details>
+<summary>**View Agenda**</summary>
+
+**Main Topics:**
+
+- Results from usability testing and focus group feedback
+- Final adjustments to SciK-Health and R-daisy tools
+- Preparation of project website and documentation
+- Planning of final workshop with stakeholder roundtable
+- Discussion on project sustainability and future developments
+
+</details>

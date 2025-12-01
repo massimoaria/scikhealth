@@ -2,6 +2,7 @@
 title: "Research Team"
 format: html
 ---
+
 <br>
 
 ## Principal Investigator
@@ -28,7 +29,6 @@ University of Naples Federico II\
 ::::::
 
 ### Research unit: <br>*University of Naples Federico II*
-
 
 :::::: {style="display: flex; align-items: flex-start; gap: 1.5em; flex-wrap: wrap; margin-bottom: 2em;"}
 <!-- Left: Foto del membro -->
@@ -151,7 +151,6 @@ Department of Economics and Statistics\
 ::::::
 
 ### Research unit: <br>*University of Campania Luigi Vanvitelli*
-
 
 :::::: {style="display: flex; align-items: flex-start; gap: 1.5em; flex-wrap: wrap; margin-bottom: 2em;"}
 <!-- Left: Foto del membro -->

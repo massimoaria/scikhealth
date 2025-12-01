@@ -1,0 +1,118 @@
+---
+title: "Organized Conference Sessions"
+format: html
+---
+
+This section presents thematic sessions organized by members of the SciK-Health research team at national and international conferences. These sessions bring together multiple contributions to foster dialogue and knowledge exchange on key topics related to academic health research.
+
+------------------------------------------------------------------------
+
+## Futures of Sustainability\ SIS/DIAS 2025 Conference
+
+**Location:** University of Bari, Bari, Italy\
+**Date:** September 11–12, 2025
+
+The Società Italiana di Statistica (SIS) and the DIAS (Data, Inference, and Applied Statistics) section organize this conference to explore the intersection between statistical science, sustainability, and societal challenges. The event gathers scholars from across Italy to present cutting-edge research on data-driven approaches to contemporary issues.
+
+------------------------------------------------------------------------
+
+### Organized Session: Mapping and Measuring the Impact of Academic Health Science Research on Patient Care
+
+**Session Organizer:** Prof. Massimo Aria (University of Naples Federico II)
+
+**Session Abstract:**
+
+This session presents the scientific results of two national research projects funded under the PRIN 2022 programme. The first project, *SciK-Health*, maps the comprehensive scientific output of Italian Academic Health Science Centres (AHSCs), developing a digital conceptual and social atlas to support decision-making for citizens, healthcare professionals, and policymakers. The second project investigates the relationship between scientific production and healthcare outcomes in AHSCs, utilizing bibliometric analyses and econometric modeling to evaluate how research activities influence patient care quality, hospital performance indicators, and patient behavior. Together, the projects offer novel empirical evidence on the role of academic research in shaping healthcare delivery and outcomes in Italy.
+
+[View full session proposal](www/SISDIAS_Proposal_Massimo_Aria.pdf){target="_blank"}
+
+------------------------------------------------------------------------
+
+### Session Contributions
+
+::: panel-tabset
+#### Contribution 1
+
+**SciK-Health: Exploring Diseases, Experts, and Research Centres with One Question**
+
+**Authors:** Aria M.<sup>1,2</sup>, Cuccurullo C.<sup>1,2,3</sup>, D'Aniello L.<sup>1,2</sup>, Spano M.<sup>1,2</sup>, Alabiso C.<sup>1,2</sup>
+
+<sup>1</sup>Department of Economics and Statistics, University of Naples Federico II\
+<sup>2</sup>K-Synth academic spin-off, University of Naples Federico II\
+<sup>3</sup>Department of Economics, University of Campania Luigi Vanvitelli
+
+<details>
+
+<summary>**View Abstract**</summary>
+
+The SciK-Health Web App is the main product of the PRIN 2022 project "Scientific Knowledge in Health", designed to transform the scientific production of Italian public Academic Health Science Centres (AHSCs) into actionable knowledge for citizens, professionals, and policymakers. Through an integrated data pipeline, spanning bibliometric records, clinical trials, patents, and grants, the app provides a unified, role-based dashboard that allows users to explore the Italian health research ecosystem with a single query.
+
+SciK-Health enables the discovery of disease-related expertise, institutional profiles, and innovation trends. Users can navigate a dynamic interface that synthesizes complex data into interpretable visualizations, helping identify centres of excellence, leading researchers (i.e., medstars), and patterns of collaboration and funding. Designed to support informed decision-making and foster transparency, the app stands as a novel digital tool at the intersection of health research, open science, and public engagement.
+
+</details>
+
+#### Contribution 2
+
+**Scientific Knowledge and Healthcare Quality: A Multidimensional Assessment of 49 Italian Academic Health Science Centres**
+
+**Authors:** Alaimo L. S.<sup>1</sup>, Aria M.<sup>2,3</sup>, D'Aniello L.<sup>2,3</sup>, Spano M.<sup>2,3</sup>
+
+<sup>1</sup>Department of Statistical Sciences, Sapienza University of Rome\
+<sup>2</sup>Department of Economics and Statistics, University of Naples Federico II\
+<sup>3</sup>K-Synth academic spin-off, University of Naples Federico II
+
+<details>
+
+<summary>**View Abstract**</summary>
+
+This study contributes to the Scientific Knowledge in Health (SciK-Health) project, a national research initiative funded under the PRIN 2022 programme. The project explores the impact of scientific production on the quality and effectiveness of patient care within the Italian healthcare system, with a particular focus on Academic Health Science Centres (AHSCs). These centres, characterized by diverse governance models and institutional arrangements, represent a complex field of analysis.
+
+We examine 49 public AHSCs located in both metropolitan and smaller urban contexts, which vary significantly in their organizational configurations and in the nature of the hospital–university linkage. To assess and compare their performance and scientific integration, we develop composite indicators using a range of methodological approaches. These synthetic indices aim to capture multidimensional aspects of the centres' structure and output, offering a tool for understanding the relationship between scientific activity and healthcare delivery across heterogeneous institutional settings.
+
+</details>
+
+#### Contribution 3
+
+**Does Clinical Research Improve the Quality of Care? Evidence from Italy**
+
+**Authors:** Aria M.<sup>1,3</sup>, Beraldo S.<sup>1</sup>, Collaro M.<sup>1</sup>, Cuccurullo C.<sup>1,2,3</sup>, Gnasso A.<sup>1,3</sup>
+
+<sup>1</sup>Department of Economics and Statistics, University of Naples Federico II\
+<sup>2</sup>Department of Economics, University of Campania Luigi Vanvitelli\
+<sup>3</sup>K-Synth academic spin-off, University of Naples Federico II
+
+<details>
+
+<summary>**View Abstract**</summary>
+
+This study examines an often-overlooked dimension in quality assessment models: the institutional mission of healthcare providers. While some institutions are deeply engaged in clinical research, others are exclusively focused on delivering patient care. It is therefore reasonable to expect that differences in core missions may be associated with variations in healthcare quality.
+
+The analysis proceeds in two steps. First, it explores the empirical relationship between research intensity and quality indicators, testing whether a research-oriented mission is linked to better healthcare outcomes. Second, it compares quality indicators between research-focused and care-focused providers to identify potential heterogeneity related to institutional orientation.
+
+The study integrates data from Academic Health Science Centers (AHSCs) - including measures of research intensity - with information from the Italian National Outcomes Program (*Programma Nazionale Esiti*, PNE), which provides a range of indicators on health outcomes. The findings offer new insights into the added value of clinical research, enhancing our understanding of how the institutional mission of healthcare providers shapes the quality of care.
+
+</details>
+
+#### Contribution 4
+
+**Governance and Performance of Academic Health Science Centers: Insights from a Qualitative Study in Italy**
+
+**Authors:** Belfiore A.<sup>1,4</sup>, Cuccurullo C.<sup>2,3,4</sup>
+
+<sup>1</sup>Università Pegaso, Italia\
+<sup>2</sup>Department of Economics and Statistics, University of Naples Federico II\
+<sup>3</sup>Department of Economics, University of Campania Luigi Vanvitelli\
+<sup>4</sup>K-Synth academic spin-off, University of Naples Federico II
+
+<details>
+
+<summary>**View Abstract**</summary>
+
+In contemporary health systems, Academic Health Science Centers (AHSCs) must integrate care, research, and education to remain sustainable. Yet, this "triple mission" entails complex challenges often neglected in planning and assessment.
+
+The Sci-K-Health project explored these issues through three components: a scientometric analysis of 200,000 Italian AHSC publications (2000–2024), a nationwide survey of CEOs (n=49, 14 responses), and interviews with four CEOs from diverse contexts. Results highlight that functional integration across missions is neither automatic nor uniform, requiring new governance models based on horizontal collaboration.
+
+Current evaluation frameworks overlook the added value of academic integration, and regulatory misalignments hinder effective synergies. The study advocates for a renewed national framework that formally supports AHSCs' integrative role, emphasizing their capacity for rapid, high-impact responses—particularly evident during the COVID-19 pandemic.
+
+</details>
+:::
