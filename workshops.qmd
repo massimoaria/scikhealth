@@ -6,8 +6,22 @@ format: html
 
 Seminars and training sessions organized within the framework of the **SciK-Health** project. These events aim to promote knowledge sharing among the research units and with external stakeholders.
 
-Next workshops:
-The upcoming  workshops are scheduled for February 26, 2025.
+------------------------------------------------------------------------
+
+### Final Workshop
+
+**Date:** February 26, 2026\
+**Location:** Room C16 – Department of Economics and Statistics (DiSES), Monte Sant'Angelo University Campus, Via Cinthia No. 21, 80126 – Naples
+
+The final workshop of the PRIN 2022 SciK-Health project brings together the main findings achieved by the research team, presenting them across five thematic sessions. The event opens with institutional greetings and an introductory address by the Principal Investigator, followed by scientific contributions on the core themes of the project:
+
+- Academic Health Science Centers in Italy: an analysis of the Italian context and the distinctive features of public AHCs, offering a comparative reading of organisational models and scientific performance.
+- The SciK-Health Dashboard: presentation of the open-data platform for the multidimensional evaluation of Italian AHCs, focusing on bibliometric indicators, social and digital engagement, industrial innovation, clinical research activity, and funding capacity.
+- Semantic Structures and Knowledge Connections in Health Research: exploration of semantic networks in Italian biomedical research, using topic modelling techniques and conceptual co-occurrence analysis.
+- From Scientific Discovery to Financial Capitalisation: investigation of the linkages between scientific production and the patent system in the health sector, analysing knowledge connections between academic research and industrial innovation.
+- Clinical Quality and Academic Health Centers: analysis of data from the National Outcomes Programme to evaluate the relationship between academic research activity and quality of care in Italian AHCs.
+
+[View workshop program](www/Locandina_finalWorkshopPRIN.pdf){target="_blank"}
 
 ------------------------------------------------------------------------
 
